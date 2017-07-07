@@ -1,6 +1,7 @@
 @extends('layouts.app')
 <!-- aca le estoy indicando a modo blade que este se archivo.php se extiende y utiliza mi plantilla-->
 @section('contenido')
+
   <!--/ banner -->
   <div class="banner1">
   		<div class="w3_agileits_service_banner_info">

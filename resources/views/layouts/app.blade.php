@@ -24,14 +24,15 @@ Maquetacion Bootstrap" />
 <!-- font-awesome-icons -->
 <link href="css/font-awesome.css" rel="stylesheet">
 <!-- //font-awesome-icons -->
+<link href="css/index.css" rel="stylesheet" type="text/css" media="all" />
 </head>
 <body>
 <!-- banner -->
 <div class="main_section_agile">
-		<div class="agileits_w3layouts_banner_nav">
+		<div class="agileits_w3layouts_banner_nav"> 
 			<nav class="navbar navbar-default">
 				<div class="navbar-header navbar-left">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="true">
 						<span class="sr-only"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
@@ -103,6 +104,8 @@ Maquetacion Bootstrap" />
 		</div>
 	</div>
 <!-- //footer -->
+
+
 
 <!-- start-smoth-scrolling -->
 <!-- js -->
@@ -193,5 +196,60 @@ Maquetacion Bootstrap" />
 			});
 	</script>
 <!-- //here ends scrolling icon -->
+<!-- start-smoth-scrolling -->
+ <!-- js -->
+  <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+ <!-- //js -->
+ <script src="js/jquery.filterizr.js"></script>
+ <script src="js/controls.js"></script>
+ <!-- Kick off Filterizr -->
+ <script type="text/javascript">
+     $(function() {
+         //Initialize filterizr with default options
+         $('.filtr-container').filterizr();
+     });
+ </script>
+<!---->
+<script src="js/jquery.chocolat.js"></script>
+ <link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen">
+ <!--light-box-files -->
+ <script type="text/javascript">
+ $(function() {
+   $('.filtr-item a').Chocolat();
+ });
+ </script>
+<!--//gallery-->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+ $(".scroll").click(function(event){
+   event.preventDefault();
+   $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+ });
+});
+</script>
+<!-- start-smoth-scrolling -->
+<!-- for bootstrap working -->
+<script src="js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
+<!-- here stars scrolling icon -->
+<script type="text/javascript">
+ $(document).ready(function() {
+   /*
+     var defaults = {
+     containerID: 'toTop', // fading element id
+     containerHoverID: 'toTopHover', // fading element hover id
+     scrollSpeed: 1200,
+     easingType: 'linear'
+     };
+   */
+
+   $().UItoTop({ easingType: 'easeOutQuart' });
+
+   });
+</script>
+<!-- //here ends scrolling icon -->
+
 </body>
 </html>
