@@ -1060,6 +1060,14 @@ div#graph-wrapper button {
     font-size: 2.5em;
     color: #fff;
 }
+.w3layouts_stats_left a {
+    color:#00ba66;
+	  text-decoration:none;
+}
+.w3layouts_stats_left a:hover {
+    color:#efb312;
+	  text-decoration:none;
+}
 .w3layouts_stats_left2{
        padding: 5em 0 4em 0;
 	text-align:center;
