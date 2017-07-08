@@ -28,4 +28,4 @@ Route::get('/blog',function () {
 });
 Auth::routes();
 
-Route::get('/blogdashboard', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home');
