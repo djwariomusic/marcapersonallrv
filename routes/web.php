@@ -20,3 +20,6 @@ Route::get('/servicios',function () {
 Route::get('/portafolio',function () {
     return view('portfolio');
 });
+Route::get('/contacto',function () {
+    return view('contact');
+});

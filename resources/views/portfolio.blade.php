@@ -1,12 +1,14 @@
 @extends('layouts.app')
 <!-- aca le estoy indicando a modo blade que este se archivo.php se extiende y utiliza mi plantilla-->
 @section('contenido')
-
+<!-- main -->
+<!-- banner -->
   <div class="banner1">
   		<div class="w3_agileits_service_banner_info">
   			<h2>Portafolio</h2>
   		</div>
   </div>
+<!--/ banner -->
   <!--/portfolio-->
   <div class="inner_main_agile_section">
   	<div class="container">
@@ -16,22 +18,22 @@
   				<br>
   				<h3>MAPA CULTURAL <span>MINCULTURA</span> </h3>
   				<strong>URL:</strong> <a href="http://www.sinic.gov.co/mapacultural/index.html" target="_blank">http://www.sinic.gov.co/mapacultural/index.html</a><br>
-  				<strong>Galeria Flickr:</strong> <a href="https://www.flickr.com/gp/150113091@N02/b5A1tn" target="_blank"><span class="label label-info">Ir a Flickr</span></a>
+  				<strong>Galería Flickr:</strong> <a href="https://www.flickr.com/gp/150113091@N02/b5A1tn" target="_blank"><span class="label label-info">Ir a Flickr</span></a>
   				<p><strong>Descripción: </strong>WebGIS que suministra datos Georreferenciados de alrededor 50.000 Inmuebles de Patrimonio Cultural a nivel nacional.<br>
   				<strong>Tecnologías: </strong>HTML5, JSON, WebServices, Georreferenciador, API Google Maps, SQL Server.<br>
   				<strong>Participación: </strong>Coordine todo el análisis de datos y validación de los mismos para que
   				los datos tuvieran Modelo 3D asociado, existencia de integridad referencial con los múltiples llaves. Soporte
-  				y Toma de Requerimientos hacia ajustes o mejoras. Testing y Documentacion</p>
+  				y Toma de Requerimientos hacia ajustes o mejoras. Testing y Documentación</p>
   			</div>
   			<br>
   			<div class="col-md-12 wthree_services_grid_left">
   				<br>
-  				<h3>SITIMOVIL <span>SERVINFORMACION S.A </span> </h3>
+  				<h3>SITIMOVIL <span>SERVINFORMACION S. A </span> </h3>
   				<strong>URL:</strong> <a href="http://sitimovil.sitimapa.com" target="_blank">http://sitimovil.sitimapa.com</a><br>
-  				<strong>Galeria Flickr:</strong> <a href="https://www.flickr.com/gp/150113091@N02/M90968" target="_blank"><span class="label label-info">Ir a Flickr</span></a>
+  				<strong>Galería Flickr:</strong> <a href="https://www.flickr.com/gp/150113091@N02/M90968" target="_blank"><span class="label label-info">Ir a Flickr</span></a>
   				<p><strong>Descripción: </strong>Plataforma Web para la Administración y Gestión de dispositivos GPS Vehicular y Telefonía Móvil para control de visitas, cumplimiento de rutas y ubicación actual.<br>
   				<strong>Tecnologías: </strong>: HTML5, JSON, WebServices, Ruteadores, API Google Maps, PostgreSQL, Receptores de Datos, Ruteadores Logísticos, Trigger B.D y Stored Procedures PL-PGSQL<br>
-  				<strong>Participación: </strong>Administrador de la Plataforma, configuración de equipos GPS y smartphone	, Coordinacion de Personal Tecnico,
+  				<strong>Participación: </strong>Administrador de la Plataforma, configuración de equipos GPS y smartphone	, Coordinación de Personal Técnico,
   				Consultas de datos por Sentencias SQL, Despliegue del Servicio a Cliente nuevos, Testing a Requerimientos Nuevos, Seguimiento a más de 4000 Dispositivos
   				transmitiendo x minuto. Apoyo a procesos de preventa y soporte postventa</p>
   			</div>
@@ -40,7 +42,7 @@
   				<br>
   				<h3>DENTISALUD - CIUDAD DE MEXICO <span>UNAM</span> </h3>
   				<strong>URL:</strong> <a href="#">NO DISPONIBLE</a><br>
-  				<strong>Galeria Flickr:</strong> <a href="https://www.flickr.com/gp/150113091@N02/5TFa43" target="_blank"><span class="label label-info">Ir a Flickr</span></a>
+  				<strong>Galería Flickr:</strong> <a href="https://www.flickr.com/gp/150113091@N02/5TFa43" target="_blank"><span class="label label-info">Ir a Flickr</span></a>
   				<p><strong>Descripción: </strong>Website Comercial que brinda alterna mente un sistema de gestión médica, basado en
   				asignación de citas, creación de pacientes, relaciones directas entre la Historia Clínica, Consulta Médica y Cita en
   				Ejecución. Proyecto Académico tipo tesis realizado en Ciudad de México en el Segundo Semestre del 2016 para la Universidad
@@ -76,8 +78,6 @@
               <div class="filtr-container">
                   <div class="  filtr-item gallery-t" data-category="1, 5" data-sort="Busy streets">
                   <a href="images/1.jpg" class="b-link-stripe b-animate-go  thickbox">
-
-
   					<figure>
   					 <img src="images/1.jpg" class="img-responsive" alt=" " />	<figcaption>
   							<h3>CONSULTANCY</h3>
@@ -90,7 +90,6 @@
                   </div>
                   <div class=" filtr-item" data-category="2, 5" data-sort="Luminous night">
                      <a href="images/2.jpg" class="b-link-stripe b-animate-go  thickbox">
-
   					<figure>
   					 <img src="images/2.jpg" class="img-responsive" alt=" " />	<figcaption>
   							<h3>CONSULTANCY</h3>
@@ -103,7 +102,6 @@
                   </div>
                   <div class=" filtr-item" data-category="1, 4" data-sort="City wonders">
                       <a href="images/3.jpg" class="b-link-stripe b-animate-go  thickbox">
-
   					<figure>
   					 <img src="images/3.jpg" class="img-responsive" alt=" " />	<figcaption>
   							<h3>CONSULTANCY</h3>
@@ -116,7 +114,6 @@
                   </div>
                   <div class="  filtr-item" data-category="3" data-sort="In production">
                      <a href="images/4.jpg" class="b-link-stripe b-animate-go  thickbox">
-
   					<figure>
   					 <img src="images/4.jpg" class="img-responsive" alt=" " />	<figcaption>
   							<h3>CONSULTANCY</h3>
@@ -129,7 +126,6 @@
                   </div>
                   <div class=" filtr-item" data-category="3, 4" data-sort="Industrial site">
                     <a href="images/5.jpg" class="b-link-stripe b-animate-go  thickbox">
-
   					<figure>
   					 <img src="images/5.jpg" class="img-responsive" alt=" " />	<figcaption>
   							<h3>CONSULTANCY</h3>
@@ -142,7 +138,6 @@
                   </div>
                   <div class=" filtr-item" data-category="2, 4" data-sort="Peaceful lake">
                       <a href="images/6.jpg" class="b-link-stripe b-animate-go  thickbox">
-
   					<figure>
   					 <img src="images/6.jpg" class="img-responsive" alt=" " />	<figcaption>
   							<h3>CONSULTANCY</h3>
@@ -152,11 +147,9 @@
   						</figcaption>
   					</figure>
   				</a>
-
                   </div>
                   <div class="  filtr-item" data-category="1, 5" data-sort="City lights">
                      <a href="images/7.jpg" class="b-link-stripe b-animate-go  thickbox">
-
   					<figure>
   					 <img src="images/7.jpg" class="img-responsive" alt=" " />	<figcaption>
   							<h3>CONSULTANCY</h3>
@@ -169,7 +162,6 @@
                   </div>
                   <div class=" filtr-item" data-category="2, 4" data-sort="Dreamhouse">
                      <a href="images/8.jpg" class="b-link-stripe b-animate-go  thickbox">
-
   					<figure>
   					 <img src="images/8.jpg" class="img-responsive" alt=" " />	<figcaption>
   							<h3>CONSULTANCY</h3>
@@ -182,7 +174,6 @@
                   </div>
   				<div class=" filtr-item" data-category="2, 4" data-sort="Dreamhouse">
                     <a href="images/9.jpg" class="b-link-stripe b-animate-go  thickbox">
-
   					<figure>
   					 <img src="images/9.jpg" class="img-responsive" alt=" " />	<figcaption>
   							<h3>CONSULTANCY</h3>
@@ -192,18 +183,17 @@
   						</figcaption>
   					</figure>
   				</a>
-                  </div>
-
-                 <div class="clearfix"> </div>
+              </div>
+         <div class="clearfix"> </div>
   			</div>
   		</div>
   	</div>
   </div>
+<!-- //main -->
 
-  <!-- start-smoth-scrolling -->
- <!-- js -->
+<!-- js -->
   <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
- <!-- //js -->
+<!--gallery-->
  <script src="js/jquery.filterizr.js"></script>
  <script src="js/controls.js"></script>
  <!-- Kick off Filterizr -->
@@ -223,35 +213,5 @@
  });
  </script>
 <!--//gallery-->
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
-<script type="text/javascript">
-jQuery(document).ready(function($) {
- $(".scroll").click(function(event){
-   event.preventDefault();
-   $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
- });
-});
-</script>
-<!-- start-smoth-scrolling -->
-<!-- for bootstrap working -->
-<script src="js/bootstrap.js"></script>
-<!-- //for bootstrap working -->
-<!-- here stars scrolling icon -->
-<script type="text/javascript">
- $(document).ready(function() {
-   /*
-     var defaults = {
-     containerID: 'toTop', // fading element id
-     containerHoverID: 'toTopHover', // fading element hover id
-     scrollSpeed: 1200,
-     easingType: 'linear'
-     };
-   */
-
-   $().UItoTop({ easingType: 'easeOutQuart' });
-
-   });
-</script>
-<!-- //here ends scrolling icon -->
+ <!-- //js -->
 @endsection

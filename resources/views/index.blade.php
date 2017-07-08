@@ -25,7 +25,6 @@ Maquetacion Bootstrap" />
 <!-- font-awesome-icons -->
 <link href="css/font-awesome.css" rel="stylesheet">
 <!-- //font-awesome-icons -->
-
 </head>
 
 <body>
@@ -234,7 +233,7 @@ Maquetacion Bootstrap" />
 					<li class="list-group-item1"><i class="fa fa-check-square-o" aria-hidden="true"></i>Fortalecer Conocimientos en NodeJS, AngularJs, MongoDB y Python.</li>
 					<li class="list-group-item1"><i class="fa fa-check-square-o" aria-hidden="true"></i>Realización de Trabajos y Ejercicios Académicos para Ing. de Sistemas.</li>
 					<li class="list-group-item1"><i class="fa fa-check-square-o" aria-hidden="true"></i>Seguir las ultimas tendencias y tecnologías asociadas al desarrollo de Software.</li>
-					<li class="list-group-item1"><i class="fa fa-check-square-o" aria-hidden="true"></i>Control de Versiones GIT y trabajo colaborativo Github.</li>
+					<li class="list-group-item1"><i class="fa fa-check-square-o" aria-hidden="true"></i>Control de Versiones GIT y trabajo colaborativo Git-hub.</li>
 				</ul>
 			</div>
 		</div>
@@ -453,7 +452,7 @@ Maquetacion Bootstrap" />
 					</div>
 	<!-- //services -->
 <!-- stats -->
-	<div class="stats2" id="stats">
+	<div class="stats" id="stats">
 	    <div class="container">
 			<div class="inner_w3l_agile_grids">
 		<div class="col-md-3 w3layouts_stats_left w3_counter_grid">
