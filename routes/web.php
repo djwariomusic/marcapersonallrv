@@ -17,7 +17,7 @@ Route::get('/', function () {
 Route::get('/servicios',function () {
     return view('services');
 });
-Route::get('/portafolio',function () {
+Route::get('/proyectos',function () {
     return view('portfolio');
 });
 Route::get('/contacto',function () {
