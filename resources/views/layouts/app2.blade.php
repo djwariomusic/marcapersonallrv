@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Desarrollo Web - Freelance Edwin Beltran</title>
+<title>{{ config('app.name', 'Desarrollo Web - Freelance Edwin Beltran') }}</title>
 <!-- custom-theme -->
 <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,10 +25,13 @@ Maquetacion Bootstrap" />
 <link href="css/font-awesome.css" rel="stylesheet">
 <!-- //font-awesome-icons -->
 <link href="css/index.css" rel="stylesheet" type="text/css" media="all" />
+
+<meta name="csrf-token" content="{{ csrf_token() }}">
+
 </head>
 <body>
 <!-- banner -->
-<div class="main_section_agile">
+<div class="main_section_agile" id="app">
 		<div class="agileits_w3layouts_banner_nav">
 			<nav class="navbar navbar-default">
 				<div class="navbar-header navbar-left">
@@ -40,6 +43,36 @@ Maquetacion Bootstrap" />
 					</button>
 				<h1><a class="navbar-brand" href="/"><i class="fa fa-desktop" aria-hidden="true"></i>Edwin Beltrán</a></h1>
       	</div>
+				<div>
+ <ul class="agile_forms">
+	 <!-- Authentication Links -->
+ 	@if (Auth::guest())
+  			<li><a href="{{ route('login') }}">Login</a></li>
+ 			<li><a href="{{ route('register') }}">Register</a></li>
+ 	@else
+ 			<li class="dropdown">
+ 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+ 							{{ Auth::user()->name }} <span class="caret"></span>
+ 					</a>
+
+ 					<ul class="dropdown-menu" role="menu">
+ 							<li>
+ 									<a href="{{ route('logout') }}"
+ 											onclick="event.preventDefault();
+ 															 document.getElementById('logout-form').submit();">
+ 											Logout
+ 									</a>
+
+ 									<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+ 											{{ csrf_field() }}
+ 									</form>
+ 							</li>
+ 					</ul>
+ 			</li>
+ 	@endif
+</ul>
+</div>
+
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 					<nav class="link-effect-2" id="link-effect-2">
@@ -50,7 +83,7 @@ Maquetacion Bootstrap" />
 							<li><a href="/blog" class="effect-3">Blog</a></li>
 							<li><a href="/contacto" class="effect-3">Contacto</a></li>
 						</ul>
-				</nav>
+				  </nav>
 				</div>
 			</nav>
 		</div>
@@ -146,6 +179,7 @@ Maquetacion Bootstrap" />
 			});
 	</script>
 <!-- //here ends scrolling icon -->
+<script src="{{ asset('js/app.js') }}"></script>
 <!-- //js -->
 
 </body>

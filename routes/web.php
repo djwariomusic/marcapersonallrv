@@ -23,3 +23,9 @@ Route::get('/proyectos',function () {
 Route::get('/contacto',function () {
     return view('contact');
 });
+Route::get('/blog',function () {
+    return view('blog');
+});
+Auth::routes();
+
+Route::get('/blogdashboard', 'HomeController@index')->name('home');
