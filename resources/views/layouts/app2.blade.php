@@ -76,7 +76,7 @@ Maquetacion Bootstrap" />
 				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 					<nav class="link-effect-2" id="link-effect-2">
 						<ul class="nav navbar-nav">
-							<li class="active"><a href="/" class="effect-3">Inicio</a></li>
+							<li><a href="/" class="effect-3">Inicio</a></li>
 							<li><a href="/servicios" class="effect-3">Servicios</a></li>
 							<li><a href="/proyectos" class="effect-3">Proyectos</a></li>
 							<li><a href="/blog" class="effect-3">Blog</a></li>
@@ -179,5 +179,6 @@ Maquetacion Bootstrap" />
 	</script>
 <!-- //here ends scrolling icon -->
 <!-- //js -->
+
 </body>
 </html>

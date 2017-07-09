@@ -286,6 +286,19 @@ a.button-w3layouts {
 ul.agile_forms {
     float: right;
 }
+ul.agile_forms li {
+    background: #0ac876;
+    color: #fff;
+    font-size: 0.9em;
+    padding: 8px 1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+	border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-o-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-ms-border-radius: 30px;
+}
 ul.agile_forms li a {
     background: #0ac876;
     color: #fff;

@@ -1,5 +1,12 @@
 @extends('layouts.app')
 <!-- aca le estoy indicando a modo blade que este se archivo.php se extiende y utiliza mi plantilla-->
+@section('barnav')
+  <li><a href="/" class="effect-3">Inicio</a></li>
+  <li><a href="/servicios" class="effect-3">Servicios</a></li>
+  <li class="active"><a href="/proyectos" class="effect-3">Proyectos</a></li>
+  <li><a href="/blog" class="effect-3">Blog</a></li>
+  <li><a href="/contacto" class="effect-3">Contacto</a></li>
+@endsection
 @section('contenido')
 <!-- main -->
 <!-- banner -->

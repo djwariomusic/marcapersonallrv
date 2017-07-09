@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Desarrollo Web - Freelance Edwin Beltran</title>
+<title>{{ config('app.name', 'Desarrollo Web - Freelance Edwin Beltran') }}</title>
 <!-- custom-theme -->
 <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,6 +25,8 @@ Maquetacion Bootstrap" />
 <link href="css/font-awesome.css" rel="stylesheet">
 <!-- //font-awesome-icons -->
 <link href="css/index.css" rel="stylesheet" type="text/css" media="all" />
+
+<meta name="csrf-token" content="{{ csrf_token() }}">
 </head>
 <body>
 <!-- banner -->
@@ -40,15 +42,12 @@ Maquetacion Bootstrap" />
 					</button>
 				<h1><a class="navbar-brand" href="/"><i class="fa fa-desktop" aria-hidden="true"></i>Edwin Beltrán</a></h1>
       	</div>
+				@yield('login')
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 					<nav class="link-effect-2" id="link-effect-2">
 						<ul class="nav navbar-nav">
-							<li class="active"><a href="/" class="effect-3">Inicio</a></li>
-							<li><a href="/servicios" class="effect-3">Servicios</a></li>
-							<li><a href="/proyectos" class="effect-3">Proyectos</a></li>
-							<li><a href="/blog" class="effect-3">Blog</a></li>
-							<li><a href="/contacto" class="effect-3">Contacto</a></li>
+							@yield('barnav')
 						</ul>
 				</nav>
 				</div>

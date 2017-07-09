@@ -1,5 +1,44 @@
-@extends('layouts.app2')
+@extends('layouts.app')
 <!-- aca le estoy indicando a modo blade que este se archivo.php se extiende y utiliza mi plantilla-->
+@section('login')
+  <div>
+  <ul class="agile_forms">
+  <!-- Authentication Links -->
+      @if (Auth::guest())
+          <li><a href="{{ route('login') }}">Login</a></li>
+          <li><a href="{{ route('register') }}">Register</a></li>
+      @else
+          <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+            {{ Auth::user()->name }} <span class="caret"></span>
+          </a>
+
+              <ul class="dropdown-menu" role="menu">
+                  <li>
+                  <a href="{{ route('logout') }}"
+                    onclick="event.preventDefault();
+                             document.getElementById('logout-form').submit();">
+                    Logout
+                  </a>
+
+                  <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                    {{ csrf_field() }}
+                  </form>
+                  </li>
+              </ul>
+         </li>
+      @endif
+  </ul>
+  </div>
+@endsection
+
+@section('barnav')
+  <li><a href="/" class="effect-3">Inicio</a></li>
+  <li><a href="/servicios" class="effect-3">Servicios</a></li>
+  <li><a href="/proyectos" class="effect-3">Proyectos</a></li>
+  <li class="active"><a href="/blog" class="effect-3">Blog</a></li>
+  <li><a href="/contacto" class="effect-3">Contacto</a></li>
+@endsection
 @section('contenido')
 <!--/ banner -->
   <div class="banner1">
