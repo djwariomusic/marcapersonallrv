@@ -30,6 +30,7 @@
       @endif
   </ul>
   </div>
+  <div class="clearfix"> </div>
 @endsection
 
 @section('barnav')

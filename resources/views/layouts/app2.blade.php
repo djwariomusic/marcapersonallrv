@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>{{ config('app.name', 'Desarrollo Web - Freelance Edwin Beltran') }}</title>
+<title>Desarrollo Web - Freelance Edwin Beltran</title>
 <!-- custom-theme -->
 <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -72,6 +72,7 @@ Maquetacion Bootstrap" />
 		 	      @endif
         </ul>
         </div>
+				<div class="clearfix"> </div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 					<nav class="link-effect-2" id="link-effect-2">
