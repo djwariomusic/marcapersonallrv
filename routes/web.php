@@ -11,21 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
-Route::get('/servicios',function () {
-    return view('services');
-});
-Route::get('/proyectos',function () {
-    return view('portfolio');
-});
-Route::get('/contacto',function () {
-    return view('contact');
-});
-Route::get('/blog',function () {
-    return view('blog');
-});
+Route::get('/', 'PagesController@showindex');
+Route::get('/servicios','PagesController@showservices');
+Route::get('/proyectos','PagesController@showportfolio');
+Route::get('/contacto','PagesController@showcontact');
+Route::get('/blog','PagesController@showblog');
+Route::resource('post', 'PostController');
+Route::resource('comments', 'CommentController');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
