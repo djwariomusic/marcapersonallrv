@@ -11,13 +11,17 @@
 |
 */
 
-Route::get('/', 'PagesController@showindex');
+/*Route::get('/', 'PagesController@showindex');*/
 Route::get('/servicios','PagesController@showservices');
 Route::get('/proyectos','PagesController@showportfolio');
 Route::get('/contacto','PagesController@showcontact');
 Route::get('/blog','PagesController@showblog');
-Route::resource('post', 'PostController');
-Route::resource('comments', 'CommentController');
+
+Route::get('/', 'PostController@getEditpost');
+Route::post('/savedPost', 'PostController@postSavepost');
+
+Route::Resource('post', 'PostController');
+Route::Resource('comments', 'CommentController');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
