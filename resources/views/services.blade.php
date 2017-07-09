@@ -31,9 +31,8 @@
   					<font color="#0ac876"><em>Está demostrado que la incorporación de nuevas tecnologías y la presencia en la Internet a través de un
             Sitio Web esta co-relacionado de manera positiva con el incremento en las ventas, la productividad y el valor en el mercado
             del Producto y Empresa.</em></font></p>
-  					<h2><input type="button" class="btn btn-success" value="Consultoria  Gratuita: "> <i class="fa fa-long-arrow-right" aria-hidden="true"></i></input></h2>
   					<br>
-  					<h2><a href="#"><span class="label label-success">Solicitar Consultoría: <i class="fa fa-long-arrow-right" aria-hidden="true"></i></span></a></h2>
+  					<h2><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="#"><span class="label label-success"> Solicitar Consultoría</span></a></h2>
 
   				</div>
   				<div class="col-md-6 wthree_services_grid_right">
@@ -150,7 +149,10 @@
   				<div class="col-md-4 agileinfo_services_grid">
   					<div class="agileinfo_services_grid1">
   						<h4><font color="#efb312">Desarrollo de Apps</font></h4>
-  						<p>Phasellus a porttitor metus, vitae ultrices nibh. Sed eu fermentum nunc.</p>
+              <span>Desarrollo de App's Nativas compatibles con SO Android, Skill en Mejoramiento con el uso de nuevas tecnologías
+              como Firebase by Google y Xamarin<br>
+              <br><br>
+              <br></span>
   						<div class="agileinfo_services_grid1_pos">
   							<span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
   						</div>

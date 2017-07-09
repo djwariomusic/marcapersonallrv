@@ -20,7 +20,7 @@
   <div class="inner_main_agile_section">
   	<div class="container">
   	<h3 class="w3l_header w3_agileits_header"> Participación / <span>Proyectos</span></h3>
-  			<p class="sub_para_agile two">Ipsum dolor sit amet consectetur adipisicing elit</p>
+  			<p class="sub_para_agile two">Algunos Proyectos Destacados</p>
   			<div class="col-md-12 wthree_services_grid_left">
   				<br>
   				<h3>MAPA CULTURAL <span>MINCULTURA</span> </h3>

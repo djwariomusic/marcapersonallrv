@@ -55,7 +55,7 @@ Maquetacion Bootstrap" />
 		 							{{ Auth::user()->name }} <span class="caret"></span>
 		 					  </a>
 
-		 					      <ul class="dropdown-menu" role="menu">
+		 					      <ul class="dropdown-menu agile_forms2" role="menu">
 		 							      <li>
 		 									  <a href="{{ route('logout') }}"
 		 											onclick="event.preventDefault();

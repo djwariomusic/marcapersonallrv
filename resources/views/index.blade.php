@@ -404,8 +404,8 @@ Maquetacion Bootstrap" />
 										</div>
 									<div class="choose_right">
 										<h3>DESARROLLO WEB</h3>
-										<p>Lorem Ipsum is simply dummy text of the printing and
-										typesetting industry.sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										<p>Desarrollo a la medida a bajo precio y alta calidad.
+										No solo observando las necesidades actuales si no las posibilidades de crecimiento.</p>
 									</div>
 										<div class="clearfix"></div>
 									 </div>
@@ -417,8 +417,8 @@ Maquetacion Bootstrap" />
 									</div>
 									<div class="choose_right">
 										<h3>CONSULTORIAS</h3>
-										<p>Lorem Ipsum is simply dummy text of the printing and
-										typesetting industry.sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										<p>Consultarías en T. I y Desarrollo Web sin Costo  <br>
+										Considero que la mejor herramienta del conocimiento es el intercambio de ideas.</p>
 									</div>
 									<div class="clearfix"></div>
 								 </div>
@@ -430,8 +430,8 @@ Maquetacion Bootstrap" />
 									</div>
 									<div class="choose_right">
 										<h3>TESTING Y CALIDAD EN SOFTWARE</h3>
-										<p>Lorem Ipsum is simply dummy text of the printing and
-										typesetting industry.sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										<p>La Entrevista inicial como punto de arranque.
+										Permitirá definir métricas, herramientas y casos de pruebas en QA.</p>
 									</div>
 									<div class="clearfix"></div>
 								 </div>
@@ -441,8 +441,8 @@ Maquetacion Bootstrap" />
 									</div>
 									<div class="choose_right">
 										<h3>EJERCICIOS<BR>ACADEMICOS</h3>
-										<p>Lorem Ipsum is simply dummy text of the printing and
-										typesetting industry.sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										<p>Realizo trabajos académicos asociados Ingeniería
+										de Sistemas y Tecnologías de la Computación, Código Comentado. Trabajo Garantizado.</p>
 									</div>
 									<div class="clearfix"></div>
 								 </div>
