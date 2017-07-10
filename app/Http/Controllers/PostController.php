@@ -10,9 +10,11 @@ use Illuminate\Support\Facades\Input;
 
 class PostController extends Controller
 {
+
   public function getList() {
     $data['posts'] = Post::where('status', 1)->get();
-  return view('index2', $data);
+    $data['posts']= Post::latest()->Paginate(5);
+  return view('blog', $data);
   }
   public function getPost($id) {
     $post = Post::find($id);
@@ -22,7 +24,7 @@ class PostController extends Controller
     else {
         $data['post'] = $post;
         $data['comments'] = Comment::where('post_id', $id)->get();
-        return view('post', $data);
+        return view('posts.post', $data);
     }
   }
   public function postSavepost() {
@@ -42,13 +44,13 @@ class PostController extends Controller
   }
   public function getEditpost($id = null) {
     if ($id == null)
-        return view('edit-post');
+        return view('posts.edit-post');
     else {
         $data['post'] = Post::find($id);
         if($data['post'] == null)
             return 'El post no existe';
 
-        return view('edit-post', $data);
+        return view('posts.edit-post', $data);
     }
   }
   public function getDeletepost($id) {

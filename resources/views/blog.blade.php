@@ -72,6 +72,46 @@
 <!!--//links-->
 <!-- //contact -->
 
+<article class="container">
+  <div class="inner_main_agile_section">
+	<div class="col-md-12 wthree_services_grid_left">
+		<div class="well">
+			<div class="page-header">
+				<h1>Listado de Posts</h1>
+			</div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati omnis vel nulla doloremque at dicta libero, repellendus quas, velit eos ab dolorem, minima provident modi eligendi alias sapiente corporis quos.</p>
+		</div>
+		{{-- Esta seccion sera un bucle de Posts (Los listará todos) --}}
+		<section class="col-md-9">
+			@foreach($posts as $post)
+				<article class="post">
+					<div class="page-header">
+						<h3>{{ $post->title }}<br/> <small>{{ $post->publish_date }}</small></h3>
+					</div>
+					<p>{{ $post->resume }}</p>
+					<a href="{{ url('blog/getPost/'.$post->id) }}"><span class="label label-success">Ver post -></span></a>
+          @if(Auth::check())
+          <a href="{{ url('edit-post/'.$post->id) }}"><span class="label label-success">Editar Post</span></a>
+          <a href="{{ url('deletedPost/'.$post->id) }}"><span class="label label-success">Editar Post</span></a>
+          @endif
+				</article>
+			@endforeach
+
+
+
+
+      @if(count($posts))
+          <div class="mt-2 mx-auto">
+          {{ $posts->links('pagination::bootstrap-4') }}
+          </div>
+      @endif
+		</section>
+    <div class="clearfix"> </div>
+		{{-- END Esta seccion sera un bucle de Posts --}}
+	</div>
+  </div>
+</article>
+
 <!-- js -->
-<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="{{ asset('js/jquery-2.1.4.min.js')}}"></script>
 @endsection
