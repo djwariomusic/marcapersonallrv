@@ -17,11 +17,14 @@ Route::get('/proyectos','PagesController@showportfolio');
 Route::get('/contacto','PagesController@showcontact');
 Route::get('/blog','PagesController@showblog');
 
-Route::get('/', 'PostController@getEditpost');
-Route::post('/savedPost', 'PostController@postSavepost');
+Route::get('/', 'PostController@getList');
+Route::get('/getPost/{postid}', 'PostController@getPost');
+Route::get('/edit-post/', 'PostController@getEditpost');
+Route::get('/edit-post/{id}', 'PostController@getEditpost');
 
-Route::Resource('post', 'PostController');
-Route::Resource('comments', 'CommentController');
+Route::post('/savedPost', 'PostController@postSavepost');
+Route::get('/deletedPost/{id}', 'PostController@getDeletepost');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

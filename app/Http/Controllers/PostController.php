@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Post;
+use App\Models\Comment;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
@@ -10,10 +11,19 @@ use Illuminate\Support\Facades\Input;
 class PostController extends Controller
 {
   public function getList() {
-      return "Lista de todos los post por GET";
+    $data['posts'] = Post::where('status', 1)->get();
+  return view('index2', $data);
   }
   public function getPost($id) {
-      return "Ver post, se pasa como parámetro la ID para buscarlo";
+    $post = Post::find($id);
+
+    if($post == null)
+        return 'No existe el post';
+    else {
+        $data['post'] = $post;
+        $data['comments'] = Comment::where('post_id', $id)->get();
+        return view('post', $data);
+    }
   }
   public function postSavepost() {
     $input = Input::all();
@@ -29,7 +39,7 @@ class PostController extends Controller
     $post->status = $input['status'];
     $post->save(); // Guarda el objeto en la BD
     return "Post guardado";
- }
+  }
   public function getEditpost($id = null) {
     if ($id == null)
         return view('edit-post');
@@ -42,6 +52,11 @@ class PostController extends Controller
     }
   }
   public function getDeletepost($id) {
-      return "Borrar Post, ID para saber cual es.";
-  }
+    $post = Post::find($id);
+
+        if($post == null)
+            return "No existe este post";
+        else
+            $post->delete();
+ }
 }

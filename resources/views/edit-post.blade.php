@@ -1,5 +1,6 @@
 @extends('base')
 
+
 @section('css')
 
 <style>
