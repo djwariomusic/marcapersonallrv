@@ -18,9 +18,11 @@
 	     {{ csrf_field() }}
 	     @if(isset($post))
 	         <input type="hidden" name="post_id" value="{{ $post->id }}">
+					 <input type="hidden" name="user_id" value="{{ Auth::user()->id }}">
 	     @endif
 
 	     <label for="title">Título</label>
+			     <input type="hidden" name="user_id" value="{{ Auth::user()->id }}">
 	         <input type="text" name="title" id="title" class="form-control" placeholder="Título..." value="{{isset($post) ? $post->title : '' }}">
 	     <label for="publish_date">Fecha de publicacion</label>
 	         <input type="date" name="publish_date" id="publish_date" class="form-control" placeholder="" value="{{isset($post) ? $post->publish_date : '' }}">

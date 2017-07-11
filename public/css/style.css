@@ -2379,6 +2379,30 @@ h2.typoh2{
        background: #efb312;
 
 }
+.contact-form input[type="button"] {
+    outline: none;
+    color: #FFFFFF;
+    padding: .6em 3em;
+    font-size:1.1em;
+    margin: 1em 0 0 0;
+    -webkit-appearance: none;
+    background: #0ac876;
+    border:none;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    transition: 0.5s all;
+	border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-o-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-ms-border-radius: 30px;
+}
+.contact-form input[type="button"]:hover {
+       background: #efb312;
+
+}
 .map iframe {
     width: 100%;
     min-height: 380px;

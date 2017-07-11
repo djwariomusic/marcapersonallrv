@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Post;
 use App\Models\Comment;
 
+
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
 
@@ -12,9 +13,10 @@ class PostController extends Controller
 {
 
   public function getList() {
-    $data['posts'] = Post::where('status', 1)->get();
-    $data['posts']= Post::latest()->Paginate(5);
-  return view('blog', $data);
+    $data= Post::where('status', 1)->get();
+    $data= Post::latest()->Paginate(5);
+
+  return view('blog', ['posts'=> $data]);
   }
   public function getPost($id) {
     $post = Post::find($id);
@@ -28,7 +30,9 @@ class PostController extends Controller
     }
   }
   public function postSavepost() {
+
     $input = Input::all();
+
     if(isset($input['post_id'])) {
         $post = Post::find($input['post_id']);
     } else {
@@ -39,6 +43,8 @@ class PostController extends Controller
     $post->description = $input['description'];
     $post->publish_date = $input['publish_date'];
     $post->status = $input['status'];
+    $post->imagen = 'http://lorempixel.com/500/338?' .mt_rand(0,100);
+    $post->user_id = $input['user_id'];
     $post->save(); // Guarda el objeto en la BD
     return "Post guardado";
   }

@@ -35,11 +35,12 @@
 <div class="container">
 	<div class="col-md-12 wthree_services_grid_left">
 		<section class="post">
-			<a href="{{ url('/blog') }}" class="btn btn-primary"><- Listado</a>
+			<a href="{{ url('/blog') }}" class="btn btn-success"><- Listado</a>
 			<article class="post">
 				<div class="page-header">
 					<h3>{{ $post->title }}<br/> <small>{{ $post->publish_date }}</small></h3>
 				</div>
+        <img src="{{$post->imagen}}">
 				<p>
 					{{ $post->description }}
 				</p>
@@ -85,7 +86,7 @@
 						<div class="well">
 							<form action="{{ url('comments/createcomment') }}" method="POST">
 								{{ csrf_field() }}
-								<input type="hidden" name="post_id" value="{{ $post->id }}">
+								<input type="text" name="post_id" value="{{ $post->id }}">
 								<label for="user">Usuario:</label>
 								<input type="text" name="user" id="user" class="form-control" required><br/>
 								<label for="comment">Comentario:</label>
@@ -99,10 +100,7 @@
 		</div>
 	</div>
 </div>
-<div class="col-md-12 wthree_services_grid_left">
-  Hola
-  <div class="clearfix"> </div>
-</div>
+
 
 
 <script type="text/javascript" src="{{url('js/jquery-2.1.4.min.js')}}"></script>

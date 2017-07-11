@@ -1101,12 +1101,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #337ab7;
+  color: #efb312;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #23527c;
+  color: #00ba66;
   text-decoration: underline;
 }
 a:focus {
@@ -4660,8 +4660,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   z-index: 2;
   color: #fff;
   cursor: default;
-  background-color: #337ab7;
-  border-color: #337ab7;
+  background-color: #efb312;
+  border-color: #efb312;
 }
 .pagination > .disabled > span,
 .pagination > .disabled > span:hover,
@@ -5558,8 +5558,8 @@ a.list-group-item-danger.active:focus {
 }
 .panel-primary > .panel-heading {
   color: #fff;
-  background-color: #337ab7;
-  border-color: #337ab7;
+  background-color: #efb312;
+  border-color: #efb312;
 }
 .panel-primary > .panel-heading + .panel-collapse > .panel-body {
   border-top-color: #337ab7;

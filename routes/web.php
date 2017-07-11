@@ -26,4 +26,7 @@ Route::get('/edit-post/{id}', 'PostController@getEditpost')->middleware('auth');
 Route::post('/savedPost', 'PostController@postSavepost')->middleware('auth');
 Route::get('/deletedPost/{id}', 'PostController@getDeletepost')->middleware('auth');
 
+Route::post('/comments/createcomment', 'CommentController@postCreatecomment');
+Route::get('/comments/deletecomment/{id}', 'CommentController@getDeletecomment');
+
 Route::get('/home', 'HomeController@index')->name('home');
