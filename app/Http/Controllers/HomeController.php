@@ -28,6 +28,6 @@ class HomeController extends Controller
     {
       $data['posts'] = Post::where('status', 1)->get();
       $data['posts']= Post::latest()->Paginate(5);
-      return view('home', $data);
+      return view('posts.home', $data);
     }
 }

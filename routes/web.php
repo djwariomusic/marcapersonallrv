@@ -29,4 +29,6 @@ Route::get('/deletedPost/{id}', 'PostController@getDeletepost')->middleware('aut
 Route::post('/comments/createcomment', 'CommentController@postCreatecomment');
 Route::get('/comments/deletecomment/{id}', 'CommentController@getDeletecomment');
 
+
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/{username}', 'UsersController@showPost');

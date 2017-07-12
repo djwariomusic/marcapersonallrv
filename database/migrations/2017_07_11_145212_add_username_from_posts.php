@@ -27,7 +27,7 @@ class AddUsernameFromPosts extends Migration
     public function down()
     {
         Schema::table('posts', function (Blueprint $table) {
-          $table ->dropForeign('messages_user_id_foreign');
+          $table ->dropForeign('posts_user_id_foreign');
           $table ->dropColumn('user_id');
         });
     }

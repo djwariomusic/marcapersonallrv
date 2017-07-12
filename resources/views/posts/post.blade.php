@@ -35,7 +35,12 @@
 <div class="container">
 	<div class="col-md-12 wthree_services_grid_left">
 		<section class="post">
-			<a href="{{ url('/blog') }}" class="btn btn-success"><- Listado</a>
+      @if(Auth::check())
+        <a href="{{ url('/home') }}" class="btn btn-success"><- Listado</a>
+      @else
+        <a href="{{ url('/blog') }}" class="btn btn-success"><- Listado</a>
+      @endif
+			
 			<article class="post">
 				<div class="page-header">
 					<h3>{{ $post->title }}<br/> <small>{{ $post->publish_date }}</small></h3>
