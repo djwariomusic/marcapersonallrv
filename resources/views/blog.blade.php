@@ -84,7 +84,8 @@
 			<div class="page-header">
 				<h1>Listado de Posts</h1>
 			</div>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati omnis vel nulla doloremque at dicta libero, repellendus quas, velit eos ab dolorem, minima provident modi eligendi alias sapiente corporis quos.</p>
+      <p>Desarrollo en Framework Laravel 5 PHP, componentes Laravel: Migrates, Controllers, Models, Routes, Factory, Seeds, Bootstrap. Sistema de Autenticación para la creación de posts, los cuales podrán ser editados o eliminados siempre y cuando sea su creador se encuentre logeado.
+      Al dar click al creador de un post se podrán observar todos los posts relacionados a ese usuario creador. Los comentarios están asociados a los posts para su creación.</p>
 		</div>
 		{{-- Esta seccion sera un bucle de Posts (Los listará todos) --}}
 		<section class="col-md-9">
