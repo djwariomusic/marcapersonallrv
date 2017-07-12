@@ -29,6 +29,7 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati omnis vel nulla doloremque at dicta libero, repellendus quas, velit eos ab dolorem, minima provident modi eligendi alias sapiente corporis quos.</p>
 		</div>
 		{{-- Esta seccion sera un bucle de Posts (Los listará todos) --}}
+
 		<section class="col-md-9">
 			@forelse($posts as $post)
 				<article class="post">
