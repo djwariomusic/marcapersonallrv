@@ -61,7 +61,12 @@ Maquetacion Bootstrap" />
 											  <a href="{{ url('/home') }}">
 												    Dashboard
 											  </a>
-											  </li>
+											</li>
+												<li>
+												<a href="/home/{{Auth::user()->username}}">
+														Mis Posts
+												</a>
+												</li>
 		 							      <li>
 		 									  <a href="{{ route('logout') }}"
 		 											onclick="event.preventDefault();
@@ -156,7 +161,17 @@ Maquetacion Bootstrap" />
 			$('.counter').countUp();
 		</script>
 <!-- //stats -->
+<script type="text/javascript">
+$(function(){
+  $("#bars li .bar").each(function(key, bar){
+    var percentage = $(this).data('percentage');
 
+    $(this).animate({
+      'height':percentage+'%'
+    }, 1000);
+  })
+})
+</script>
 <script type="text/javascript" src="{{ asset('js/move-top.js')}}"></script>
 <script type="text/javascript" src="{{ asset('js/easing.js')}}"></script>
 <script type="text/javascript">

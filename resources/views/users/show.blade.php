@@ -8,7 +8,7 @@
   		</div>
   	</div>
 <!--/ banner -->
-<article class="container">
+<div class="container">
   <div class="inner_main_agile_section">
 	<div class="col-md-12 wthree_services_grid_left">
 		<div class="well">
@@ -55,9 +55,9 @@
           <div class="clearfix"> </div>
   </div>
   </div>
-</article>
+</div>
 
 <!-- js -->
-<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="{{ asset('js/jquery-2.1.4.min.js')}}"></script>
 
 @endsection

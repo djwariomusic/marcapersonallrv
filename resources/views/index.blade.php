@@ -493,11 +493,14 @@ Maquetacion Bootstrap" />
 							   	<div class="test-grid">
 							   		<div class="col-md-8 test-grid1">
 									  <i class="fa fa-quote-left" aria-hidden="true"></i>
-										<p class="para-w3-agile">Lorem ipsum dolor sit amet, consectetur adipiscing elit,consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.
-										Lorem ipsum dolor .</p>
-										<h4>Alexander Soto</h4>
-										<span>Ingeniero Industrial</span>
+										<p class="para-w3-agile">Puedo dar fe que él el profesionalismo en sus actividades e informe
+											sobre los cambios que este cliente realizaría y su impacto hacia nuestros procesos, brindando
+											un informe preciso con varias alternativas en desarrollo de software lo cual, no tenemos duda
+											de seguir contratando con él. </p>
+										<h4>Jose Octavio Zuluaga</h4>
+										<p>Gerente General - Conciliatus S.A.S Firma de Abogados</p>
 									</div>
+
 									<div class="col-md-4 test-grid2">
 										<img src="images/t1.jpg" alt="" class="img-r">
 									</div>
@@ -508,10 +511,12 @@ Maquetacion Bootstrap" />
 							   	<div class="test-grid">
 							   		<div class="col-md-8 test-grid1">
 									<i class="fa fa-quote-left" aria-hidden="true"></i>
-										<p class="para-w3-agile">Lorem ipsum dolor sit amet, consectetur adipiscing elit,consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.
-										Lorem ipsum dolor.</p>
-										<h4>Leonardo Molina</h4>
-										<span>Coordinador Académico UCC</span>
+										<p class="para-w3-agile">Puedo dar fe que él se caracteriza fundamentalmente por ser responsable,
+											comprometido, dedicado; demostrando un alto grado de madurez en todas sus actitudes y aptitudes
+											como compañero y ser humano. En el plano personal, admiro cualidades como la constancia
+											y la honradez, además es evidente su marcada persistencia en lograr sus objetivos.</p>
+										<h4>Margarita Muñoz</h4>
+										<p>Jefe de Operaciones - Servinformacion S.A</p>
 									</div>
 									<div class="col-md-4 test-grid2">
 										<img src="images/t2.jpg" alt="" class="img-r">
@@ -523,14 +528,17 @@ Maquetacion Bootstrap" />
 							   	<div class="test-grid">
 							   		<div class="col-md-8 test-grid1">
 									<i class="fa fa-quote-left" aria-hidden="true"></i>
-										<p class="para-w3-agile">Lorem ipsum dolor sit amet, consectetur adipiscing elit,consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.
-										Lorem ipsum dolor .</p>
-										<h4>Diana Marcela Folleco</h4>
-										<span>Ingeniera Desarrollo Móvil</span>
+									<p class="para-w3-agile">Tengo el honor de conocer desde el año de 2005 y siempre lo he
+										visto comportarse como una persona Responsable, Honesta, Proactiva y Trabajadora, además
+										posee extraordinarias habilidades de comunicación y de relaciones interpersonales para el
+										desarrollo de trabajo en equipo.</p>
+									<h4>Alexander Soto</h4>
+									<p>Coordinador de Servicios - Acueducto y Alcantarillado de Bogotá - Ingeniero Industrial</p>
 									</div>
 									<div class="col-md-4 test-grid2">
 										<img src="images/t3.jpg" alt="" class="img-r">
 									</div>
+
 								</div>
 								<div class="clearfix"></div>
 							</div>
@@ -538,10 +546,12 @@ Maquetacion Bootstrap" />
 							   	<div class="test-grid">
 							   		<div class="col-md-8 test-grid1">
 									<i class="fa fa-quote-left" aria-hidden="true"></i>
-										<p class="para-w3-agile">Lorem ipsum dolor sit amet, consectetur adipiscing elit,consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.
-										Lorem ipsum dolor .</p>
-										<h4>Luis Cuellar</h4>
-										<span>Representante Google Cloud Latam</span>
+										<p class="para-w3-agile">En el transcurso de las clases que hemos compartido se ha destacado en su
+											liderazgo y participación en la clase con temas asociados a Tecnología e Innovación.
+											Soy actualmente docente del estudiante durante el transcurso dee las clases el estudiante ha mostrado
+											un desempeño destacado y se observa su esfuerzo más que el promedio de sus compañeros. </p>
+										<h4>Adriana Sanchez</h4>
+										<p>Ingenieria de Sistemas - Docente Universitaria.</p>
 									</div>
 									<div class="col-md-4 test-grid2">
 										<img src="images/t4.jpg" alt="" class="img-r">

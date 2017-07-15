@@ -12,8 +12,8 @@
 <center>
 <div class="contact-form agile_inner_grids">
   <a href="{{url('/edit-post')}}"><input type="button" value="Crear Post"></a>
-  <input type="button" value="MENU2">
-	<input type="button" value="MENU3">
+  <a href="/home/{{Auth::user()->username}}"><input type="button" value="Mis Posts"></a>
+	<a href="/graphs"><input type="button" value="Grafica"></a>
 	<input type="button" value="MENU4">
 	<input type="button" value="MENU5">
 </div>

@@ -1,4 +1,4 @@
-          <h3>{{ $post->title }}</h3><br/ ><h4><small>{{ $post->publish_date }} creado por:<a href="/{{$post->user->username}}"> {{$post->user->name}} </a></small></h4>
+          <h3>{{ $post->title }}</h3><br/ ><h4><small>{{ $post->publish_date }} creado por:<a href="/home/{{$post->user->username}}"> {{$post->user->name}} </a></small></h4>
 					</div>
           <img class="img-thumbnail" src="{{ $post->imagen }}">
 					<p>{{ $post->resume }}</p>
