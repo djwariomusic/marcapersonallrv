@@ -22,32 +22,33 @@
   		<h3 class="w3l_header w3_agileits_header"> Enviame un <span>Mensaje</span></h3>
 			<p class="sub_para_agile two">No dude en contactarme, siempre dispuesto ayudarle.</p>
 			 <div class="contact-form agile_inner_grids">
-				<form action="#" method="post">
+				<form action="/contactar" method="post">
+          {{csrf_field()}}
 					<div class="fields-grid">
 						<div class="styled-input agile-styled-input-top">
-							<input type="text" name="Full Name" required="">
+							<input type="text" name="name" required="">
 							<label>Nombre Completo</label>
 							<span></span>
 						</div>
 						<div class="styled-input agile-styled-input-top">
-							<input type="text" name="Phone" required="">
+							<input type="text" name="telephone" required="">
 							<label>Telefono o Celular</label>
 							<span></span>
 						</div>
 						<div class="styled-input">
-							<input type="email" name="Email" required="">
+							<input type="email" name="email" required="">
 							<label>Email</label>
 							<span></span>
 						</div>
 						<div class="styled-input">
-							<input type="text" name="Subject" required="">
+							<input type="text" name="description" required="">
 							<label>Asunto</label>
 							<span></span>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
 					<div class="styled-input textarea-grid">
-						<textarea name="Message" required=""></textarea>
+						<textarea name="message" required=""></textarea>
 						<label>Mensaje</label>
 						<span></span>
 					</div>

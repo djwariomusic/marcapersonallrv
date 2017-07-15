@@ -17,7 +17,6 @@
   </div>
 <!--/ banner -->
   <!--/portfolio-->
-  <div class="inner_main_agile_section">
   	<div class="container">
   	<h3 class="w3l_header w3_agileits_header"> Participación / <span>Proyectos</span></h3>
   			<p class="sub_para_agile two">Algunos Proyectos Destacados</p>
@@ -73,129 +72,156 @@
   				<p>Construyendo un website comercial tipo Responsive que permita a esta clínica tener presencia en la Internet,
   				brindando la posibilidad de solicitar contacto a través de un formulario el cual envíe notificaciones vía Email.</p>
   			</div>
-  				<div class="agile_inner_grids">
-              <ul class="simplefilter">
-                  <li class="active" data-filter="all">All</li>
-                  <li data-filter="1">Category</li>
-                  <li data-filter="2">Category1</li>
-                  <li data-filter="3">Category2</li>
-                  <li data-filter="4">Category3</li>
-                  <li data-filter="5">Category4</li>
-              </ul>
-              <div class="filtr-container">
-                  <div class="  filtr-item gallery-t" data-category="1, 5" data-sort="Busy streets">
-                  <a href="images/1.jpg" class="b-link-stripe b-animate-go  thickbox">
-  					<figure>
-  					 <img src="images/1.jpg" class="img-responsive" alt=" " />	<figcaption>
-  							<h3>CONSULTANCY</h3>
-  						<p>
-  								Add Description
-  							</p>
-  						</figcaption>
-  					</figure>
-  				</a>
-                  </div>
-                  <div class=" filtr-item" data-category="2, 5" data-sort="Luminous night">
-                     <a href="images/2.jpg" class="b-link-stripe b-animate-go  thickbox">
-  					<figure>
-  					 <img src="images/2.jpg" class="img-responsive" alt=" " />	<figcaption>
-  							<h3>CONSULTANCY</h3>
-  							<p>
-  								Add Description
-  							</p>
-  						</figcaption>
-  					</figure>
-  				</a>
-                  </div>
-                  <div class=" filtr-item" data-category="1, 4" data-sort="City wonders">
-                      <a href="images/3.jpg" class="b-link-stripe b-animate-go  thickbox">
-  					<figure>
-  					 <img src="images/3.jpg" class="img-responsive" alt=" " />	<figcaption>
-  							<h3>CONSULTANCY</h3>
-  							<p>
-  								Add Description
-  							</p>
-  						</figcaption>
-  					</figure>
-  				</a>
-                  </div>
-                  <div class="  filtr-item" data-category="3" data-sort="In production">
-                     <a href="images/4.jpg" class="b-link-stripe b-animate-go  thickbox">
-  					<figure>
-  					 <img src="images/4.jpg" class="img-responsive" alt=" " />	<figcaption>
-  							<h3>CONSULTANCY</h3>
-  							<p>
-  								Add Description
-  							</p>
-  						</figcaption>
-  					</figure>
-  				</a>
-                  </div>
-                  <div class=" filtr-item" data-category="3, 4" data-sort="Industrial site">
-                    <a href="images/5.jpg" class="b-link-stripe b-animate-go  thickbox">
-  					<figure>
-  					 <img src="images/5.jpg" class="img-responsive" alt=" " />	<figcaption>
-  							<h3>CONSULTANCY</h3>
-  							<p>
-  								Add Description
-  							</p>
-  						</figcaption>
-  					</figure>
-  				</a>
-                  </div>
-                  <div class=" filtr-item" data-category="2, 4" data-sort="Peaceful lake">
-                      <a href="images/6.jpg" class="b-link-stripe b-animate-go  thickbox">
-  					<figure>
-  					 <img src="images/6.jpg" class="img-responsive" alt=" " />	<figcaption>
-  							<h3>CONSULTANCY</h3>
-  							<p>
-  								Add Description
-  							</p>
-  						</figcaption>
-  					</figure>
-  				</a>
-                  </div>
-                  <div class="  filtr-item" data-category="1, 5" data-sort="City lights">
-                     <a href="images/7.jpg" class="b-link-stripe b-animate-go  thickbox">
-  					<figure>
-  					 <img src="images/7.jpg" class="img-responsive" alt=" " />	<figcaption>
-  							<h3>CONSULTANCY</h3>
-  							<p>
-  								Add Description
-  							</p>
-  						</figcaption>
-  					</figure>
-  				</a>
-                  </div>
-                  <div class=" filtr-item" data-category="2, 4" data-sort="Dreamhouse">
-                     <a href="images/8.jpg" class="b-link-stripe b-animate-go  thickbox">
-  					<figure>
-  					 <img src="images/8.jpg" class="img-responsive" alt=" " />	<figcaption>
-  							<h3>CONSULTANCY</h3>
-  							<p>
-  								Add Description
-  							</p>
-  						</figcaption>
-  					</figure>
-  				</a>
-                  </div>
-  				<div class=" filtr-item" data-category="2, 4" data-sort="Dreamhouse">
-                    <a href="images/9.jpg" class="b-link-stripe b-animate-go  thickbox">
-  					<figure>
-  					 <img src="images/9.jpg" class="img-responsive" alt=" " />	<figcaption>
-  							<h3>CONSULTANCY</h3>
-  							<p>
-  								Add Description
-  							</p>
-  						</figcaption>
-  					</figure>
-  				</a>
-              </div>
-         <div class="clearfix"> </div>
-  			</div>
-  		</div>
+        <!--/portfolio-->
+        <div class="inner_main_agile_section">
+        	<div class="container">
+        	<h3 class="w3l_header w3_agileits_header"> GALERIA DE <span>PROYECTOS</span></h3>
+
+        				<div class="agile_inner_grids">
+                    <ul class="simplefilter">
+                        <li class="active" data-filter="all">Todos</li>
+                        <li data-filter="1">Mincultura</li>
+                        <li data-filter="2">Sitimovil</li>
+                        <li data-filter="3">Dentisalud</li>
+                        <li data-filter="4">Marca Personal</li>
+                        <li data-filter="5">GIS</li>
+                    </ul>
+                    <div class="filtr-container">
+                        <div class="filtr-item gallery-t" data-category="1, 5" data-sort="Busy streets">
+
+                        <a href="{{url('images/mapacultural1.jpg')}}" class="b-link-stripe b-animate-go  thickbox">
+
+        					<figure>
+        					 <img src="{{url('images/mapacultural1.jpg')}}" class="img-responsive" alt=" " />	<figcaption>
+                     <h3>CONSULTAR</h3>
+                     <p>
+                       Ampliar Imagén
+                     </p>
+        						</figcaption>
+        					</figure>
+        				</a>
+
+                        </div>
+                        <div class=" filtr-item" data-category="1, 5" data-sort="Luminous night">
+                           <a href="{{url('images/mapacultural2.jpg')}}" class="b-link-stripe b-animate-go  thickbox">
+
+        					<figure>
+        					 <img src="{{url('images/mapacultural2.jpg')}}" class="img-responsive" alt=" " />	<figcaption>
+                     <h3>CONSULTAR</h3>
+                     <p>
+                       Ampliar Imagén
+                     </p>
+        						</figcaption>
+        					</figure>
+        				</a>
+
+                        </div>
+                        <div class=" filtr-item" data-category="2, 5" data-sort="City wonders">
+                            <a href="{{url('images/sitimovil1.jpg')}}" class="b-link-stripe b-animate-go  thickbox">
+
+        					<figure>
+        					 <img src="{{url('images/sitimovil1.jpg')}}" class="img-responsive" alt=" " />	<figcaption>
+                     <h3>CONSULTAR</h3>
+                     <p>
+                       Ampliar Imagén
+                     </p>
+        						</figcaption>
+        					</figure>
+        				</a>
+
+                        </div>
+                        <div class="  filtr-item" data-category="2, 5" data-sort="In production">
+                           <a href="{{url('images/sitimovil2.jpg')}}" class="b-link-stripe b-animate-go  thickbox">
+
+        					<figure>
+        					 <img src="{{url('images/sitimovil2.jpg')}}" class="img-responsive" alt=" " />	<figcaption>
+                     <h3>CONSULTAR</h3>
+                     <p>
+                       Ampliar Imagén
+                     </p>
+        						</figcaption>
+        					</figure>
+        				</a>
+
+                        </div>
+                        <div class=" filtr-item" data-category="3" data-sort="Industrial site">
+                          <a href="{{url('images/dentisalud1.jpg')}}" class="b-link-stripe b-animate-go  thickbox">
+
+        					<figure>
+        					 <img src="{{url('images/dentisalud1.jpg')}}" class="img-responsive" alt=" " />	<figcaption>
+                     <h3>CONSULTAR</h3>
+                     <p>
+                       Ampliar Imagén
+                     </p>
+        						</figcaption>
+        					</figure>
+        				</a>
+
+                        </div>
+                        <div class=" filtr-item" data-category="3" data-sort="Peaceful lake">
+                            <a href="{{url('images/dentisalud2.jpg')}}" class="b-link-stripe b-animate-go  thickbox">
+
+        					<figure>
+        					 <img src="{{url('images/dentisalud2.jpg')}}" class="img-responsive" alt=" " />	<figcaption>
+                     <h3>CONSULTAR</h3>
+                     <p>
+                       Ampliar Imagén
+                     </p>
+        						</figcaption>
+        					</figure>
+        				</a>
+
+                        </div>
+                        <div class="  filtr-item" data-category="3" data-sort="City lights">
+                           <a href="{{url('images/dentisalud3.jpg')}}" class="b-link-stripe b-animate-go  thickbox">
+
+        					<figure>
+        					 <img src="{{url('images/dentisalud3.jpg')}}" class="img-responsive" alt=" " />	<figcaption>
+                     <h3>CONSULTAR</h3>
+                     <p>
+                       Ampliar Imagén
+                     </p>
+        						</figcaption>
+        					</figure>
+        				</a>
+
+                        </div>
+                        <div class=" filtr-item" data-category="3" data-sort="Dreamhouse">
+                           <a href="{{url('images/dentisalud4.jpg')}}" class="b-link-stripe b-animate-go  thickbox">
+
+        					<figure>
+        					 <img src="{{url('images/dentisalud4.jpg')}}" class="img-responsive" alt=" " />	<figcaption>
+        							<h3>CONSULTAR</h3>
+        							<p>
+        								Ampliar Imagén
+        							</p>
+        						</figcaption>
+        					</figure>
+        				</a>
+
+                        </div>
+        				<div class=" filtr-item" data-category="4" data-sort="Dreamhouse">
+                          <a href="{{url('images/marcapersonal1.jpg')}}" class="b-link-stripe b-animate-go  thickbox">
+
+        					<figure>
+        					 <img src="{{url('images/marcapersonal1.jpg')}}" class="img-responsive" alt=" " />	<figcaption>
+        							<h3>CONSULTAR</h3>
+        							<p>
+        								Ampliar Imagén
+        							</p>
+        						</figcaption>
+        					</figure>
+        				</a>
+
+                        </div>
+
+                       <div class="clearfix"> </div>
+        			</div>
+        		</div>
+        	</div>
+        </div>
   	</div>
-  </div>
+
 <!-- //main -->
 
 <!-- js -->

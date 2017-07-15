@@ -63,14 +63,16 @@ Maquetacion Bootstrap" />
 		<ul>
 			<li>
 				<div class="w3layouts-banner-top">
+
 						<div class="container">
 							<div class="agileits-banner-info">
+
 								<h3>FrontEnd y BackEnd</h3>
 								<div class="alert alert-warning">
 										Realizando mezclas perfectas entre HTML5 y Backend a la medida
 								</div>
 									<div class="more">
-								<a href="#" class="hvr-shutter-in-vertical" data-toggle="modal" data-target="#myModal">Como lo hago? <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+								<a href="{{url('/blog')}}" class="hvr-shutter-in-vertical" >Como lo hago? <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
 								</div>
 							</div>
 						</div>
@@ -80,12 +82,13 @@ Maquetacion Bootstrap" />
 					<div class="w3layouts-banner-top w3layouts-banner-top1">
 					<div class="container">
 							<div class="agileits-banner-info">
+
 								<h3>Asesorías en TI</h3>
 								<div  class="alert alert-warning">
 									 Asesoría Gratuita en temas de Tecnología y Desarrollo
 								 </div>
 									<div class="more">
-								<a href="#" class="hvr-shutter-in-vertical" data-toggle="modal" data-target="#myModal">Solicitar Ahora <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+								<a href="#" class="hvr-shutter-in-vertical" data-toggle="modal" data-target="#myModal4">Solicitar Ahora <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
 								</div>
 							</div>
 						</div>
@@ -101,17 +104,46 @@ Maquetacion Bootstrap" />
 										Adaptando ideas al Mercado Digital.
 								</div>
 								<div class="more">
-								<a href="#" class="hvr-shutter-in-vertical" data-toggle="modal" data-target="#myModal">Quiero saber más <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+								<a href="{{url('/servicios')}}" class="hvr-shutter-in-vertical" >Quiero saber más <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
 								</div>
 							</div>
+
 						</div>
 					</div>
 				</li>
+
 		</ul>
 	</div>
-</div>
+		</div>
 <!-- //banner -->
+<!-- Modal2 -->
+													<div class="modal fade" id="myModal4" tabindex="-1" role="dialog">
+														<div class="modal-dialog">
+														<!-- Modal content-->
+															<div class="modal-content">
+																<div class="modal-header">
+																	<button type="button" class="close" data-dismiss="modal">&times;</button>
 
+																	<div class="signin-form profile">
+
+																			<div class="login-form">
+																				<form action="/contactar" method="post">
+																					{{csrf_field()}}
+																				   <input type="text" name="name" placeholder="Nombre" required="">
+																					<input type="email" name="email" placeholder="Email" required="">
+																					<input type="text" name="telephone" placeholder="Telefono" required="">
+																					<input type="text" name="description" placeholder="Asunto" required="">
+																					<textarea name="message" placeholder="Mensaje" required=""></textarea>
+																					<input type="submit" value="ENVIAR">
+																				</form>
+																			</div>
+
+																		</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<!-- //Modal2 -->
 <!-- bootstrap-pop-up -->
 	<div class="modal video-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal">
 		<div class="modal-dialog" role="document">

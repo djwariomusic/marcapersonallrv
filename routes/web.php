@@ -16,6 +16,8 @@ Route::get('/servicios','PagesController@showservices');
 Route::get('/proyectos','PagesController@showportfolio');
 Route::get('/contacto','PagesController@showcontact');
 
+Route::post('/contactar','MessagesController@getMessage');
+
 Route::get('/blog', 'PostController@getList');
 Route::get('blog/getPost/{postid}', 'PostController@getPost');
 
