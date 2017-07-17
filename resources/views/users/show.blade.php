@@ -21,7 +21,7 @@
 		{{-- Esta seccion sera un bucle de Posts (Los listará todos)--}}
 		<section class="col-md-9">
 
-			@foreach($posts as $post)
+			@forelse($posts as $post)
 				<article class="post">
 					<div class="page-header">
               @include('posts.lastpost')
@@ -30,7 +30,14 @@
           @else
             <a href="{{ url('/blog') }}" class="btn btn-success"><- Listado</a>
           @endif
-      @endforeach
+      @empty
+          <article class="post">
+            <div class="page-header">
+              <h3>No hay Mensajes</h3><br/>
+            </div>
+          </article>
+          <div class="clearfix"><br></div>
+      @endforelse
 
 
       @if(count($posts))

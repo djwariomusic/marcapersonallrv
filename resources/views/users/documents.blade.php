@@ -12,33 +12,34 @@
 	<div class="inner_main_agile_section">
 		<div class="container">
 		<h6>Desarrollo Web a la Medida</h6>
-		<h3 class="w3l_header w3_agileits_header">Perfil <span class="fixed_w3">Profesional</span></h3>
-		<p class="sub_para_agile two">Descripción Competencias Laborales</p>
+		<h3 class="w3l_header w3_agileits_header">Documentación <span class="fixed_w3">Marca Personal</span></h3>
+		<p class="sub_para_agile two">Descarga de Archivos PDF</p>
 
     			<div class="agile_inner_grids">
 
     				<div class="col-md-12 w3_agileits_about2_grid_left">
-    					<p>Profesional en Ingeniería de Sistemas. Especialista Base de Datos para Sistemas de Información Geográfica,
-    						conocimientos en Desarrollo  de  Páginas  WEB  HTML5,  CSS3,  PHP,  JavaScript  y  diseño Responsive.
-    						Experiencia en Coordinación de Soporte Técnico en desarrollo de Software y sistemas de rastreo o seguimiento GPS,
-    						Sistemas de Información Geográfica, geolocalización, consultas SQL sobre diferentes motores de Base de Datos,
-    						gestión de calidad con enfoque al desarrollo de Software.</p><br>
+    					<p>A continuación encontrara un serie de contenidos que nos permitiran definir el ciclo de vida del software
+                (Marca Personal), desde información de analisis y diseño, diagramación UML, Mockaps, Desarrollo, Testing e Implementación.
+                Con el fin de ser una guia para la creación de Websites de alto impacto, a traves del uso de diferentes herramientas, que
+                proporciona los lenguajes como HTML5, CSS3, PHP7, Jquery, JavaScript consolidados en el framework Laravel 5 haciendo un producto
+                de alta calidad.
+              </p><br>
     					<ul>
-    						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Ingeniero en Sistemas</li>
-    						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Tecnologo en Sistemas</li>
-    						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Especialista en Base de Datos</li>
-    						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Desarrollador en Platzi</li>
+    						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Analisis</li>
+    						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Diseño</li>
+    						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Desarrollo</li>
+    						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Testing</li>
+                <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Implementación</li>
     					</ul>
     				</div>
             <div class="contact-form agile_inner_grids">
-              <select name="seleccion" id="seleccion">
+              <select name="seleccion" id="seleccion" onchange="dibujoPorCambio();">
                 <option value="1" selected="selected">Index</option>
                 <option value="2">Servicios</option>
                 <option value="3">Proyectos</option>
                 <option value="4">Blog</option>
                 <option value="5">Contacto</option>
               </select>
-              <input type="button" id="verImg" value="Ver Mockap">
             </div>
             <center>
               <img class="img-thumbnail" id='mockap' src="{{URL('images/mockaps/index.png')}}" style="display:none;">

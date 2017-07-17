@@ -33,7 +33,7 @@ Route::post('/comments/createcomment', 'CommentController@postCreatecomment');
 Route::get('/comments/deletecomment/{id}', 'CommentController@getDeletecomment');
 
 
-Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/home/{username}', 'UsersController@showPost');
-Route::get('/home/{username}/graphs', 'UsersController@showGraph');
-Route::get('/documents', 'UsersController@showDocs');
+Route::get('/home', 'HomeController@index')->middleware('auth');
+Route::get('/home/{username}', 'UsersController@showPost')->middleware('auth');
+Route::get('/home/{username}/graphs', 'UsersController@showGraph')->middleware('auth');
+Route::get('/documents', 'UsersController@showDocs')->middleware('auth');

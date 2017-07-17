@@ -1,7 +1,5 @@
 var s = document.getElementById("seleccion");
-var boton = document.getElementById("verImg");
-boton.addEventListener("click", dibujoPorClick );
-function dibujoPorClick(){
+function dibujoPorCambio(){
 var str = s.options[s.selectedIndex].value;
 
 switch (str){

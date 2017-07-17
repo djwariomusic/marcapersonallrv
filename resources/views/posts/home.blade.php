@@ -4,7 +4,7 @@
 <!--/ banner -->
   <div class="banner1">
   		<div class="w3_agileits_service_banner_info">
-  			<h2>HOME ESTAS LOGEADO </h2>
+  			<h2>DASHBOARD</h2>
   		</div>
   	</div>
 <!--/ banner -->
@@ -15,7 +15,7 @@
   <a href="/home/{{Auth::user()->username}}"><input type="button" value="Mis Posts"></a>
 	<a href="/home/{{Auth::user()->username}}/graphs"><input type="button" value="Grafica"></a>
 	<a href="/documents"><input type="button" value="Documentación"></a>
-	<input type="button" value="MENU5">
+	<input type="button" value="Datatables Jquery">
 </div>
 </center>
 
