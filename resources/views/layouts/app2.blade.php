@@ -102,7 +102,6 @@ Maquetacion Bootstrap" />
 <div class="clearfix"> </div>
 <!--/ banner -->
 @yield('contenido')
-
 <!-- footer -->
 	<div class="footer">
 		<div class="container">
@@ -153,7 +152,6 @@ Maquetacion Bootstrap" />
 	<script src="{{ asset('js/bootstrap.js')}}"></script>
 <!-- //for bootstrap working -->
 
-
 <!-- stats -->
 	<script src="{{ asset('js/jquery.waypoints.min.js')}}"></script>
 	<script src="{{ asset('js/jquery.countup.js')}}"></script>
@@ -201,6 +199,5 @@ $(function(){
 	</script>
 <!-- //here ends scrolling icon -->
 <!-- //js -->
-
 </body>
 </html>

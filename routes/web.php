@@ -23,9 +23,8 @@ Route::get('blog/getPost/{postid}', 'PostController@getPost');
 
 Auth::routes();
 
-Route::get('/myposts/', 'PostController@getMyPosts')->middleware('auth');
 
-
+Route::get('/edit-post', 'PostController@getEditpost')->middleware('auth');
 Route::get('/edit-post/{id}', 'PostController@getEditpost')->middleware('auth');
 Route::post('/savedPost', 'PostController@postSavepost')->middleware('auth');
 Route::get('/deletedPost/{id}', 'PostController@getDeletepost')->middleware('auth');
@@ -36,4 +35,5 @@ Route::get('/comments/deletecomment/{id}', 'CommentController@getDeletecomment')
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/home/{username}', 'UsersController@showPost');
-Route::get('/graphs', 'UsersController@showGraph');
+Route::get('/home/{username}/graphs', 'UsersController@showGraph');
+Route::get('/documents', 'UsersController@showDocs');

@@ -33,12 +33,24 @@ input[type="submit"],input[type="reset"],a,.agileinfo_services_grid1_pos,.agilei
     -o-transition: 0.5s ease-in;
     transition:0.5s ease-in;
 }
+canvas {
+  border: 1px dotted red;
+}
+
+
 /*-- banner --*/
 .agileits_w3layouts_banner_nav {
     margin: 0 auto;
     width: 90%;
 }
 /*-- nav --*/
+.chart-container {
+  position: relative;
+  margin: auto;
+  height: 80vh;
+  width: 80vw;
+}
+
 .navbar-default {
     background: none;
     border: none;

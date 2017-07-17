@@ -58,7 +58,7 @@
   				<strong>Participación: </strong>Este proyecto se realizó de forma Full Stack e Independiente se contactó a una entidad
   				odontológica la cual no tenía presencia la Internet, se identificó la necesidad critica de asignar y gestionar citas,
   				se procedió a un levantamiento de requerimientos, siguiendo   recomendaciones de las metodologías CMMI, ISO  9126 y
-  				W3C se realizó un software web que solucionara esa necesidad y a través de un diseño atractivo brindar confianza en sus
+  				W3C se realizó un software web que solucionara esa necesidad y a través de un diseño atractivo brindando confianza a sus
   				servicios.<br><font color="#0ac876"><em>El intercambio realizado me permitió reforzar habilidades en programación,
   				incluir en el desarrollo el Modelo -  Vista -  Controlador (MVC) para mejorar su comprensión y mantenimiento.
   				Realizar el documento en las secciones de Planeación, Costos y Asignación de Recursos en el desarrollo me brindo una

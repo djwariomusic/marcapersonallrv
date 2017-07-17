@@ -94,7 +94,7 @@
   					<div class="agileinfo_services_grid1">
   						<h4><font color="#efb312">Desarrollo Web</font></h4>
   						<span>Desde el Frontend hasta el Backend para el desarrollo de Sitios Web dinámicos, control y gestión de
-  							registros de la B. D, consultas sencillas y compuestas en SQL para mostrar resultados sobre Grid o Listas.</span>
+  							registros de la B. D, consultas sencillas y compuestas en SQL para mostrar resultados sobre Grid o Listas.<br><br></span>
   						<div class="agileinfo_services_grid1_pos">
   							<span class="glyphicon glyphicon-cloud" aria-hidden="true"></front></span>
   						</div>
@@ -115,7 +115,7 @@
   					<div class="agileinfo_services_grid1">
   						<h4><font color="#efb312">Testing Automatizado</font></h4>
   						<span>Ejecución de testing sobre diferentes desarrollos, documentando pruebas unitarias, equivalencias, integración
-  							y de Sistema, por medio de testing Black Box y White Box para así determinar métricas de Calidad sobre el Desarrollo</span>
+  							y de Sistema, por medio de testing Black Box y White Box para así determinar métricas de Calidad sobre el Desarrollo.<br></span>
   						<div class="agileinfo_services_grid1_pos">
   							<span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
   						</div>
