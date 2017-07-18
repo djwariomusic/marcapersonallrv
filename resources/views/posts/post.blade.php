@@ -40,15 +40,15 @@
       @else
         <a href="{{ url('/blog') }}" class="btn btn-success"><- Listado</a>
       @endif
-			
+
 			<article class="post">
 				<div class="page-header">
 					<h3>{{ $post->title }}<br/> <small>{{ $post->publish_date }}</small></h3>
 				</div>
         <img src="{{$post->imagen}}">
-				<p>
-					{{ $post->description }}
-				</p>
+				 <textarea class="ckeditor" name="description" id="description" placeholder="Descripcion..." rows="7" cols="80" disabled>
+           {{ $post->description  }}
+         </textarea>
 			</article>
 		</section>
 		<hr>
@@ -109,4 +109,5 @@
 
 
 <script type="text/javascript" src="{{url('js/jquery-2.1.4.min.js')}}"></script>
+<script src="{{ asset('js/ckeditor/ckeditor.js') }}"></script>
 @endsection
