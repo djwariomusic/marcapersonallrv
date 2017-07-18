@@ -26,7 +26,7 @@ Laravel is accessible, yet powerful, providing tools needed for large, robust ap
 
 Se realizo un website de Marca Personal en Laravel manteniendo el uso de plantillas y backend por medio de PHP y Blade.
 Desarrollo en Framework Laravel 5 PHP, componentes Laravel: Migrates, Controllers, Models, Routes, Factory, Seeds, Bootstrap. Sistema de Autenticación para la creación de posts, los cuales podrán ser editados o eliminados siempre y cuando sea su creador.
-Al dar click al creador de un post se podrán observar todos los posts relacionados a ese usuario creador. Los comentarios están asociados a los posts para su creación. Para ver algunos previews de la plataforma puede visitar el siguiente [link](https://flic.kr/s/aHsm3WByJT) 
+Al dar click al creador de un post se podrán observar todos los posts relacionados a ese usuario creador. Los comentarios están asociados a los posts para su creación. Para ver algunos previews de la plataforma puede visitar el siguiente [link](https://flic.kr/s/aHsm3WByJT)
 
 ## Learning Laravel
 

@@ -17,11 +17,8 @@
 
     			<div class="agile_inner_grids">
     				<div class="col-md-12 w3_agileits_about2_grid_left">
-    					<p>Profesional en Ingeniería de Sistemas. Especialista Base de Datos para Sistemas de Información Geográfica,
-    						conocimientos en Desarrollo  de  Páginas  WEB  HTML5,  CSS3,  PHP,  JavaScript  y  diseño Responsive.
-    						Experiencia en Coordinación de Soporte Técnico en desarrollo de Software y sistemas de rastreo o seguimiento GPS,
-    						Sistemas de Información Geográfica, geolocalización, consultas SQL sobre diferentes motores de Base de Datos,
-    						gestión de calidad con enfoque al desarrollo de Software.</p><br>
+    					<p>La libreria Chart.js es una de las grandes bibliotecas de JavaScript en línea,
+                la cual ayuda a plasmar datos usando el elemento canvas de HTML5  para dibujar gráficos y tablas.</p><br>
 
                 <script src="/js/Chart.min.js"></script>
                 <div class="clearfix">></div>
@@ -111,7 +108,30 @@
                   }
                   }
                   );
-                  </script></div>
+                  </script>
+                </script>
+                <div class="clearfix"></div>
+                <div class="chart-container" style="width:70%;">
+                  <p class="sub_para_agile two">Grafica de Red</p>
+                <canvas id="chartjs-3"></canvas>
+                </div>
+                <div class="clearfix"></div>
+                    <script>
+                    new Chart(document.getElementById("chartjs-3"),
+                    {"type":"radar","data":
+                    {"labels":["Curiosidad","Claridad","Lectura","Detallista","Aprendizaje","Pasión","Adaptabilidad"],
+                    "datasets":[{"label":"Grafica de Habilidades","data":[80,85,68,87,78,95,65],
+                    "fill":true,
+                    "backgroundColor":
+                    "rgba(255, 99, 132, 0.2)",
+                    "borderColor":"rgb(255, 99, 132)",
+                    "pointBackgroundColor":"rgb(255, 99, 132)",
+                    "pointBorderColor":"#fff","pointHoverBackgroundColor":
+                    "#fff","pointHoverBorderColor":"rgb(255, 99, 132)"}
+                    ]},
+                    "options":{"elements":{"line":{"tension":0,"borderWidth":3}}}});</script>
+
+                </div>
     				</div>
 				<div class="clearfix"><br> </div>
 		</div>

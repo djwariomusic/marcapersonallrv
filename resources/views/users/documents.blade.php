@@ -49,6 +49,7 @@
 
 		</div>
 	</div>
+</div>
 <!-- js -->
 <script type="text/javascript" src="{{url('js/jquery-2.1.4.min.js')}}"></script>
 
