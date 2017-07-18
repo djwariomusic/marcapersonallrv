@@ -4,7 +4,7 @@
 <!--/ banner -->
   <div class="banner1">
   		<div class="w3_agileits_service_banner_info">
-  			<h2>POSTS DE: {{$users->name}}</h2>
+  			<h2>MIS POSTS</h2>
   		</div>
   	</div>
 <!--/ banner -->

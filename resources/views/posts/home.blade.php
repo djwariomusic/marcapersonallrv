@@ -53,10 +53,7 @@
     </section>
       		{{-- END Esta seccion sera un bucle de Posts --}}
           <div class="col-md-3">
-            <div class="col-md-3">
-              <i class="fa fa-phone" aria-hidden="true"></i>
-            </div>
-            <p>+(57) 301 2388303</p>
+            <img src="{{url('/images/giphy.gif')}}" width="256" height="256">
           </div>
           <div class="col-md-3">
             <div class="col-md-3">
@@ -69,6 +66,26 @@
   </div>
 </article>
 
+@if(session('alerts')==null)
+  <input type="hidden" data-toggle="modal"  data-target="#myModalPost"  value="">
+@elseif (session('alerts')=='Post guardado')
+  <script language="JavaScript">
+    function load() {
+      document.getElementById("buttonpost").click();
+    }
+    window.onload = load;
+  </script>
+  {{$alerts=NULL}}
+  <input type="hidden" data-toggle="modal"  id="buttonpost" data-target="#myModalPost">
+@elseif (session('alerts')=='Post Eliminado')
+  <script language="JavaScript">
+    function load() {
+      document.getElementById("buttonpost").click();
+    }
+    window.onload = load;
+  </script>
+  <input type="hidden" data-toggle="modal"  id="buttonpost" data-target="#myModalPostDel">
+@endif
 
 <!-- js -->
 <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>

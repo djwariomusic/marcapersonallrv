@@ -20,6 +20,7 @@ class MessagesController extends Controller
      $message->description = $input['description'];
      $message->message = $input['message'];
      $message->save(); // Guarda el objeto en la BD
-     return "Mensaje Enviado. Gracias por Contactar.";
+     $alerts = "Mensaje Confirmado";
+     return View('contact',['alerts'=>$alerts,]);
    }
 }

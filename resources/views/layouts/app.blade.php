@@ -58,6 +58,30 @@ Maquetacion Bootstrap" />
 </div>
 <div class="clearfix"> </div>
 <!--/ banner -->
+<!-- bootstrap-pop-up -->
+	<div class="modal video-modal fade" id="myModalMsj" tabindex="-1" role="dialog" aria-labelledby="myModal">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				</div>
+				<section>
+					<div class="modal-body">
+						<h5>Gracias por Contactarnos</h5>
+						<img src="{{url('images/gracias.png')}}" alt=" " class="img-responsive" />
+						<!--<p>Ut enim ad minima venían, quis nostrum
+							exercitationem ullam corporis suscipit laboriosam,
+							nisi ut aliquid ex ea commodi consequatur? Quis autem
+							vel eum iure reprehenderit qui in ea voluptate velit
+							e.
+							<i>" Quis autem vel eum iure reprehenderit qui in ea voluptate velit
+								esse quam nihil molestiae consequatur.</i></p>-->
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+<!-- //bootstrap-pop-up -->
 @yield('contenido')
 
 <!-- footer -->

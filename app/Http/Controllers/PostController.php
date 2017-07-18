@@ -21,8 +21,10 @@ class PostController extends Controller
   public function getPost($id) {
     $post = Post::find($id);
 
-    if($post == null)
-        return 'No existe el post';
+    if($post == null){
+        echo("<script language='javascript'>alert('El posts Id no existe');</script>");
+        return redirect()->route('home');
+      }
     else {
         $data['post'] = $post;
         $data['comments'] = Comment::where('post_id', $id)->get();
@@ -46,25 +48,30 @@ class PostController extends Controller
     $post->imagen = 'http://lorempixel.com/500/338?' .mt_rand(0,100);
     $post->user_id = $input['user_id'];
     $post->save(); // Guarda el objeto en la BD
-    return "Post guardado";
+    return redirect()->to('/home')->with('alerts','Post guardado');
   }
   public function getEditpost($id = null) {
-    if ($id == null)
+  $alerts=NULL;
+    if ($id == null){
         return view('posts.edit-post');
+      }
     else {
         $data['post'] = Post::find($id);
-        if($data['post'] == null)
-            return 'El post no existe';
-
-        return view('posts.edit-post', $data);
+            if($data['post'] == null){
+              return view('posts.edit-post');
+              }
+      return view('posts.edit-post',$data,['alerts'=>$alerts,]);
     }
   }
   public function getDeletepost($id) {
     $post = Post::find($id);
 
-        if($post == null)
-            return "No existe este post";
-        else
+        if($post == null){
+          return view('posts.edit-post');
+          }
+        else{
             $post->delete();
+            return redirect()->to('/home')->with('alerts','Post Eliminado');
+          }
  }
 }

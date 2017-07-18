@@ -16,7 +16,8 @@ class PagesController extends Controller
       return View('portfolio');
     }
     public function showcontact(){
-      return View('contact');
+      $alerts= NULL;
+      return View('contact',['alerts'=>$alerts]);
     }
     public function showblog(){
       return View('blog');

@@ -14,7 +14,7 @@ class UsersController extends Controller
       $user2=5;
       $user= $this->findByUsername($username);
       $data= Post::where('user_id','=', $user->id)->Paginate(5);
-      return view('users.show',['posts'=> $data,'users'=>$user]);
+      return view('users.show',['posts'=> $data,'users'=>$user,]);
     }
     public function showGraph($username){
       $data2017= Post::whereYear('created_at','=','2017')->count();

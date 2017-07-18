@@ -188,6 +188,7 @@ Maquetacion Bootstrap" />
 						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Tecnologo en Sistemas</li>
 						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Especialista en Base de Datos</li>
 						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Desarrollador en Platzi</li>
+						<li><input type="button" data-toggle="modal" data-target="#myModal4" value="Solicitar Ahora"></li>
 					</ul>
 				</div>
 				<div class="col-md-6 w3_agileits_about_grid_right">

@@ -54,6 +54,19 @@
 					</div>
 					<input type="submit" value="ENVIAR">
 				</form>
+
+        @if($alerts==null)
+          <input type="hidden" data-toggle="modal"  data-target="#myModalMsj"  value="Vacio">
+        @elseif ($alerts=='Mensaje Confirmado')
+          <script language="JavaScript">
+            function load() {
+              document.getElementById("buttonmsj").click();
+            }
+            window.onload = load;
+          </script>
+          <input type="hidden" data-toggle="modal" id="buttonmsj"  data-target="#myModalMsj"  value="{{$alerts}}">
+        @endif
+        <div>Icons made by <a href="http://www.flaticon.com/authors/picol" title="Picol">Picol</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 			</div>
     </div>
 </div>
@@ -61,7 +74,7 @@
             <!-- map -->
 				<h3 class="w3l_header w3_agileits_header"> Ubicame en <span>Maps</span></h3>
 				<div class="map">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387145.86654334463!2d-74.25818682528057!3d40.70531100753592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sin!4v1497241987900"  allowfullscreen></iframe>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38714.710590!2d-74.115707!3d4.710590!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sin!4v1497241987900"  allowfullscreen></iframe>
 				</div>
 			<!-- //map -->
 <!!-- links -->

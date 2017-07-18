@@ -33,13 +33,15 @@
 	     <label for="title">Publicado?</label>
 	         <select name="status" id="status" class="form-control">
 	             <option value="0" {{ (isset($post) && $post->status == 0)  ? 'selected' : '' }}>NO</option>
-	             <option value="1" {{ (isset($post) && $post->status == 1)  ? 'selected' : '' }}>SI</option>
+	             <option value="1" {{ (isset($post) && $post->status == 1)  ? 'selected' : '' }} selected>SI</option>
 	         </select>
 	     <input type="submit" class="btn btn-success" value="Guardar"><br>
 	  </form>
     </div>
     <div class="clearfix"> </div>
 		</article>
+		
+
 		<script type="text/javascript" src="{{url('js/jquery-2.1.4.min.js')}}"></script>
 		<script src="{{ asset('js/ckeditor/ckeditor.js') }}"></script>
 @endsection
