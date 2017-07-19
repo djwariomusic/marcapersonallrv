@@ -16,6 +16,15 @@ Route::get('/servicios','PagesController@showservices');
 Route::get('/proyectos','PagesController@showportfolio');
 Route::get('/contacto','PagesController@showcontact');
 
+Route::get('/pdf',function(){
+  $pdf = PDF::loadView('pdf.invoice');
+  return $pdf->download('analisis-objetivos.pdf');
+});
+
+Route::get('/pdfs',function(){
+  return View('pdf.invoice');
+});
+
 Route::post('/contactar','MessagesController@getMessage');
 
 Route::get('/blog', 'PostController@getList');
@@ -24,20 +33,20 @@ Route::get('/auth/facebook', 'SocialAuthController@facebook');
 Route::get('/auth/facebook/callback', 'SocialAuthController@callback');
 Route::post('/auth/facebook/register', 'SocialAuthController@register');
 
-Auth::routes();
-
-
-Route::get('/edit-post', 'PostController@getEditpost')->middleware('auth');
-
-Route::get('/edit-post/{id}', 'PostController@getEditpost')->middleware('auth');
-Route::post('/savedPost', 'PostController@postSavepost')->middleware('auth');
-Route::get('/deletedPost/{id}', 'PostController@getDeletepost')->middleware('auth');
-
 Route::post('/comments/createcomment', 'CommentController@postCreatecomment');
 Route::get('/comments/deletecomment/{id}', 'CommentController@getDeletecomment');
 
 
-Route::get('/home', 'HomeController@index')->middleware('auth');
-Route::get('/home/{username}', 'UsersController@showPost')->middleware('auth');
-Route::get('/home/{username}/graphs', 'UsersController@showGraph')->middleware('auth');
-Route::get('/documents', 'UsersController@showDocs')->middleware('auth');
+Auth::routes();
+
+
+Route::group(['middleware' => 'auth'], function () {
+  Route::get('/edit-post', 'PostController@getEditpost');
+  Route::get('/edit-post/{id}', 'PostController@getEditpost');
+  Route::post('/savedPost', 'PostController@postSavepost');
+  Route::get('/deletedPost/{id}', 'PostController@getDeletepost');
+  Route::get('/home', 'HomeController@index');
+  Route::get('/home/{username}', 'UsersController@showPost');
+  Route::get('/home/{username}/graphs', 'UsersController@showGraph');
+  Route::get('/documents', 'UsersController@showDocs');
+});
