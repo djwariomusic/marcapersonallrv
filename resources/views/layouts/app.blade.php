@@ -58,6 +58,35 @@ Maquetacion Bootstrap" />
 </div>
 <div class="clearfix"> </div>
 <!--/ banner -->
+
+<!-- Modal2 -->
+													<div class="modal fade" id="myModal4" tabindex="-1" role="dialog">
+														<div class="modal-dialog">
+														<!-- Modal content-->
+															<div class="modal-content">
+																<div class="modal-header">
+																	<button type="button" class="close" data-dismiss="modal">&times;</button>
+
+																	<div class="signin-form profile">
+
+																			<div class="login-form">
+																				<form action="/contactar" method="post">
+																					{{csrf_field()}}
+																				   <input type="text" name="name" placeholder="Nombre" required="">
+																					<input type="email" name="email" placeholder="Email" required="">
+																					<input type="text" name="telephone" placeholder="Telefono" required="">
+																					<input type="text" name="description" placeholder="Asunto" required="">
+																					<textarea name="message" placeholder="Mensaje" required=""></textarea>
+																					<input type="submit" value="ENVIAR">
+																				</form>
+																			</div>
+
+																		</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<!-- //Modal2 -->
 <!-- bootstrap-pop-up -->
 	<div class="modal video-modal fade" id="myModalMsj" tabindex="-1" role="dialog" aria-labelledby="myModal">
 		<div class="modal-dialog" role="document">

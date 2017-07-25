@@ -16,8 +16,24 @@
 	<a href="/home/{{Auth::user()->username}}/graphs"><input type="button" value="Grafica"></a>
 	<a href="/documents"><input type="button" value="Documentación"></a>
 	<input type="button" value="Datatables Jquery">
+  <input type="button" value="GIS">
 </div>
+
 </center>
+
+<form action="/searchUser" method="GET">
+<div class="inner_main_agile_section">
+    <div class="col-md-6">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Busqueda de Post por Username...">
+          <span class="input-group-btn">
+          <button class="btn btn-default" type="submit">Buscar</button>
+          </span>
+         </div>
+     </div>
+</div>
+</form>
+
 
 <article class="container">
   <div class="inner_main_agile_section">
@@ -63,7 +79,7 @@
           </div>
           <div class="clearfix"> </div>
   </div>
-  </div>
+</div>
 </article>
 
 @if(session('alerts')==null)

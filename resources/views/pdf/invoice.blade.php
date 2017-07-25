@@ -3,7 +3,6 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>Documento sin t&iacute;tulo</title>
-<link href="{{ url('css/font-awesome.css')}}" rel="stylesheet">
 <style type="text/css">
 body,td,th {
 	font-family: Arial, Helvetica, sans-serif;

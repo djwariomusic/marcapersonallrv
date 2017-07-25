@@ -222,6 +222,7 @@ Maquetacion Bootstrap" />
 		</div>
 	</div>
 <!-- //about -->
+
 	<div class="medile_agile_its_section">
 	     <div class="col-md-6 medile_agile_its_blue">
 	           <h4>Consulta Técnica <br>Gratis <i class="fa fa-hand-o-right" aria-hidden="true"></i> </h4>
@@ -247,7 +248,7 @@ Maquetacion Bootstrap" />
 					la ultima experiencia laboral fue muy gratificante porque me permitió estar presente en todas las etapas del
 					ciclo de vida del Software pero en menor parte en la etapa de desarrollo en contraste con las etapas de
 					implementación, soporte y preventa. Mi formación académica esta orientada a ser un Arquitecto en Soluciones
-					Informáticas teniendo enfoques especiales en ITIL y Metodologías Ágiles en Desarrollo y Testing que me permita
+					Informáticas teniendo enfoques especiales en ITIL, Metodologías Ágiles en Desarrollo y Testing que me permita
 					generar buenas practicas para la gestión y control en Desarrollo Software
 				</p>
 			</div>
@@ -513,6 +514,62 @@ Maquetacion Bootstrap" />
    </div>
 </div>
 <!-- //stats -->
+
+<!-- about -->
+	<div class="inner_main_agile_section">
+		<div class="container">
+		<h6>Desarrollo Web a la Medida</h6>
+		<h3 class="w3l_header w3_agileits_header">Perfil <span class="fixed_w3">Profesional</span></h3>
+		<p class="sub_para_agile two">Descripción Competencias Laborales</p>
+
+			<div class="agile_inner_grids">
+
+				<div class="col-md-6 w3_agileits_about2_grid_left">
+					<p>Profesional en Ingeniería de Sistemas. Especialista Base de Datos para Sistemas de Información Geográfica,
+						conocimientos en Desarrollo  de  Páginas  WEB  HTML5,  CSS3,  PHP,  JavaScript  y  diseño Responsive.
+						Experiencia en Coordinación de Soporte Técnico en desarrollo de Software y sistemas de rastreo o seguimiento GPS,
+						Sistemas de Información Geográfica, geolocalización, consultas SQL sobre diferentes motores de Base de Datos,
+						gestión de calidad con enfoque al desarrollo de Software.</p><br>
+					<ul>
+						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Ingeniero en Sistemas</li>
+						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Tecnologo en Sistemas</li>
+						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Especialista en Base de Datos</li>
+						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Desarrollador en Platzi</li>
+						<li><input type="button" data-toggle="modal" data-target="#myModal4" value="Solicitar Ahora"></li>
+					</ul>
+				</div>
+				<div class="col-md-6 w3_agileits_about_grid_right">
+
+							  <div id="chart">
+							  <ul id="numbers">
+								<li><span>100%</span></li>
+								<li><span>90%</span></li>
+								<li><span>80%</span></li>
+								<li><span>70%</span></li>
+								<li><span>60%</span></li>
+								<li><span>50%</span></li>
+								<li><span>40%</span></li>
+								<li><span>30%</span></li>
+								<li><span>20%</span></li>
+								<li><span>10%</span></li>
+								<li><span>0%</span></li>
+							  </ul>
+							  <ul id="bars">
+								<li><div data-percentage="72" class="bar"></div><span>Backend</span></li>
+								<li><div data-percentage="50" class="bar"></div><span>Frontend</span></li>
+								<li><div data-percentage="80" class="bar"></div><span>Database</span></li>
+								<li><div data-percentage="50" class="bar"></div><span>Framework</span></li>
+								<li><div data-percentage="75" class="bar"></div><span>Git-hub</span></li>
+								<li><div data-percentage="45" class="bar"></div><span>Linux</span></li>
+							  </ul>
+							</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<!-- //about -->
+
 <!-- agile_testimonials -->
 <div class="test">
 	<div class="container">

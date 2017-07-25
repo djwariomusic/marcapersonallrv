@@ -7,8 +7,8 @@
           @if(Auth::check())
             <input type="hidden" name="login" value="{{$login=Auth::user()->name}}"><input type="hidden" name="author" value="{{ $author=$post->user->name}}">
             @if($login==$author)
-          <a href="{{ url('edit-post/'.$post->id) }}"><span class="label label-success"><font size="2">Editar Post  <i class="fa fa-edit"></i></font></span></a>
-          <a href="{{ url('deletedPost/'.$post->id) }}"><span class="label label-success"><font size="2">Eliminar Post <i class="fa fa-trash"></i></font></span></a></h2>
+               <a href="{{ url('edit-post/'.$post->id) }}"><span class="label label-success"><font size="2">Editar Post  <i class="fa fa-edit"></i></font></span></a>
+               <a href="{{ url('deletedPost/'.$post->id) }}"><span class="label label-success"><font size="2">Eliminar Post <i class="fa fa-trash"></i></font></span></a></h2>
             @endif
           @endif
         </article>

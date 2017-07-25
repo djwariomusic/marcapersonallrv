@@ -19,13 +19,9 @@ class PostController extends Controller
   return view('blog', ['posts'=> $data]);
   }
   public function getPost($id) {
-    $post = Post::find($id);
+    $post = Post::where('id',$id)->firstorFail();
 
-    if($post == null){
-        echo("<script language='javascript'>alert('El posts Id no existe');</script>");
-        return redirect()->route('home');
-      }
-    else {
+    if($post != null){
         $data['post'] = $post;
         $data['comments'] = Comment::where('post_id', $id)->get();
         return view('posts.post', $data);
@@ -56,7 +52,8 @@ class PostController extends Controller
         return view('posts.edit-post');
       }
     else {
-        $data['post'] = Post::find($id);
+        $data['post'] = Post::where('id','=',$id)->firstorFail();
+        //$data['post'] = Post::where('id','=',$id)->where('user_id','=', Auth::check());
             if($data['post'] == null){
               return view('posts.edit-post');
               }

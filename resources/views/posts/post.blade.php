@@ -46,9 +46,9 @@
 					<h3>{{ $post->title }}<br/> <small>{{ $post->publish_date }}</small></h3>
 				</div>
         <img src="{{$post->imagen}}">
-				 <textarea class="ckeditor" name="description" id="description" placeholder="Descripcion..." rows="7" cols="80" disabled>
+				 <p>
            {{ $post->description  }}
-         </textarea>
+         </p>
 			</article>
 		</section>
 		<hr>
@@ -91,7 +91,7 @@
 						<div class="well">
 							<form action="{{ url('comments/createcomment') }}" method="POST">
 								{{ csrf_field() }}
-								<input type="text" name="post_id" value="{{ $post->id }}">
+								<input type="hidden" name="post_id" value="{{ $post->id }}">
 								<label for="user">Usuario:</label>
 								<input type="text" name="user" id="user" class="form-control" required><br/>
 								<label for="comment">Comentario:</label>

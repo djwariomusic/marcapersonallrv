@@ -32,7 +32,7 @@
             Sitio Web esta co-relacionado de manera positiva con el incremento en las ventas, la productividad y el valor en el mercado
             del Producto y Empresa.</em></font></p>
   					<br>
-  					<h2><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="#"><span class="label label-success"> Solicitar Consultoría</span></a></h2>
+  					<h2><i class="fa fa-hand-o-right" aria-hidden="true"></i> <a href="#" data-toggle="modal" data-target="#myModal4"><span class="label label-success"> Solicitar Consultoría</span></a></h2>
 
   				</div>
   				<div class="col-md-6 wthree_services_grid_right">

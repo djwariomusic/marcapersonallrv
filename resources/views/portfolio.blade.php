@@ -17,6 +17,7 @@
   </div>
 <!--/ banner -->
   <!--/portfolio-->
+  <div class="inner_main_agile_section">
   	<div class="container">
   	<h3 class="w3l_header w3_agileits_header"> Participación / <span>Proyectos</span></h3>
   			<p class="sub_para_agile two">Algunos Proyectos Destacados</p>
@@ -72,6 +73,7 @@
   				<p>Construyendo un website comercial tipo Responsive que permita a esta clínica tener presencia en la Internet,
   				brindando la posibilidad de solicitar contacto a través de un formulario el cual envíe notificaciones vía Email.</p>
   			</div>
+      </div>
         <!--/portfolio-->
         <div class="inner_main_agile_section">
         	<div class="container">
@@ -86,141 +88,121 @@
                         <li data-filter="4">Marca Personal</li>
                         <li data-filter="5">GIS</li>
                     </ul>
+                </div>
                     <div class="filtr-container">
                         <div class="filtr-item gallery-t" data-category="1, 5" data-sort="Busy streets">
-
-                        <a href="{{url('images/mapacultural1.jpg')}}" class="b-link-stripe b-animate-go  thickbox">
-
-        					<figure>
-        					 <img src="{{url('images/mapacultural1.jpg')}}" class="img-responsive" alt=" " />	<figcaption>
-                     <h3>CONSULTAR</h3>
-                     <p>
-                       Ampliar Imagén
-                     </p>
-        						</figcaption>
-        					</figure>
-        				</a>
-
+                          <a href="{{url('images/mapacultural1.jpg')}}" class="b-link-stripe b-animate-go  thickbox">
+                  					<figure>
+                  					 <img src="{{url('images/mapacultural1.jpg')}}" class="img-responsive" alt=" " />	<figcaption>
+                               <h3>CONSULTAR</h3>
+                               <p>
+                                 Ampliar Imagén
+                               </p>
+                  						</figcaption>
+                  					</figure>
+                  				</a>
                         </div>
                         <div class=" filtr-item" data-category="1, 5" data-sort="Luminous night">
                            <a href="{{url('images/mapacultural2.jpg')}}" class="b-link-stripe b-animate-go  thickbox">
-
-        					<figure>
-        					 <img src="{{url('images/mapacultural2.jpg')}}" class="img-responsive" alt=" " />	<figcaption>
-                     <h3>CONSULTAR</h3>
-                     <p>
-                       Ampliar Imagén
-                     </p>
-        						</figcaption>
-        					</figure>
-        				</a>
-
+                  					<figure>
+                  					 <img src="{{url('images/mapacultural2.jpg')}}" class="img-responsive" alt=" " />	<figcaption>
+                               <h3>CONSULTAR</h3>
+                               <p>
+                                 Ampliar Imagén
+                               </p>
+                  						</figcaption>
+                  					</figure>
+                  				</a>
                         </div>
                         <div class=" filtr-item" data-category="2, 5" data-sort="City wonders">
                             <a href="{{url('images/sitimovil1.jpg')}}" class="b-link-stripe b-animate-go  thickbox">
-
-        					<figure>
-        					 <img src="{{url('images/sitimovil1.jpg')}}" class="img-responsive" alt=" " />	<figcaption>
-                     <h3>CONSULTAR</h3>
-                     <p>
-                       Ampliar Imagén
-                     </p>
-        						</figcaption>
-        					</figure>
-        				</a>
-
+                    					<figure>
+                    					 <img src="{{url('images/sitimovil1.jpg')}}" class="img-responsive" alt=" " />	<figcaption>
+                                 <h3>CONSULTAR</h3>
+                                 <p>
+                                   Ampliar Imagén
+                                 </p>
+                    						</figcaption>
+                    					</figure>
+                    				</a>
                         </div>
                         <div class="  filtr-item" data-category="2, 5" data-sort="In production">
                            <a href="{{url('images/sitimovil2.jpg')}}" class="b-link-stripe b-animate-go  thickbox">
-
-        					<figure>
-        					 <img src="{{url('images/sitimovil2.jpg')}}" class="img-responsive" alt=" " />	<figcaption>
-                     <h3>CONSULTAR</h3>
-                     <p>
-                       Ampliar Imagén
-                     </p>
-        						</figcaption>
-        					</figure>
-        				</a>
-
+                    					<figure>
+                    					 <img src="{{url('images/sitimovil2.jpg')}}" class="img-responsive" alt=" " />	<figcaption>
+                                 <h3>CONSULTAR</h3>
+                                 <p>
+                                   Ampliar Imagén
+                                 </p>
+                    						</figcaption>
+                    					</figure>
+                    				</a>
                         </div>
                         <div class=" filtr-item" data-category="3" data-sort="Industrial site">
                           <a href="{{url('images/dentisalud1.jpg')}}" class="b-link-stripe b-animate-go  thickbox">
-
-        					<figure>
-        					 <img src="{{url('images/dentisalud1.jpg')}}" class="img-responsive" alt=" " />	<figcaption>
-                     <h3>CONSULTAR</h3>
-                     <p>
-                       Ampliar Imagén
-                     </p>
-        						</figcaption>
-        					</figure>
-        				</a>
-
+                  					<figure>
+                  					 <img src="{{url('images/dentisalud1.jpg')}}" class="img-responsive" alt=" " />	<figcaption>
+                               <h3>CONSULTAR</h3>
+                               <p>
+                                 Ampliar Imagén
+                               </p>
+                  						</figcaption>
+                  					</figure>
+                  				</a>
                         </div>
                         <div class=" filtr-item" data-category="3" data-sort="Peaceful lake">
                             <a href="{{url('images/dentisalud2.jpg')}}" class="b-link-stripe b-animate-go  thickbox">
-
-        					<figure>
-        					 <img src="{{url('images/dentisalud2.jpg')}}" class="img-responsive" alt=" " />	<figcaption>
-                     <h3>CONSULTAR</h3>
-                     <p>
-                       Ampliar Imagén
-                     </p>
-        						</figcaption>
-        					</figure>
-        				</a>
-
+                    					<figure>
+                    					 <img src="{{url('images/dentisalud2.jpg')}}" class="img-responsive" alt=" " />	<figcaption>
+                                 <h3>CONSULTAR</h3>
+                                 <p>
+                                   Ampliar Imagén
+                                 </p>
+                    						</figcaption>
+                    					</figure>
+                    				</a>
                         </div>
                         <div class="  filtr-item" data-category="3" data-sort="City lights">
                            <a href="{{url('images/dentisalud3.jpg')}}" class="b-link-stripe b-animate-go  thickbox">
-
-        					<figure>
-        					 <img src="{{url('images/dentisalud3.jpg')}}" class="img-responsive" alt=" " />	<figcaption>
-                     <h3>CONSULTAR</h3>
-                     <p>
-                       Ampliar Imagén
-                     </p>
-        						</figcaption>
-        					</figure>
-        				</a>
-
+                    					<figure>
+                    					 <img src="{{url('images/dentisalud3.jpg')}}" class="img-responsive" alt=" " />	<figcaption>
+                                 <h3>CONSULTAR</h3>
+                                 <p>
+                                   Ampliar Imagén
+                                 </p>
+                    						</figcaption>
+                    					</figure>
+                    				</a>
                         </div>
                         <div class=" filtr-item" data-category="3" data-sort="Dreamhouse">
                            <a href="{{url('images/dentisalud4.jpg')}}" class="b-link-stripe b-animate-go  thickbox">
-
-        					<figure>
-        					 <img src="{{url('images/dentisalud4.jpg')}}" class="img-responsive" alt=" " />	<figcaption>
-        							<h3>CONSULTAR</h3>
-        							<p>
-        								Ampliar Imagén
-        							</p>
-        						</figcaption>
-        					</figure>
-        				</a>
-
+                    					<figure>
+                    					 <img src="{{url('images/dentisalud4.jpg')}}" class="img-responsive" alt=" " />	<figcaption>
+                    							<h3>CONSULTAR</h3>
+                    							<p>
+                    								Ampliar Imagén
+                    							</p>
+                    						</figcaption>
+                    					</figure>
+                    				</a>
                         </div>
-        				<div class=" filtr-item" data-category="4" data-sort="Dreamhouse">
+        				        <div class=" filtr-item" data-category="4" data-sort="Dreamhouse">
                           <a href="{{url('images/marcapersonal1.jpg')}}" class="b-link-stripe b-animate-go  thickbox">
-
-        					<figure>
-        					 <img src="{{url('images/marcapersonal1.jpg')}}" class="img-responsive" alt=" " />	<figcaption>
-        							<h3>CONSULTAR</h3>
-        							<p>
-        								Ampliar Imagén
-        							</p>
-        						</figcaption>
-        					</figure>
-        				</a>
-
+                  					<figure>
+                  					 <img src="{{url('images/marcapersonal1.jpg')}}" class="img-responsive" alt=" " />	<figcaption>
+                  							<h3>CONSULTAR</h3>
+                  							<p>
+                  								Ampliar Imagén
+                  							</p>
+                  						</figcaption>
+                  					</figure>
+                  				</a>
                         </div>
-
                        <div class="clearfix"> </div>
         			</div>
-        		</div>
         	</div>
         </div>
-  	</div>
+
 
 <!-- //main -->
 

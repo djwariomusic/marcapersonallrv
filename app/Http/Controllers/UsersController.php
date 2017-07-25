@@ -49,6 +49,6 @@ class UsersController extends Controller
       return view('users.documents');
     }
     private function findByUsername($username){
-      return User::where('username', $username)->first();
+      return User::where('username', $username)->firstorFail();
     }
 }
