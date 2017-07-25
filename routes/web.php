@@ -30,6 +30,7 @@ Route::post('/contactar','MessagesController@getMessage');
 
 Route::get('/blog', 'PostController@getList');
 Route::get('/blog/getPost/{postid}', 'PostController@getPost');
+
 Route::get('/auth/facebook', 'SocialAuthController@facebook');
 Route::get('/auth/facebook/callback', 'SocialAuthController@callback');
 Route::post('/auth/facebook/register', 'SocialAuthController@register');

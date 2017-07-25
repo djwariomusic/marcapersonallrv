@@ -14,10 +14,29 @@ class ExampleTest extends TestCase
      *
      * @return void
      */
-    public function testBasicTest()
+    public function testBasicSeeIndexPage()
     {
         $response = $this->get('/');
-
-        $response->assertStatus(200);
+        $response->assertSee('Desarrollo Web');
+    }
+    public function testBasicSeeServicePage()
+    {
+        $response = $this->get('/servicios');
+        $response->assertSee('Servicios');
+    }
+    public function testBasicSeeProyectPage()
+    {
+        $response = $this->get('/proyectos');
+        $response->assertSee('Proyectos');
+    }
+    public function testBasicSeeBlogPage()
+    {
+        $response = $this->get('/blog');
+        $response->assertSee('Ver post');
+    }
+    public function testBasicSeeContactPage()
+    {
+        $response = $this->get('/contacto');
+        $response->assertSee('ENVIAR');
     }
 }

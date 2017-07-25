@@ -43,7 +43,7 @@
 
 			<article class="post">
 				<div class="page-header">
-					<h3>{{ $post->title }}<br/> <small>{{ $post->publish_date }}</small></h3>
+					<h3>{{ $post->title }}<br/><small>Escrito por: {{ $users->name }} Fecha Publicación: {{ $post->publish_date }} </small></h3>
 				</div>
         <img src="{{$post->imagen}}">
 				 <p>

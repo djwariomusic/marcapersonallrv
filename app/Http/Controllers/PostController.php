@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Post;
 use App\Models\Comment;
-
+use App\User;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
@@ -21,10 +21,12 @@ class PostController extends Controller
   public function getPost($id) {
     $post = Post::where('id',$id)->firstorFail();
 
+
     if($post != null){
+        $users = User::where('id',$post->user_id)->firstorFail();
         $data['post'] = $post;
         $data['comments'] = Comment::where('post_id', $id)->get();
-        return view('posts.post', $data);
+        return view('posts.post',$data,[ 'users'=>$users]);
     }
   }
   public function postSavepost() {
