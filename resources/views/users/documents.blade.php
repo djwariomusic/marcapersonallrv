@@ -14,16 +14,15 @@
 		<h6>Desarrollo Web a la Medida</h6>
 		<h3 class="w3l_header w3_agileits_header">Documentación <span class="fixed_w3">Marca Personal</span></h3>
 		<p class="sub_para_agile two">Descarga de Archivos PDF</p>
-
     			<div class="agile_inner_grids">
-
     				<div class="col-md-12 w3_agileits_about2_grid_left">
-    					<p>A continuación encontrara un serie de contenidos que nos permitiran definir el ciclo de vida del software
-                (Marca Personal), desde información de analisis y diseño, diagramación UML, Mockaps, Desarrollo, Testing e Implementación.
-                Con el fin de ser una guia para la creación de Websites de alto impacto, a traves del uso de diferentes herramientas, que
+    					<p>A continuación encontrara un serie de contenidos que nos permitirán definir el ciclo de vida del software
+                (Marca Personal), desde información de analisis y diseño, diagrama UML, Mockaps, Desarrollo, Testing e Implementación.
+                Con el fin de ser una guía para la creación de Websites de alto impacto, a través del uso de diferentes herramientas, que
                 proporciona los lenguajes como HTML5, CSS3, PHP7, Jquery, JavaScript consolidados en el framework Laravel 5 haciendo un producto
                 de alta calidad.
-              </p><br>
+              </p>
+    					<br>
     					<ul>
     						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Analisis</li>
     						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Diseño</li>
@@ -42,7 +41,7 @@
               </select>
             </div>
             <center>
-              <img class="img-thumbnail" id='mockap' src="{{URL('images/mockaps/index.png')}}" style="display:none;">
+              <img class="img-thumbnail" id='mockap' src="{{url('images/mockaps/index.png')}}" style="display:none;">
             </center>
 
 				<div class="clearfix"><br> </div>
@@ -59,13 +58,13 @@
             <tbody>
               <tr>
                 <th>
-                <div align="left">1.1 Introduccion y Objetivos </div>    </th>
+                <div align="left">1.1 Introducción y Objetivos </div>    </th>
                 <td><h3><a href="{{url('/documents/html/1/11')}}"><span class="label label-warning">Ver HTML</span></h3></a></td>
                 <td><h3><a href="{{url('/documents/pdf/1/11/1')}}"><span class="label label-warning">Ver PDF</span></h3></a></td>
                 <td><h3><a href="{{url('/documents/pdf/1/11/2')}}"><span class="label label-warning">Descargar PDF</span></h3></a></td>
               </tr>
               <tr>
-                <th><div align="left">1.2 Lista de Requermientos</div></th>
+                <th><div align="left">1.2 Lista de Requerimientos</div></th>
                 <td><h3><a href="#"><span class="label label-warning">Ver HTML</span></h3></a></td>
                 <td><h3><a href="#"><span class="label label-warning">Ver PDF</span></h3></a></td>
                 <td><h3><a href="#"><span class="label label-warning">Descargar PDF</span></h3></a></td>
@@ -161,7 +160,7 @@
                 <td><h3><a href="#"><span class="label label-warning">Descargar PDF</span></h3></a></td>
               </tr>
               <tr>
-                <th><div align="left">3.2 Componentes Logicos</div></th>
+                <th><div align="left">3.2 Componentes Lógicos</div></th>
                 <td><h3><a href="#"><span class="label label-warning">Ver HTML</span></h3></a></td>
                 <td><h3><a href="#"><span class="label label-warning">Ver PDF</span></h3></a></td>
                 <td><h3><a href="#"><span class="label label-warning">Descargar PDF</span></h3></a></td>
@@ -212,13 +211,13 @@
                 <td><h3><a href="#"><span class="label label-warning">Descargar PDF</span></h3></a></td>
               </tr>
               <tr>
-                <th><div align="left">4.2 Metricas de Calidad</div></th>
+                <th><div align="left">4.2 Métricas de Calidad</div></th>
                 <td><h3><a href="#"><span class="label label-warning">Ver HTML</span></h3></a></td>
                 <td><h3><a href="#"><span class="label label-warning">Ver PDF</span></h3></a></td>
                 <td><h3><a href="#"><span class="label label-warning">Descargar PDF</span></h3></a></td>
               </tr>
               <tr>
-                <th><div align="left">4.3 Testing Caja Blanca Complejidad Ciclomatica</div></th>
+                <th><div align="left">4.3 Testing Caja Blanca Complejidad Ciclomática</div></th>
                 <td><h3><a href="#"><span class="label label-warning">Ver HTML</span></h3></a></td>
                 <td><h3><a href="#"><span class="label label-warning">Ver PDF</span></h3></a></td>
                 <td><h3><a href="#"><span class="label label-warning">Descargar PDF</span></h3></a></td>

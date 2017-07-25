@@ -45,11 +45,11 @@
 @endsection
 
 @section('barnav')
-  <li><a href="/" class="effect-3">Inicio</a></li>
-  <li><a href="/servicios" class="effect-3">Servicios</a></li>
-  <li><a href="/proyectos" class="effect-3">Proyectos</a></li>
-  <li class="active"><a href="/blog" class="effect-3">Blog</a></li>
-  <li><a href="/contacto" class="effect-3">Contacto</a></li>
+  <li><a href="{{url('/')}}" class="effect-3">Inicio</a></li>
+  <li><a href="{{url('/servicios')}}" class="effect-3">Servicios</a></li>
+  <li><a href="{{url('/proyectos')}}" class="effect-3">Proyectos</a></li>
+  <li class="active"><a href="{{url('/blog')}}" class="effect-3">Blog</a></li>
+  <li><a href="{{url('/contacto')}}" class="effect-3">Contacto</a></li>
 @endsection
 @section('contenido')
 <!--/ banner -->
@@ -59,7 +59,6 @@
   		</div>
   	</div>
 <!--/ banner -->
-
 <!!-- links -->
       <div class="stats2">
           <div class="inner_w3l_agile_grids">
@@ -91,12 +90,12 @@
 	<div class="col-md-12 wthree_services_grid_left">
 		<div class="well">
 			<div class="page-header">
-				<h1>Listado de Posts</h1>
+				<h1>Listado de Post's</h1>
 			</div>
       <p>Desarrollo en Framework Laravel 5 PHP, componentes Laravel: Migrates, Controllers, Models, Routes, Factory, Seeds, Bootstrap. Sistema de Autenticación para la creación de posts, los cuales podrán ser editados o eliminados siempre y cuando sea su creador se encuentre logeado.
-      Al dar click al creador de un post se podrán observar todos los posts relacionados a ese usuario creador. Los comentarios están asociados a los posts para su creación.</p>
+      Al dar click al creador de un post se podrán observar todos los post's relacionados a ese usuario creador. Los comentarios están asociados a los post's para su creación.</p>
 		</div>
-		{{-- Esta seccion sera un bucle de Posts (Los listará todos) --}}
+		{{-- Esta sección sera un bucle de Post's (Los listará todos) --}}
 		<section class="col-md-9">
 			@forelse($posts as $post)
 				<article class="post">
@@ -136,5 +135,5 @@
 </article>
 
 <!-- js -->
-<script type="text/javascript" src="{{ asset('js/jquery-2.1.4.min.js')}}"></script>
+<script type="text/javascript" src="{{ url('js/jquery-2.1.4.min.js')}}"></script>
 @endsection

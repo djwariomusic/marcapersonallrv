@@ -1,17 +1,17 @@
 @extends('layouts.app')
 <!-- aca le estoy indicando a modo blade que este se archivo.php se extiende y utiliza mi plantilla-->
 @section('barnav')
-  <li><a href="/" class="effect-3">Inicio</a></li>
-  <li><a href="/servicios" class="effect-3">Servicios</a></li>
-  <li><a href="/proyectos" class="effect-3">Proyectos</a></li>
-  <li><a href="/blog" class="effect-3">Blog</a></li>
-  <li class="active"><a href="/contacto" class="effect-3">Contacto</a></li>
+  <li><a href="{{url('/')}}" class="effect-3">Inicio</a></li>
+  <li><a href="{{url('/servicios')}}" class="effect-3">Servicios</a></li>
+  <li><a href="{{url('/proyectos')}}" class="effect-3">Proyectos</a></li>
+  <li><a href="{{url('/blog')}}" class="effect-3">Blog</a></li>
+  <li class="active"><a href="{{url('/contacto')}}" class="effect-3">Contacto</a></li>
 @endsection
 @section('contenido')
 <!--/ banner -->
   <div class="banner1">
   		<div class="w3_agileits_service_banner_info">
-  			<h2>Contactame </h2>
+  			<h2>Contáctame </h2>
   		</div>
   	</div>
 <!--/ banner -->
@@ -19,7 +19,7 @@
 <!-- /contact -->
 <div class="inner_main_agile_section">
 	<div class="container">
-  		<h3 class="w3l_header w3_agileits_header"> Enviame un <span>Mensaje</span></h3>
+  		<h3 class="w3l_header w3_agileits_header"> Envíame un <span>Mensaje</span></h3>
 			<p class="sub_para_agile two">No dude en contactarme, siempre dispuesto ayudarle.</p>
 			 <div class="contact-form agile_inner_grids">
 				<form action="/contactar" method="post">
@@ -71,7 +71,7 @@
 </div>
     <div class="clearfix"> </div>
             <!-- map -->
-				<h3 class="w3l_header w3_agileits_header"> Ubicame en <span>Maps</span></h3>
+				<h3 class="w3l_header w3_agileits_header"> Ubícame en <span>Maps</span></h3>
 				<div class="map">
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38714.710590!2d-74.115707!3d4.710590!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sin!4v1497241987900"  allowfullscreen></iframe>
 				</div>
@@ -80,7 +80,7 @@
       <div class="stats2">
           <div class="inner_w3l_agile_grids">
           <br>
-          <h3 class="w3l_header w3_agileits_header"> Encuentrame en <span>Redes</span></h3>
+          <h3 class="w3l_header w3_agileits_header"> Encuéntrame en <span>Redes</span></h3>
           <div class="col-md-3 w3layouts_stats_left2 w3_counter_grid">
              <i class="fa fa-wordpress" aria-hidden="true"></i>
              <h3><a href="https://edwinbeltrandev.wordpress.com/" target="_blank"><br>Publicaciones</a></h3>
@@ -104,5 +104,5 @@
 <!-- //contact -->
 
 <!-- js -->
-<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="{{url('js/jquery-2.1.4.min.js')}}"></script>
 @endsection

@@ -14,7 +14,7 @@
   <a href="{{url('/edit-post')}}"><input type="button" value="Crear Post"></a>
   <a href="/home/{{Auth::user()->username}}"><input type="button" value="Mis Posts"></a>
 	<a href="/home/{{Auth::user()->username}}/graphs"><input type="button" value="Grafica"></a>
-	<a href="/documents"><input type="button" value="Documentación"></a>
+	<a href="{{url('/documents')}}"><input type="button" value="Documentación"></a>
 	<input type="button" value="Datatables Jquery">
   <input type="button" value="GIS">
 </div>
@@ -40,10 +40,10 @@
 	<div class="col-md-12 wthree_services_grid_left">
 		<div class="well">
 			<div class="page-header">
-				<h1>Listado de Posts</h1>
+				<h1>Listado de Post's</h1>
 			</div>
-      <p>Desarrollo en Framework Laravel 5 PHP, componentes Laravel: Migrates, Controllers, Models, Routes, Factory, Seeds, Bootstrap. Sistema de Autenticación para la creación de posts, los cuales podrán ser editados o eliminados siempre y cuando sea su creador se encuentre logeado.
-      Al dar click al creador de un post se podrán observar todos los posts relacionados a ese usuario creador. Los comentarios están asociados a los posts para su creación.</p>
+      <p>Desarrollo en Framework Laravel 5 PHP, componentes Laravel: Migrates, Controllers, Models, Routes, Factory, Seeds, Bootstrap. Sistema de Autenticación para la creación de post's, los cuales podrán ser editados o eliminados siempre y cuando sea su creador se encuentre logeado.
+      Al dar click al creador de un post se podrán observar todos los post's relacionados a ese usuario creador. Los comentarios están asociados a los post's para su creación.</p>
 		</div>
 		{{-- Esta seccion sera un bucle de Posts (Los listará todos) --}}
 
@@ -83,27 +83,26 @@
 </article>
 
 @if(session('alerts')==null)
-  <input type="hidden" data-toggle="modal"  data-target="#myModalPost"  value="">
+    <input type="hidden" data-toggle="modal"  data-target="#myModalPost"  value="">
 @elseif (session('alerts')=='Post guardado')
-  <script language="JavaScript">
-    function load() {
-      document.getElementById("buttonpost").click();
-    }
-    window.onload = load;
-  </script>
-  {{$alerts=NULL}}
+    <script language="JavaScript">
+        function load() {
+            document.getElementById("buttonpost").click();
+        }
+        window.onload = load;
+    </script>
   <input type="hidden" data-toggle="modal"  id="buttonpost" data-target="#myModalPost">
 @elseif (session('alerts')=='Post Eliminado')
-  <script language="JavaScript">
-    function load() {
-      document.getElementById("buttonpost").click();
-    }
-    window.onload = load;
-  </script>
+    <script language="JavaScript">
+        function load() {
+            document.getElementById("buttonpost").click();
+        }
+        window.onload = load;
+     </script>
   <input type="hidden" data-toggle="modal"  id="buttonpost" data-target="#myModalPostDel">
 @endif
 
 <!-- js -->
-<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="{{url('js/jquery-2.1.4.min.js')}}"></script>
 
 @endsection

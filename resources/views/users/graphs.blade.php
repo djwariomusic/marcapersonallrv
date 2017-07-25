@@ -12,19 +12,20 @@
 	<div class="inner_main_agile_section">
 		<div class="container">
 		<h6>Uso de ChartJS</h6>
-		<h3 class="w3l_header w3_agileits_header">Graficos <span class="fixed_w3">Dinamicos</span></h3>
+		<h3 class="w3l_header w3_agileits_header">Gráficos <span class="fixed_w3">Dinámicos</span></h3>
 
 
     			<div class="agile_inner_grids">
     				<div class="col-md-12 w3_agileits_about2_grid_left">
-    					<p>La libreria Chart.js es una de las grandes bibliotecas de JavaScript en línea,
-                la cual ayuda a plasmar datos usando el elemento canvas de HTML5  para dibujar gráficos y tablas.</p><br>
+    					<p>La librería Chart.js es una de las grandes bibliotecas de JavaScript en línea,
+                la cual ayuda a plasmar datos usando el elemento canvas de HTML5  para dibujar gráficos y tablas.</p>
+    					<br>
 
-                <script src="/js/Chart.min.js"></script>
+                <script src="{{url('/js/Chart.min.js')}}"></script>
                 <div class="clearfix">></div>
                 <div class="chart-container" style="width:70%;">
-                  <p class="sub_para_agile two">Grafico de Numero de Posts los Ultimos Años</p>
-                <canvas id="myChart"></canvas>
+                  <p class="sub_para_agile two">Gráfico de Numero de Post's los Últimos Años</p>
+                  <canvas id="myChart"></canvas>
                 </div>
                 <div class="clearfix"></div>
                 <script>
@@ -68,8 +69,8 @@
                 </script>
                 <div class="clearfix"></div>
                 <div class="chart-container" style="width:70%;">
-                  <p class="sub_para_agile two">Mis Post los Ultimos Meses</p>
-                <canvas id="chartjs-0"></canvas>
+                  <p class="sub_para_agile two">Mis Post los Últimos Meses</p>
+                  <canvas id="chartjs-0"></canvas>
                 </div>
                 <div class="clearfix"></div>
                     <script>
@@ -86,8 +87,8 @@
                     </script>
                 <div class="clearfix"></div>
                 <div class="chart-container" style="width:70%;">
-                  <p class="sub_para_agile two">Top 5 de Usuarios con mas Posts</p>
-                <canvas id="chartjs-4"></canvas>
+                  <p class="sub_para_agile two">Top 5 de Usuarios con mas Post's</p>
+                  <canvas id="chartjs-4"></canvas>
                 </div>
                 <div class="clearfix"></div>
                   <script>
@@ -112,8 +113,8 @@
                 </script>
                 <div class="clearfix"></div>
                 <div class="chart-container" style="width:70%;">
-                  <p class="sub_para_agile two">Grafica de Red</p>
-                <canvas id="chartjs-3"></canvas>
+                  <p class="sub_para_agile two">Gráfica de Red</p>
+                  <canvas id="chartjs-3"></canvas>
                 </div>
                 <div class="clearfix"></div>
                     <script>

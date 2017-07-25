@@ -11,9 +11,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-      $users= factory(App\Models\User::class,50)->create();
+      $users= factory(App\User::class,50)->create();
 
-      $users->each(function(App\Models\User $user) use ($users) {
+      $users->each(function(App\User $user) use ($users) {
           factory(App\Models\Post::class)
             ->times(20)
               ->create([

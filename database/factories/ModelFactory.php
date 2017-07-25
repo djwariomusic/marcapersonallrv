@@ -37,3 +37,15 @@ $factory->define(App\Models\Post::class, function(Faker\Generator $faker){
     'updated_at' => $faker->dateTimeThisDecade,
   ];
 });
+
+$factory->define(App\Message::class, function(Faker\Generator $faker){
+  return [
+    'name' => $faker->name,
+    'telephone'=>$faker->numerify($string ='##########'),
+    'email' => $faker->safeEmail,
+    'description'=>$faker->realText(random_int(20,160)),
+    'message'=>$faker->text,
+    'created_at' => $faker->dateTimeThisDecade,
+    'updated_at' => $faker->dateTimeThisDecade,
+  ];
+});

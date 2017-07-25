@@ -1,11 +1,11 @@
 @extends('layouts.app')
 <!-- aca le estoy indicando a modo blade que este se archivo.php se extiende y utiliza mi plantilla-->
 @section('barnav')
-  <li><a href="/" class="effect-3">Inicio</a></li>
-  <li class="active"><a href="/servicios" class="effect-3">Servicios</a></li>
-  <li><a href="/proyectos" class="effect-3">Proyectos</a></li>
-  <li><a href="/blog" class="effect-3">Blog</a></li>
-  <li><a href="/contacto" class="effect-3">Contacto</a></li>
+  <li><a href="{{url('/')}}" class="effect-3">Inicio</a></li>
+  <li class="active"><a href="{{url('/servicios')}}" class="effect-3">Servicios</a></li>
+  <li><a href="{{url('/proyectos')}}" class="effect-3">Proyectos</a></li>
+  <li><a href="{{url('/blog')}}" class="effect-3">Blog</a></li>
+  <li><a href="{{url('/contacto')}}" class="effect-3">Contacto</a></li>
 @endsection
 @section('contenido')
 <!-- main -->
@@ -84,7 +84,6 @@
   		</div>
   	</div>
   <!-- //services -->
-
   <!-- stats-bottom -->
   	<div class="stats-bottom contact">
   		<div class="container">
@@ -166,9 +165,9 @@
 <!-- //main -->
 
 <!-- js -->
-<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="{{url('js/jquery-2.1.4.min.js')}}"></script>
 <!-- flexisel -->
-	<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+	<script type="text/javascript" src="{{url('js/jquery.flexisel.js')}}"></script>
 	<script type="text/javascript">
 		$(window).load(function() {
 			$("#flexiselDemo1").flexisel({
@@ -198,7 +197,7 @@
 	</script>
 <!-- //flexisel -->
 <!-- requried-jsfiles-for owl -->
- <script src="js/owl.carousel.js"></script>
+ <script src="{{url('js/owl.carousel.js')}}"></script>
 							        <script>
 									    $(document).ready(function() {
 									      $("#owl-demo2").owlCarousel({

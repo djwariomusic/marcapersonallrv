@@ -1,11 +1,11 @@
 @extends('layouts.app')
 <!-- aca le estoy indicando a modo blade que este se archivo.php se extiende y utiliza mi plantilla-->
 @section('barnav')
-  <li><a href="/" class="effect-3">Inicio</a></li>
-  <li><a href="/servicios" class="effect-3">Servicios</a></li>
-  <li class="active"><a href="/proyectos" class="effect-3">Proyectos</a></li>
-  <li><a href="/blog" class="effect-3">Blog</a></li>
-  <li><a href="/contacto" class="effect-3">Contacto</a></li>
+  <li><a href="{{url('/')}}" class="effect-3">Inicio</a></li>
+  <li><a href="{{url('/servicios')}}" class="effect-3">Servicios</a></li>
+  <li class="active"><a href="{{url('/proyectos')}}" class="effect-3">Proyectos</a></li>
+  <li><a href="{{url('/blog')}}" class="effect-3">Blog</a></li>
+  <li><a href="{{url('/contacto')}}" class="effect-3">Contacto</a></li>
 @endsection
 @section('contenido')
 <!-- main -->
@@ -78,7 +78,6 @@
         <div class="inner_main_agile_section">
         	<div class="container">
         	<h3 class="w3l_header w3_agileits_header"> GALERIA DE <span>PROYECTOS</span></h3>
-
         				<div class="agile_inner_grids">
                     <ul class="simplefilter">
                         <li class="active" data-filter="all">Todos</li>
@@ -96,7 +95,7 @@
                   					 <img src="{{url('images/mapacultural1.jpg')}}" class="img-responsive" alt=" " />	<figcaption>
                                <h3>CONSULTAR</h3>
                                <p>
-                                 Ampliar Imagén
+                                 Ampliar Imagen
                                </p>
                   						</figcaption>
                   					</figure>
@@ -108,7 +107,7 @@
                   					 <img src="{{url('images/mapacultural2.jpg')}}" class="img-responsive" alt=" " />	<figcaption>
                                <h3>CONSULTAR</h3>
                                <p>
-                                 Ampliar Imagén
+                                 Ampliar Imagen
                                </p>
                   						</figcaption>
                   					</figure>
@@ -120,7 +119,7 @@
                     					 <img src="{{url('images/sitimovil1.jpg')}}" class="img-responsive" alt=" " />	<figcaption>
                                  <h3>CONSULTAR</h3>
                                  <p>
-                                   Ampliar Imagén
+                                   Ampliar Imagen
                                  </p>
                     						</figcaption>
                     					</figure>
@@ -132,7 +131,7 @@
                     					 <img src="{{url('images/sitimovil2.jpg')}}" class="img-responsive" alt=" " />	<figcaption>
                                  <h3>CONSULTAR</h3>
                                  <p>
-                                   Ampliar Imagén
+                                   Ampliar Imagen
                                  </p>
                     						</figcaption>
                     					</figure>
@@ -144,7 +143,7 @@
                   					 <img src="{{url('images/dentisalud1.jpg')}}" class="img-responsive" alt=" " />	<figcaption>
                                <h3>CONSULTAR</h3>
                                <p>
-                                 Ampliar Imagén
+                                 Ampliar Imagen
                                </p>
                   						</figcaption>
                   					</figure>
@@ -156,7 +155,7 @@
                     					 <img src="{{url('images/dentisalud2.jpg')}}" class="img-responsive" alt=" " />	<figcaption>
                                  <h3>CONSULTAR</h3>
                                  <p>
-                                   Ampliar Imagén
+                                   Ampliar Imagen
                                  </p>
                     						</figcaption>
                     					</figure>
@@ -168,7 +167,7 @@
                     					 <img src="{{url('images/dentisalud3.jpg')}}" class="img-responsive" alt=" " />	<figcaption>
                                  <h3>CONSULTAR</h3>
                                  <p>
-                                   Ampliar Imagén
+                                   Ampliar Imagen
                                  </p>
                     						</figcaption>
                     					</figure>
@@ -180,7 +179,7 @@
                     					 <img src="{{url('images/dentisalud4.jpg')}}" class="img-responsive" alt=" " />	<figcaption>
                     							<h3>CONSULTAR</h3>
                     							<p>
-                    								Ampliar Imagén
+                    								Ampliar Imagen
                     							</p>
                     						</figcaption>
                     					</figure>
@@ -192,7 +191,7 @@
                   					 <img src="{{url('images/marcapersonal1.jpg')}}" class="img-responsive" alt=" " />	<figcaption>
                   							<h3>CONSULTAR</h3>
                   							<p>
-                  								Ampliar Imagén
+                  								Ampliar Imagen
                   							</p>
                   						</figcaption>
                   					</figure>
@@ -207,10 +206,10 @@
 <!-- //main -->
 
 <!-- js -->
-  <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="{{url('js/jquery-2.1.4.min.js')}}"></script>
 <!--gallery-->
- <script src="js/jquery.filterizr.js"></script>
- <script src="js/controls.js"></script>
+ <script src="{{url('js/jquery.filterizr.js')}}"></script>
+ <script src="{{url('js/controls.js')}}"></script>
  <!-- Kick off Filterizr -->
  <script type="text/javascript">
      $(function() {
@@ -219,8 +218,8 @@
      });
  </script>
 <!---->
-<script src="js/jquery.chocolat.js"></script>
- <link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen">
+<script src="{{url('js/jquery.chocolat.js')}}"></script>
+ <link rel="stylesheet" href="{{url('css/chocolat.css')}}" type="text/css" media="screen">
  <!--light-box-files -->
  <script type="text/javascript">
  $(function() {

@@ -13,12 +13,12 @@
 	<div class="col-md-12 wthree_services_grid_left">
 		<div class="well">
 			<div class="page-header">
-				<h1>Listado de Posts</h1>
+				<h1>Listado de Post's</h1>
 			</div>
-      <p>Desarrollo en Framework Laravel 5 PHP, componentes Laravel: Migrates, Controllers, Models, Routes, Factory, Seeds, Bootstrap. Sistema de Autenticación para la creación de posts, los cuales podrán ser editados o eliminados siempre y cuando sea su creador se encuentre logeado.
-      Al dar click al creador de un post se podrán observar todos los posts relacionados a ese usuario creador. Los comentarios están asociados a los posts para su creación.</p>
+      <p>Desarrollo en Framework Laravel 5 PHP, componentes Laravel: Migrates, Controllers, Models, Routes, Factory, Seeds, Bootstrap. Sistema de Autenticación para la creación de post's, los cuales podrán ser editados o eliminados siempre y cuando sea su creador se encuentre logeado.
+      Al dar click al creador de un post se podrán observar todos los post's relacionados a ese usuario creador. Los comentarios están asociados a los post's para su creación.</p>
 		</div>
-		{{-- Esta seccion sera un bucle de Posts (Los listará todos)--}}
+		{{-- Esta sección sera un bucle de Posts (Los listará todos)--}}
 		<section class="col-md-9">
 
 			@forelse($posts as $post)
@@ -65,6 +65,6 @@
 </div>
 
 <!-- js -->
-<script type="text/javascript" src="{{ asset('js/jquery-2.1.4.min.js')}}"></script>
+<script type="text/javascript" src="{{ url('js/jquery-2.1.4.min.js')}}"></script>
 
 @endsection

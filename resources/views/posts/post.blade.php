@@ -14,7 +14,7 @@
       <div class="stats2">
           <div class="inner_w3l_agile_grids">
           <br>
-          <h3 class="w3l_header w3_agileits_header"> Encuentrame en <span>Redes</span></h3>
+          <h3 class="w3l_header w3_agileits_header"> Encuéntrame en <span>Redes</span></h3>
           <div class="col-md-4 w3layouts_stats_left2 w3_counter_grid">
              <i class="fa fa-wordpress" aria-hidden="true"></i>
              <h3><a href="https://edwinbeltrandev.wordpress.com/" target="_blank"><br>Publicaciones</a></h3>
@@ -109,5 +109,5 @@
 
 
 <script type="text/javascript" src="{{url('js/jquery-2.1.4.min.js')}}"></script>
-<script src="{{ asset('js/ckeditor/ckeditor.js') }}"></script>
+<script src="{{ url('js/ckeditor/ckeditor.js') }}"></script>
 @endsection

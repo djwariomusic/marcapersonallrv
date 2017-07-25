@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Desarrollo Web - Freelance Edwin Beltran</title>
+<title>Desarrollo Web - Freelance Edwin Beltrán</title>
 <!-- custom-theme -->
 <link rel="icon" href="{{ url('images/favicon.ico')}}" type="image/x-icon">
 <meta name="viewport" content="width=device-width, initial-scale=1">

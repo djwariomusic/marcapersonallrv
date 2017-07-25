@@ -17,13 +17,14 @@ Maquetacion Bootstrap" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //custom-theme -->
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/JiSlider.css" rel="stylesheet">
-<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
-<!-- Owl-carousel-CSS --><link href="css/owl.carousel.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="{{url('css/bootstrap.css')}}" rel="stylesheet" type="text/css" media="all" />
+<link href="{{url('css/JiSlider.css')}}" rel="stylesheet">
+<link rel="stylesheet" href="{{url('css/flexslider.css')}}" type="text/css" media="screen" property="" />
+<!-- Owl-carousel-CSS -->
+<link href="{{url('css/owl.carousel.css')}}" rel="stylesheet">
+<link href="{{url('css/style.css')}}" rel="stylesheet" type="text/css" media="all" />
 <!-- font-awesome-icons -->
-<link href="css/font-awesome.css" rel="stylesheet">
+<link href="{{url('css/font-awesome.css')}}" rel="stylesheet">
 <!-- //font-awesome-icons -->
 </head>
 
@@ -45,11 +46,11 @@ Maquetacion Bootstrap" />
 				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 					<nav class="link-effect-2" id="link-effect-2">
 						<ul class="nav navbar-nav">
-							<li class="active"><a href="/" class="effect-3">Inicio</a></li>
-							<li><a href="/servicios" class="effect-3">Servicios</a></li>
-							<li><a href="/proyectos" class="effect-3">Proyectos</a></li>
-							<li><a href="/blog" class="effect-3">Blog</a></li>
-							<li><a href="/contacto" class="effect-3">Contacto</a></li>
+							<li class="active"><a href="{{url('/')}}" class="effect-3">Inicio</a></li>
+							<li><a href="{{url('/servicios')}}" class="effect-3">Servicios</a></li>
+							<li><a href="{{url('/proyectos')}}" class="effect-3">Proyectos</a></li>
+							<li><a href="{{url('/blog')}}" class="effect-3">Blog</a></li>
+							<li><a href="{{url('/contacto')}}" class="effect-3">Contacto</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -63,10 +64,8 @@ Maquetacion Bootstrap" />
 		<ul>
 			<li>
 				<div class="w3layouts-banner-top">
-
 						<div class="container">
 							<div class="agileits-banner-info">
-
 								<h3>FrontEnd y BackEnd</h3>
 								<div class="alert alert-warning">
 										Realizando mezclas perfectas entre HTML5 y Backend a la medida
@@ -98,7 +97,6 @@ Maquetacion Bootstrap" />
 					<div class="w3layouts-banner-top w3layouts-banner-top2">
 						<div class="container">
 							<div class="agileits-banner-info">
-
 								<h3>Desarrollo Web </h3>
 								<div  class="alert alert-warning">
 										Adaptando ideas al Mercado Digital.
@@ -123,13 +121,11 @@ Maquetacion Bootstrap" />
 															<div class="modal-content">
 																<div class="modal-header">
 																	<button type="button" class="close" data-dismiss="modal">&times;</button>
-
 																	<div class="signin-form profile">
-
 																			<div class="login-form">
 																				<form action="/contactar" method="post">
 																					{{csrf_field()}}
-																				   <input type="text" name="name" placeholder="Nombre" required="">
+																				  <input type="text" name="name" placeholder="Nombre" required="">
 																					<input type="email" name="email" placeholder="Email" required="">
 																					<input type="text" name="telephone" placeholder="Telefono" required="">
 																					<input type="text" name="description" placeholder="Asunto" required="">
@@ -137,7 +133,6 @@ Maquetacion Bootstrap" />
 																					<input type="submit" value="ENVIAR">
 																				</form>
 																			</div>
-
 																		</div>
 																</div>
 															</div>
@@ -154,7 +149,7 @@ Maquetacion Bootstrap" />
 				<section>
 					<div class="modal-body">
 						<h5>Consultancy</h5>
-						<img src="images/2.jpg" alt=" " class="img-responsive" />
+						<img src="{{url('images/2.jpg')}}" alt=" " class="img-responsive" />
 						<p>Ut enim ad minima venían, quis nostrum
 							exercitationem ullam corporis suscipit laboriosam,
 							nisi ut aliquid ex ea commodi consequatur? Quis autem
@@ -174,9 +169,7 @@ Maquetacion Bootstrap" />
 		<h6>Desarrollo Web a la Medida</h6>
 		<h3 class="w3l_header w3_agileits_header">Perfil <span class="fixed_w3">Profesional</span></h3>
 		<p class="sub_para_agile two">Descripción Competencias Laborales</p>
-
 			<div class="agile_inner_grids">
-
 				<div class="col-md-6 w3_agileits_about2_grid_left">
 					<p>Profesional en Ingeniería de Sistemas. Especialista Base de Datos para Sistemas de Información Geográfica,
 						conocimientos en Desarrollo  de  Páginas  WEB  HTML5,  CSS3,  PHP,  JavaScript  y  diseño Responsive.
@@ -185,14 +178,13 @@ Maquetacion Bootstrap" />
 						gestión de calidad con enfoque al desarrollo de Software.</p><br>
 					<ul>
 						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Ingeniero en Sistemas</li>
-						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Tecnologo en Sistemas</li>
+						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Tecnólogo en Sistemas</li>
 						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Especialista en Base de Datos</li>
 						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Desarrollador en Platzi</li>
 						<li><input type="button" data-toggle="modal" data-target="#myModal4" value="Solicitar Ahora"></li>
 					</ul>
 				</div>
 				<div class="col-md-6 w3_agileits_about_grid_right">
-
 							  <div id="chart">
 							  <ul id="numbers">
 								<li><span>100%</span></li>
@@ -222,14 +214,13 @@ Maquetacion Bootstrap" />
 		</div>
 	</div>
 <!-- //about -->
-
 	<div class="medile_agile_its_section">
 	     <div class="col-md-6 medile_agile_its_blue">
-	           <h4>Consulta Técnica <br>Gratis <i class="fa fa-hand-o-right" aria-hidden="true"></i> </h4>
+	        <h4>Consulta Técnica <br>Gratis <i class="fa fa-hand-o-right" aria-hidden="true"></i> </h4>
 	     </div>
 		 <div class="col-md-6 medile_agile_its_green">
-	             <div class="more click">
-									<a href="#" class="hvr-shutter-in-vertical" data-toggle="modal" data-target="#myModal4">Solicitar Ahora  <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+	        <div class="more click">
+					<a href="#" class="hvr-shutter-in-vertical" data-toggle="modal" data-target="#myModal4">Solicitar Ahora  <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
 				</div>
 	     </div>
 		 <div class="clearfix"> </div>
@@ -271,13 +262,11 @@ Maquetacion Bootstrap" />
 				</ul>
 			</div>
 		</div>
-
-		<div class="clearfix"> </div>
-
+		<div class="clearfix"></div>
 		<div class="agileits_banner_bottom_grids">
 				<div class="col-md-3 agileits_banner_bottom_grid">
 					<div class="hovereffect w3ls_banner_bottom_grid">
-						<img href="www.google.com" src="images/1.jpg" alt=" " class="img-responsive" />
+						<img src="{{url('images/1.jpg')}}" alt=" " class="img-responsive" />
 						<div class="overlay">
 							<div class="overlay">
 	         	  </div>
@@ -290,7 +279,7 @@ Maquetacion Bootstrap" />
     		</div>
 				<div class="col-md-3 agileits_banner_bottom_grid">
 					<div class="hovereffect w3ls_banner_bottom_grid">
-						<img src="images/2.jpg" alt=" " class="img-responsive" />
+						<img src="{{url('images/2.jpg')}}" alt=" " class="img-responsive" />
 						<div class="overlay">
 						</div>
 					</div>
@@ -301,7 +290,7 @@ Maquetacion Bootstrap" />
 				</div>
 				<div class="col-md-3 agileits_banner_bottom_grid">
 					<div class="hovereffect w3ls_banner_bottom_grid">
-						<img src="images/3.jpg" alt=" " class="img-responsive" />
+						<img src="{{url('images/3.jpg')}}" alt=" " class="img-responsive" />
 						<div class="overlay">
 						</div>
 					</div>
@@ -312,7 +301,7 @@ Maquetacion Bootstrap" />
 				</div>
 				<div class="col-md-3 agileits_banner_bottom_grid">
 					<div class="hovereffect w3ls_banner_bottom_grid">
-						<img src="images/4.jpg" alt=" " class="img-responsive" />
+						<img src="{{url('images/4.jpg')}}" alt=" " class="img-responsive" />
 						<div class="overlay">
 						</div>
 					</div>
@@ -330,7 +319,7 @@ Maquetacion Bootstrap" />
 			<li>
 				<div class="w3layouts_event_grid">
 					<div class="w3_agile_event_grid1">
-						<img src="images/tools1.jpg" alt=" " class="img-responsive" />
+						<img src="{{url('images/tools1.jpg')}}" alt=" " class="img-responsive" />
 						<div class="agile_event_grid1_pos">
 							<ul>
 								<li><a href="#"><i class="fa fa-git" aria-hidden="true"></i><font size="1">Git</font></a></li>
@@ -348,7 +337,7 @@ Maquetacion Bootstrap" />
 			<li>
 				<div class="w3layouts_event_grid">
 					<div class="w3_agile_event_grid1">
-						<img src="images/tools2.jpg" alt=" " class="img-responsive" />
+						<img src="{{url('images/tools2.jpg')}}" alt=" " class="img-responsive" />
 						<div class="agile_event_grid1_pos">
 							<ul>
 								<li><a href="#"><i class="fa fa-html5" aria-hidden="true"></i><font size="1">HTML5</font></a></li>
@@ -366,7 +355,7 @@ Maquetacion Bootstrap" />
 			<li>
 				<div class="w3layouts_event_grid">
 					<div class="w3_agile_event_grid1">
-						<img src="images/tools3.jpg" alt=" " class="img-responsive" />
+						<img src="{{url('images/tools3.jpg')}}" alt=" " class="img-responsive" />
 						<div class="agile_event_grid1_pos">
 							<ul>
 								<li><a href="#"><i class="fa fa-code" aria-hidden="true"></i><font size="1">PHP</font></a></li>
@@ -384,7 +373,7 @@ Maquetacion Bootstrap" />
 			<li>
 				<div class="w3layouts_event_grid">
 					<div class="w3_agile_event_grid1">
-						<img src="images/tools4.jpg" alt=" " class="img-responsive" />
+						<img src="{{url('images/tools4.jpg')}}" alt=" " class="img-responsive" />
 						<div class="agile_event_grid1_pos">
 							<ul>
 								<li><a href="#"><i class="fa fa-database" aria-hidden="true"></i><font size="1">PosgreSQL</font></a></li>
@@ -402,7 +391,7 @@ Maquetacion Bootstrap" />
 			<li>
 				<div class="w3layouts_event_grid">
 					<div class="w3_agile_event_grid1">
-						<img src="images/tools5.jpg" alt=" " class="img-responsive" />
+						<img src="{{url('images/tools5.jpg')}}" alt=" " class="img-responsive" />
 						<div class="agile_event_grid1_pos">
 							<ul>
 								<li><a href="#"><i class="fa fa-linux" aria-hidden="true"></i><font size="1">Linux</font></a></li>
@@ -428,9 +417,7 @@ Maquetacion Bootstrap" />
 		<div class="container">
 		<h3 class="w3l_header w3_agileits_header two"><span>SERVICIOS</span></h3>
 		<p class="sub_para_agile two">Sera un gusto poder asesorarlo. </p>
-
 			<div class="agile_inner_grids">
-
 								   <!-- choose icon -->
 								   <div class="col-md-6 choose_icon">
 										<div class="choose_left">
@@ -443,7 +430,6 @@ Maquetacion Bootstrap" />
 									</div>
 										<div class="clearfix"></div>
 									 </div>
-
 								  <!-- choose icon -->
 								  <div class="col-md-6 choose_icon">
 									<div class="choose_left">
@@ -456,7 +442,6 @@ Maquetacion Bootstrap" />
 									</div>
 									<div class="clearfix"></div>
 								 </div>
-
 								  <!-- choose icon -->
 								  <div class="col-md-6 choose_icon">
 									<div class="choose_left">
@@ -532,14 +517,12 @@ Maquetacion Bootstrap" />
 						gestión de calidad con enfoque al desarrollo de Software.</p><br>
 					<ul>
 						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Ingeniero en Sistemas</li>
-						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Tecnologo en Sistemas</li>
+						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Tecnólogo en Sistemas</li>
 						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Especialista en Base de Datos</li>
 						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Desarrollador en Platzi</li>
-						<li><input type="button" data-toggle="modal" data-target="#myModal4" value="Solicitar Ahora"></li>
 					</ul>
 				</div>
 				<div class="col-md-6 w3_agileits_about_grid_right">
-
 							  <div id="chart">
 							  <ul id="numbers">
 								<li><span>100%</span></li>
@@ -563,8 +546,15 @@ Maquetacion Bootstrap" />
 								<li><div data-percentage="45" class="bar"></div><span>Linux</span></li>
 							  </ul>
 							</div>
+
 				</div>
+				<div class="col-md-6">
+				<span><br><p><center>
+				   Gráfico de Manejo de Herramientas
+				</center></p></span>
+			</div>
 				<div class="clearfix"> </div>
+
 			</div>
 		</div>
 	</div>
@@ -587,12 +577,12 @@ Maquetacion Bootstrap" />
 											sobre los cambios que este cliente realizaría y su impacto hacia nuestros procesos, brindando
 											un informe preciso con varias alternativas en desarrollo de software lo cual, no tenemos duda
 											de seguir contratando con él. </p>
-										<h4>Jose Octavio Zuluaga</h4>
+										<h4>José Octavio Zuluaga</h4>
 										<p>Gerente General - Conciliatus S.A.S Firma de Abogados</p>
 									</div>
 
 									<div class="col-md-4 test-grid2">
-										<img src="images/t1.jpg" alt="" class="img-r">
+										<img src="{{url('images/t1.jpg')}}" alt="" class="img-r">
 									</div>
 								</div>
 								<div class="clearfix"></div>
@@ -609,7 +599,7 @@ Maquetacion Bootstrap" />
 										<p>Jefe de Operaciones - Servinformacion S.A</p>
 									</div>
 									<div class="col-md-4 test-grid2">
-										<img src="images/t2.jpg" alt="" class="img-r">
+										<img src="{{url('images/t2.jpg')}}" alt="" class="img-r">
 									</div>
 								</div>
 								<div class="clearfix"></div>
@@ -626,7 +616,7 @@ Maquetacion Bootstrap" />
 									<p>Coordinador de Servicios - Acueducto y Alcantarillado de Bogotá - Ingeniero Industrial</p>
 									</div>
 									<div class="col-md-4 test-grid2">
-										<img src="images/t3.jpg" alt="" class="img-r">
+										<img src="{{url('images/t3.jpg')}}" alt="" class="img-r">
 									</div>
 
 								</div>
@@ -638,13 +628,13 @@ Maquetacion Bootstrap" />
 									<i class="fa fa-quote-left" aria-hidden="true"></i>
 										<p class="para-w3-agile">En el transcurso de las clases que hemos compartido se ha destacado en su
 											liderazgo y participación en la clase con temas asociados a Tecnología e Innovación.
-											Soy actualmente docente del estudiante durante el transcurso dee las clases el estudiante ha mostrado
+											Soy actualmente docente del estudiante durante el transcurso de las clases el estudiante ha mostrado
 											un desempeño destacado y se observa su esfuerzo más que el promedio de sus compañeros. </p>
-										<h4>Adriana Sanchez</h4>
-										<p>Ingenieria de Sistemas - Docente Universitaria.</p>
+										<h4>Adriana Sánchez</h4>
+										<p>Ingeniería de Sistemas - Docente Universitaria.</p>
 									</div>
 									<div class="col-md-4 test-grid2">
-										<img src="images/t4.jpg" alt="" class="img-r">
+										<img src="{{url('images/t4.jpg')}}" alt="" class="img-r">
 									</div>
 								</div>
 								<div class="clearfix"></div>
@@ -703,14 +693,14 @@ Maquetacion Bootstrap" />
 
 <!-- start-smoth-scrolling -->
 <!-- js -->
-<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="{{url('js/jquery-2.1.4.min.js')}}"></script>
 <!-- //js -->
-<script src="js/JiSlider.js"></script>
-<script src="js/JiSlider2.js"></script>
-<script type="text/javascript" src="js/https.js"></script>
+<script src="{{url('js/JiSlider.js')}}"></script>
+<script src="{{url('js/JiSlider2.js')}}"></script>
+<script type="text/javascript" src="{{url('js/https.js')}}"></script>
 <!-- stats -->
-<script src="js/jquery.waypoints.min.js"></script>
-<script src="js/jquery.countup.js"></script>
+<script src="{{url('js/jquery.waypoints.min.js')}}"></script>
+<script src="{{url('js/jquery.countup.js')}}"></script>
 <script>
     $('.counter').countUp();
 </script>
@@ -727,19 +717,19 @@ $(function(){
 })
 </script>
 <!-- flexisel -->
-<script type="text/javascript" src="js/jquery.flexisel.js"></script>
-<script type="text/javascript" src="js/flexisel.js"></script>
+<script type="text/javascript" src="{{url('js/jquery.flexisel.js')}}"></script>
+<script type="text/javascript" src="{{url('js/flexisel.js')}}"></script>
 <!-- //flexisel -->
 <!-- requried-jsfiles-for owl -->
-<script src="js/owl.carousel.js"></script>
-<script src="js/owlcarousel.js"></script>
+<script src="{{url('js/owl.carousel.js')}}"></script>
+<script src="{{url('js/owlcarousel.js')}}"></script>
 <!-- //requried-jsfiles-for owl -->
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
-<script type="text/javascript" src="js/scroll.js"></script>
+<script type="text/javascript" src="{{url('js/move-top.js')}}"></script>
+<script type="text/javascript" src="{{url('js/easing.js')}}"></script>
+<script type="text/javascript" src="{{url('js/scroll.js')}}"></script>
 <!-- start-smoth-scrolling -->
 <!-- for bootstrap working -->
-	<script src="js/bootstrap.js"></script>
+<script src="{{url('js/bootstrap.js')}}"></script>
 <!-- //for bootstrap working -->
 <!-- here stars scrolling icon -->
 <script type="text/javascript">

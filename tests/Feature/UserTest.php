@@ -3,6 +3,8 @@
 namespace Tests\Feature;
 
 use App\User;
+use App\Message;
+
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithoutMiddleware;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
@@ -25,5 +27,15 @@ class UsersTest extends TestCase
 
 		$this->seeIsAuthenticatedAs($user);
 	}
-
+	public function testCanMessageContact()
+	{
+		$message = factory(Message::class)->create();
+		$response = $this->post('/contactar', [
+			'name' => $message->name,
+			'telephone' => $message->telephone,
+			'email' => $message->email,
+			'description' => $message->description,
+			'message' => $message->message,
+		]);
+	}
 }
