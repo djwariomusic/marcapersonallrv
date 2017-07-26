@@ -6,10 +6,13 @@ use Illuminate\Http\Request;
 
 class DocumentsController extends Controller
 {
-  public function showIntro(){
+  public function show111(){
     return View('documents.1-11');
   }
-  public function showRequeriments(){
-    return View('services');
+  public function show114(){
+    return View('documents.1-14');
+  }
+  public function show221(){
+    return View('documents.2-21');
   }
 }

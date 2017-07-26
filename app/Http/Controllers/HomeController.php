@@ -27,7 +27,7 @@ class HomeController extends Controller
     public function index()
     {
       $data['posts'] = Post::where('status', 1)->get();
-      $data['posts']= Post::with('user')->latest()->Paginate(5);
+      $data['posts']= Post::with('user')->orderBy('publish_date','desc')->Paginate(5);
       return view('posts.home', $data);
     }
 }

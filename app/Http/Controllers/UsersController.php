@@ -13,7 +13,7 @@ class UsersController extends Controller
     public function showPost($username){
       $user2=5;
       $user= $this->findByUsername($username);
-      $data= Post::with('user')->where('user_id','=', $user->id)->Paginate(5);
+      $data= Post::with('user')->where('user_id','=', $user->id)->orderBy('publish_date','desc')->Paginate(5);
       return view('users.show',['posts'=> $data,'users'=>$user,]);
     }
     public function showGraph($username){

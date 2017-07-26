@@ -14,8 +14,8 @@ class PostController extends Controller
 {
 
   public function getList() {
-    $data= Post::where('status', 1)->get();
-    $data= Post::with('user')->latest()->Paginate(5);
+    $data= Post::where('user_id', 2)->get();
+    $data= Post::where('user_id', 2)->orderBy('publish_date','desc')->Paginate(5);
 
   return view('blog', ['posts'=> $data]);
   }

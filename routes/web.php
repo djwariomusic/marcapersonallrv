@@ -48,6 +48,10 @@ Route::group(['middleware' => 'auth'], function () {
   Route::get('/home/{username}', 'UsersController@showPost');
   Route::get('/home/{username}/graphs', 'UsersController@showGraph');
   Route::get('/documents', 'UsersController@showDocs');
-  Route::get('/documents/html/1/11', 'DocumentsController@showIntro');
+  Route::get('/documents/html/1/11', 'DocumentsController@show111');
   Route::get('/documents/pdf/1/11/{opcion}', 'PdfController@createPdf111');
+  Route::get('/documents/html/1/14', 'DocumentsController@show114');
+  Route::get('/documents/pdf/1/14/{opcion}', 'PdfController@createPdf114');
+  Route::get('/documents/html/2/21', 'DocumentsController@show221');
+  Route::get('/documents/pdf/2/21/{opcion}', 'PdfController@createPdf221');
 });

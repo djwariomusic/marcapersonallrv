@@ -31,34 +31,21 @@
                 <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Implementación</li>
     					</ul>
     				</div>
-            <div class="contact-form agile_inner_grids">
-              <select name="seleccion" id="seleccion" onchange="dibujoPorCambio();">
-                <option value="1" selected="selected">Index</option>
-                <option value="2">Servicios</option>
-                <option value="3">Proyectos</option>
-                <option value="4">Blog</option>
-                <option value="5">Contacto</option>
-              </select>
-            </div>
-            <center>
-              <img class="img-thumbnail" id='mockap' src="{{url('images/mockaps/index.png')}}" style="display:none;">
-            </center>
-
 				<div class="clearfix"><br> </div>
         <div class="bs-docs-example">
             <table class="table table-striped">
             <thead>
               <tr>
-                <th colspan="4" scope="col"><h3>TABLA DE DOCUMENTACION PROYECTO MARCA PERSONAL</h3> </th>
+                <th colspan="4" scope="col"><h3><font color="#0ac876"><strong>TABLA DE DOCUMENTACION PROYECTO MARCA PERSONAL</strong></font></h3> </th>
               </tr>
               <tr>
-                <th colspan="4" scope="row"><h4>1. ETAPA DE ANALISIS</h4></th>
+                <th colspan="4" scope="row"><h4><font color="#0ac876"><strong>1. ETAPA DE ANALISIS</strong></font></h4></th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <th>
-                <div align="left">1.1 Introducción y Objetivos </div>    </th>
+                <div align="left">1.1 Introducción y Objetivos </div></th>
                 <td><h3><a href="{{url('/documents/html/1/11')}}"><span class="label label-warning">Ver HTML</span></h3></a></td>
                 <td><h3><a href="{{url('/documents/pdf/1/11/1')}}"><span class="label label-warning">Ver PDF</span></h3></a></td>
                 <td><h3><a href="{{url('/documents/pdf/1/11/2')}}"><span class="label label-warning">Descargar PDF</span></h3></a></td>
@@ -77,16 +64,16 @@
               </tr>
               <tr>
                 <th><div align="left">1.4 Propuesta Técnica</div></th>
-                <td><h3><a href="#"><span class="label label-warning">Ver HTML</span></h3></a></td>
+                <td><h3><a href="{{url('/documents/html/1/14')}}"><span class="label label-warning">Ver HTML</span></h3></a></td>
                 <td><h3><a href="#"><span class="label label-warning">Ver PDF</span></h3></a></td>
                 <td><h3><a href="#"><span class="label label-warning">Descargar PDF</span></h3></a></td>
               </tr>
               <tr>
-                <th colspan="4" scope="row"><h4>2. DISEÑO</h4></th>
+                <th colspan="4" scope="row"><h4><font color="#0ac876"><strong>2. DISEÑO</strong></font></h4></th>
                 </tr>
               <tr>
                 <th><div align="left">2.1 Prototipos Estaticos - Mockaps</div></th>
-                <td><h3><a href="#"><span class="label label-warning">Ver HTML</span></h3></a></td>
+                <td><h3><a href="{{url('/documents/html/2/21')}}"><span class="label label-warning">Ver HTML</span></h3></a></td>
                 <td><h3><a href="#"><span class="label label-warning">Ver PDF</span></h3></a></td>
                 <td><h3><a href="#"><span class="label label-warning">Descargar PDF</span></h3></a></td>
               </tr>
@@ -151,7 +138,7 @@
                 <td><h3><a href="#"><span class="label label-warning">Descargar PDF</span></h3></a></td>
               </tr>
               <tr>
-                <th colspan="4" scope="row"><h4>3. DESARROLLO</h4></th>
+                <th colspan="4" scope="row"><h4><font color="#0ac876"><strong>3. DESARROLLO</strong></font></h4></th>
                 </tr>
               <tr>
                 <th><div align="left">3.1 Componentes Fisicos</div></th>
@@ -202,7 +189,7 @@
                 <td><h3><a href="#"><span class="label label-warning">Descargar PDF</span></h3></a></td>
               </tr>
               <tr>
-                <th colspan="4" scope="row"><h4>4. TESTING</h4></th>
+                <th colspan="4" scope="row"><h4><font color="#0ac876"><strong>4. TESTING</strong></font></h4></th>
                 </tr>
               <tr>
                 <th><div align="left">4.1 Estandares de Calidad en Software</div></th>
@@ -247,7 +234,7 @@
                 <td><h3><a href="#"><span class="label label-warning">Descargar PDF</span></h3></a></td>
               </tr>
               <tr>
-                <th colspan="4" scope="row"><h4>5. IMPLEMENTACIÓN DEPLOY</h4></th>
+                <th colspan="4" scope="row"><h4><font color="#0ac876"><strong>5. IMPLEMENTACIÓN DEPLOY</strong></font></h4></th>
               </tr>
               <tr>
                 <th><div align="left">5.1 Infraestructura de Producción</div></th>
@@ -268,7 +255,7 @@
                 <td><h3><a href="#"><span class="label label-warning">Descargar PDF</span></h3></a></td>
               </tr>
               <tr>
-                <th colspan="4" scope="row"><h4>ANEXOS</h4></th>
+                <th colspan="4" scope="row"><h4><font color="#0ac876"><strong>ANEXOS</strong></font></h4></th>
               </tr>
               <tr>
                 <th>&nbsp;</th>
@@ -288,6 +275,5 @@
 <!-- js -->
 <script type="text/javascript" src="{{url('js/jquery-2.1.4.min.js')}}"></script>
 
-<script src="{{url('js/mockaps.js')}}"></script>
 
 @endsection

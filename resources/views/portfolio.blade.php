@@ -73,10 +73,10 @@
   				<p>Construyendo un website comercial tipo Responsive que permita a esta clínica tener presencia en la Internet,
   				brindando la posibilidad de solicitar contacto a través de un formulario el cual envíe notificaciones vía Email.</p>
   			</div>
-      </div>
+
         <!--/portfolio-->
         <div class="inner_main_agile_section">
-        	<div class="container">
+
         	<h3 class="w3l_header w3_agileits_header"> GALERIA DE <span>PROYECTOS</span></h3>
         				<div class="agile_inner_grids">
                     <ul class="simplefilter">
@@ -90,7 +90,7 @@
                 </div>
                     <div class="filtr-container">
                         <div class="filtr-item gallery-t" data-category="1, 5" data-sort="Busy streets">
-                          <a href="{{url('images/mapacultural1.jpg')}}" class="b-link-stripe b-animate-go  thickbox">
+                          <a href="{{url('images/mapacultural.jpg')}}" class="b-link-stripe b-animate-go  thickbox">
                   					<figure>
                   					 <img src="{{url('images/mapacultural1.jpg')}}" class="img-responsive" alt=" " />	<figcaption>
                                <h3>CONSULTAR</h3>
@@ -199,7 +199,9 @@
                         </div>
                        <div class="clearfix"> </div>
         			</div>
-        	</div>
+
+        </div>
+        </div>
         </div>
 
 
