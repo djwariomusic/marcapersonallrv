@@ -100,6 +100,14 @@
         window.onload = load;
      </script>
   <input type="hidden" data-toggle="modal"  id="buttonpost" data-target="#myModalPostDel">
+@elseif (session('alerts')=='No Permitido')
+    <script language="JavaScript">
+        function load() {
+            document.getElementById("buttonpost").click();
+        }
+        window.onload = load;
+     </script>
+  <input type="hidden" data-toggle="modal"  id="buttonpost" data-target="#myModalDened">
 @endif
 
 <!-- js -->

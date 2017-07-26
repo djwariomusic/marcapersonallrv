@@ -16,11 +16,6 @@
 
 	    <form action="/savedPost" method="POST">
 	     {{ csrf_field() }}
-	     @if(isset($post))
-	         <input type="hidden" name="post_id" value="{{ $post->id }}">
-					 <input type="hidden" name="user_id" value="{{ Auth::user()->id }}">
-	     @endif
-
 	     <label for="title">Título</label>
 			     <input type="hidden" name="user_id" value="{{ Auth::user()->id }}">
 	         <input type="text" name="title" id="title" class="form-control" placeholder="Título..." value="{{isset($post) ? $post->title : '' }}">

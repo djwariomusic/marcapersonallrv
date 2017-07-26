@@ -41,9 +41,9 @@ Auth::routes();
 
 Route::group(['middleware' => 'auth'], function () {
   Route::get('/edit-post', 'PostController@getEditpost');
-  Route::get('/edit-post/{id}', 'PostController@getEditpost');
+  Route::get('/edit-post/{id}/', 'PostController@getEditpost');
   Route::post('/savedPost', 'PostController@postSavepost');
-  Route::get('/deletedPost/{id}', 'PostController@getDeletepost');
+  Route::post('/deletedPost', 'PostController@getDeletepost');
   Route::get('/home', 'HomeController@index')->name('home');
   Route::get('/home/{username}', 'UsersController@showPost');
   Route::get('/home/{username}/graphs', 'UsersController@showGraph');

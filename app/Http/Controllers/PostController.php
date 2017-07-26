@@ -9,6 +9,7 @@ use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
 
+
 class PostController extends Controller
 {
 
@@ -20,8 +21,6 @@ class PostController extends Controller
   }
   public function getPost($id) {
     $post = Post::where('id',$id)->firstorFail();
-
-
     if($post != null){
         $users = User::where('id',$post->user_id)->firstorFail();
         $data['post'] = $post;
@@ -34,8 +33,9 @@ class PostController extends Controller
     $input = Input::all();
 
     if(isset($input['post_id'])) {
-        $post = Post::find($input['post_id']);
-    } else {
+        $post = Post::with('user')->where('id','=',$input['post_id'])->firstorFail();
+    }
+    else {
         $post = new Post();
     }
     $post->title = $input['title'];
@@ -48,29 +48,37 @@ class PostController extends Controller
     $post->save(); // Guarda el objeto en la BD
     return redirect()->to('/home')->with('alerts','Post guardado');
   }
-  public function getEditpost($id = null) {
+  public function getEditpost($id = null, Request $request) {
   $alerts=NULL;
+  $me = $request->user();
+
     if ($id == null){
         return view('posts.edit-post');
       }
-    else {
-        $data['post'] = Post::where('id','=',$id)->firstorFail();
-        //$data['post'] = Post::where('id','=',$id)->where('user_id','=', Auth::check());
-            if($data['post'] == null){
-              return view('posts.edit-post');
+    else{
+        $data = Post::where('id','=',$id)->firstorFail();
+              if($data == null){
+                  return view('posts.edit-post');
               }
-      return view('posts.edit-post',$data,['alerts'=>$alerts,]);
+              elseif($data->user_id != $me->id){
+                  return redirect()->to('/home')->with('alerts','No Permitido');
+              }
+      return view('posts.edit-post',['alerts'=>$alerts,'data'=>$data,]);
     }
   }
-  public function getDeletepost($id) {
-    $post = Post::find($id);
+  public function getDeletepost() {
 
+    $input = Input::all();
+    $post = Post::where('id','=',$input['id'])->firstorFail();
         if($post == null){
           return view('posts.edit-post');
           }
-        else{
+          elseif($post->user_id == $input['login']){
             $post->delete();
             return redirect()->to('/home')->with('alerts','Post Eliminado');
+            }
+          else{
+            return redirect()->to('/home')->with('alerts','No Permitido');
           }
- }
+  }
 }
