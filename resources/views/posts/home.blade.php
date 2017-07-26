@@ -10,10 +10,11 @@
 <!--/ banner -->
 
 <center>
-<div class="contact-form agile_inner_grids">
+  <label style="display:none;">{{$me = Auth::user()->username}}</label>
+  <div class="contact-form agile_inner_grids">
   <a href="{{url('/edit-post')}}"><input type="button" value="Crear Post"></a>
-  <a href="/home/{{Auth::user()->username}}"><input type="button" value="Mis Posts"></a>
-	<a href="/home/{{Auth::user()->username}}/graphs"><input type="button" value="Grafica"></a>
+  <a href="{{url('/home/'.$me)}}"><input type="button" value="Mis Posts"></a>
+	<a href="{{url('/home/'.$me.'/graphs')}}"><input type="button" value="Grafica"></a>
 	<a href="{{url('/documents')}}"><input type="button" value="Documentación"></a>
 	<input type="button" value="Datatables Jquery">
   <input type="button" value="GIS">
@@ -52,6 +53,7 @@
 				<article class="post">
 					<div class="page-header">
               @include('posts.lastpost')
+
       @empty
         <article class="post">
           <div class="page-header">

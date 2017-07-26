@@ -31,6 +31,7 @@ Maquetacion Bootstrap" />
 </head>
 <body>
 <!-- banner -->
+<label style="display:none;">{{$me = Auth::user()->username}}</label>
 <div class="main_section_agile" id="app">
 		<div class="agileits_w3layouts_banner_nav">
 			<nav class="navbar navbar-default">
@@ -63,7 +64,7 @@ Maquetacion Bootstrap" />
 											  </a>
 											</li>
 												<li>
-												<a href="/home/{{Auth::user()->username}}">
+												<a href="{{url('/home/'.$me)}}">
 														Mis Posts
 												</a>
 												</li>
