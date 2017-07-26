@@ -31,7 +31,7 @@ Maquetacion Bootstrap" />
 </head>
 <body>
 <!-- banner -->
-<label style="display:none;">{{$me = Auth::user()->username}}</label>
+
 <div class="main_section_agile" id="app">
 		<div class="agileits_w3layouts_banner_nav">
 			<nav class="navbar navbar-default">
@@ -51,7 +51,7 @@ Maquetacion Bootstrap" />
 		  			    <li><a href="{{ route('login') }}">Login</a></li>
 								<li><a href="{{ route('register') }}">Register</a></li>
 		 	      @else
-
+								<label style="display:none;">{{$me = Auth::user()->username}}</label>
 		 			      <li class="dropdown">
 		 					  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
 		 							{{ Auth::user()->name }} <span class="caret"></span>
