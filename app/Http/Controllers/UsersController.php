@@ -6,15 +6,21 @@ use App\User;
 use App\Models\Post;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Input;
 
 class UsersController extends Controller
 {
     //
     public function showPost($username){
-      $user2=5;
       $user= $this->findByUsername($username);
       $data= Post::with('user')->where('user_id','=', $user->id)->orderBy('publish_date','desc')->Paginate(5);
       return view('users.show',['posts'=> $data,'users'=>$user,]);
+    }
+    public function searchUser(){
+      $input =Input::all();
+      $user = User::where('username','LIKE', "%".$input['username']."%")->get();
+      $user = User::where('username','LIKE', "%".$input['username']."%")->orderBy('username')->Paginate(5);
+      return view('users.search',['users'=>$user,]);
     }
     public function showGraph($username){
       $data2017= Post::whereYear('created_at','=','2017')->count();

@@ -13,8 +13,6 @@
 		<div class="container">
 		<h6>Uso de ChartJS</h6>
 		<h3 class="w3l_header w3_agileits_header">Gráficos <span class="fixed_w3">Dinámicos</span></h3>
-
-
     			<div class="agile_inner_grids">
     				<div class="col-md-12 w3_agileits_about2_grid_left">
     					<p>La librería Chart.js es una de las grandes bibliotecas de JavaScript en línea,
@@ -74,16 +72,19 @@
                 </div>
                 <div class="clearfix"></div>
                     <script>
-                    new Chart(
-                      document.getElementById("chartjs-0"),
-                      {"type":"line","data":
-                      {"labels":["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio"],
-                      "datasets":[{"label":"Mis # de Posts",
-                      "data":[{{$dataEnero17}},{{$dataFebrero17}},{{$dataMarzo17}},{{$dataAbril17}},{{$dataMayo17}},{{$dataJunio17}},{{$dataJulio17}}],
-                      "fill":false,
-                      "borderColor":"rgb(75, 192, 192)",
-                      "lineTension":0.1}]},
-                      "options":{}});
+                      new Chart(document.getElementById("chartjs-0"),{
+                          "type":"line","data":{
+                            "labels":["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio"],
+                            "datasets":[{
+                              "label":"Mis # de Posts",
+                              "data":[{{$dataEnero17}},{{$dataFebrero17}},{{$dataMarzo17}},{{$dataAbril17}},{{$dataMayo17}},{{$dataJunio17}},{{$dataJulio17}}],
+                              "fill":false,
+                              "borderColor":"rgb(75, 192, 192)",
+                              "lineTension":0.1
+                            }]
+                          },
+                        "options":{}
+                      });
                     </script>
                 <div class="clearfix"></div>
                 <div class="chart-container" style="width:70%;">
@@ -92,25 +93,17 @@
                 </div>
                 <div class="clearfix"></div>
                   <script>
-                  new Chart(document.getElementById("chartjs-4"),
-                  {"type":"doughnut","data":
-
-                  {"labels":["{{$querys[0]->name}}","{{$querys[1]->name}}","{{$querys[2]->name}}","{{$querys[3]->name}}","{{$querys[4]->name}}"],
-                  "datasets":[{"label":"Mis # de Posts",
-                  "data":[{{$querys[0]->count}},{{$querys[1]->count}},{{$querys[2]->count}},{{$querys[3]->count}},{{$querys[4]->count}}],
-                  "backgroundColor":[
-                    "rgb(255, 99, 132)",
-                    "rgb(54, 162, 235)",
-                    "rgb(255, 205, 86)",
-                    'rgb(75, 192, 192)',
-                    'rgb(153, 102, 255)'
-                                    ]
-                                }],
-                  }
-                  }
-                  );
+                    new Chart(document.getElementById("chartjs-4"),{
+                      "type":"doughnut","data":{
+                        "labels":["{{$querys[0]->name}}","{{$querys[1]->name}}","{{$querys[2]->name}}","{{$querys[3]->name}}","{{$querys[4]->name}}"],
+                        "datasets":[{
+                          "label":"Mis # de Posts",
+                          "data":[{{$querys[0]->count}},{{$querys[1]->count}},{{$querys[2]->count}},{{$querys[3]->count}},{{$querys[4]->count}}],
+                          "backgroundColor":["rgb(255, 99, 132)","rgb(54, 162, 235)","rgb(255, 205, 86)",'rgb(75, 192, 192)','rgb(153, 102, 255)']
+                        }],
+                      }
+                    });
                   </script>
-                </script>
                 <div class="clearfix"></div>
                 <div class="chart-container" style="width:70%;">
                   <p class="sub_para_agile two">Gráfica de Red</p>
@@ -118,20 +111,28 @@
                 </div>
                 <div class="clearfix"></div>
                     <script>
-                    new Chart(document.getElementById("chartjs-3"),
-                    {"type":"radar","data":
-                    {"labels":["Curiosidad","Claridad","Lectura","Detallista","Aprendizaje","Pasión","Adaptabilidad"],
-                    "datasets":[{"label":"Grafica de Habilidades","data":[80,85,68,87,78,95,65],
-                    "fill":true,
-                    "backgroundColor":
-                    "rgba(255, 99, 132, 0.2)",
-                    "borderColor":"rgb(255, 99, 132)",
-                    "pointBackgroundColor":"rgb(255, 99, 132)",
-                    "pointBorderColor":"#fff","pointHoverBackgroundColor":
-                    "#fff","pointHoverBorderColor":"rgb(255, 99, 132)"}
-                    ]},
-                    "options":{"elements":{"line":{"tension":0,"borderWidth":3}}}});</script>
-
+                      new Chart(document.getElementById("chartjs-3"),{
+                        "type":"radar","data":{
+                          "labels":["Curiosidad","Claridad","Lectura","Detallista","Aprendizaje","Pasión","Adaptabilidad"],
+                          "datasets":[{
+                                      "label":"Grafica de Habilidades","data":[80,85,68,87,78,95,65],
+                                      "fill":true,
+                                      "backgroundColor":"rgba(255, 99, 132, 0.2)",
+                                      "borderColor":"rgb(255, 99, 132)",
+                                      "pointBackgroundColor":"rgb(255, 99, 132)",
+                                      "pointBorderColor":"#fff","pointHoverBackgroundColor":
+                                      "#fff","pointHoverBorderColor":"rgb(255, 99, 132)"
+                                      }]
+                        },
+                        "options":{
+                          "elements":{
+                            "line":{
+                              "tension":0,"borderWidth":3
+                             }
+                          }
+                        }
+                      });
+                    </script>
                 </div>
     				</div>
 				<div class="clearfix"><br> </div>

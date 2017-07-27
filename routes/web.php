@@ -47,6 +47,7 @@ Route::group(['middleware' => 'auth'], function () {
   Route::get('/home', 'HomeController@index')->name('home');
   Route::get('/home/{username}', 'UsersController@showPost');
   Route::get('/home/{username}/graphs', 'UsersController@showGraph');
+  Route::post('/searchUser', 'UsersController@searchUser');
   Route::get('/documents', 'UsersController@showDocs');
   Route::get('/documents/html/1/11', 'DocumentsController@show111');
   Route::get('/documents/pdf/1/11/{opcion}', 'PdfController@createPdf111');
@@ -54,4 +55,8 @@ Route::group(['middleware' => 'auth'], function () {
   Route::get('/documents/pdf/1/14/{opcion}', 'PdfController@createPdf114');
   Route::get('/documents/html/2/21', 'DocumentsController@show221');
   Route::get('/documents/pdf/2/21/{opcion}', 'PdfController@createPdf221');
+  Route::get('/documents/html/2/29', 'DocumentsController@show229');
+  Route::get('/documents/pdf/2/29/{opcion}', 'PdfController@createPdf229');
+  Route::get('/documents/html/3/31', 'DocumentsController@show331');
+  Route::get('/documents/pdf/3/31/{opcion}', 'PdfController@createPdf331');
 });

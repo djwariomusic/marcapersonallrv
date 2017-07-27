@@ -4,7 +4,7 @@
 <!--/ banner -->
   <div class="banner1">
   		<div class="w3_agileits_service_banner_info">
-  			<h2>LISTADO DE POST DE {{$users->username}}</h2>
+  			<h2>RESULTADO DE BUSQUEDA POR USERNAME</h2>
   		</div>
   	</div>
 <!--/ banner -->
@@ -21,28 +21,23 @@
 		{{-- Esta sección sera un bucle de Posts (Los listará todos)--}}
 		<section class="col-md-9">
 
-			@forelse($posts as $post)
+			@forelse($users as $user)
 				<article class="post">
-					<div class="page-header">
-              @include('posts.lastpost')
-          @if(Auth::check())
-            <a href="{{ url('/home') }}" class="btn btn-success"><- Listado</a>
-          @else
-            <a href="{{ url('/blog') }}" class="btn btn-success"><- Listado</a>
-          @endif
+		        <p><h3>Nombre de Usuario</h3><a href="{{url('/home/'. $user->username)}}">{{ $user->username }}</a></p>
+        </article>
+          <div class="clearfix"><br></div>
       @empty
           <article class="post">
             <div class="page-header">
-              <h3>No hay Mensajes</h3><br/>
+              <h3>No se Encontrarón Resultados</h3><br/>
             </div>
           </article>
           <div class="clearfix"><br></div>
       @endforelse
 
-
-      @if(count($posts))
+      @if(count($users))
           <div class="mt-2 mx-auto">
-          {{ $posts->links('pagination::bootstrap-4') }}
+          {{ $users->links('pagination::bootstrap-4') }}
           </div>
       @endif
     </section>

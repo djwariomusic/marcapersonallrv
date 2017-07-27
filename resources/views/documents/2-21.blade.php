@@ -43,6 +43,7 @@
           </div>
           <br>
           <center>
+            <input type="hidden" value="{{url('/')}}" id="url">
             <img class="img-thumbnail" id='mockap' src="{{url('images/documents/index.png')}}">
           </center>
       <div class="clearfix"><br> </div>

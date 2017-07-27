@@ -11,30 +11,35 @@
 
 <center>
   <label style="display:none;">{{$me = Auth::user()->username}}</label>
-  <div class="contact-form agile_inner_grids">
-  <a href="{{url('/edit-post')}}"><input type="button" value="Crear Post"></a>
-  <a href="{{url('/home/'.$me)}}"><input type="button" value="Mis Posts"></a>
-	<a href="{{url('/home/'.$me.'/graphs')}}"><input type="button" value="Grafica"></a>
-	<a href="{{url('/documents')}}"><input type="button" value="Documentación"></a>
-	<input type="button" value="Datatables Jquery">
-  <input type="button" value="GIS">
-</div>
-
+  <nav>
+    <ul class="pager">
+      <li class="pager-prev"><a href="{{url('/edit-post')}}">Crear Post</a></li>
+      <li class="pager-next"><a href="{{url('/home/'.$me)}}">Mis Posts</a></li>
+      <li class="pager-next"><a href="{{url('/home/'.$me.'/graphs')}}">Grafica</a></li>
+      <li class="pager-next"><a href="{{url('/documents')}}">Documentación</a></li>
+      <li class="pager-next"><a href="#">DataTables Jquery</a></li>
+      <li class="pager-next"><a href="#">GIS</a></li>
+      <li class="pager-next"><a href="#">API Restful JSON</a></li>
+    </ul>
+    <ul class="pager">
+      <li class="pager-next">
+        <center>
+        <div class="col-md-5">
+            <form action="{{url('/searchUser')}}" method="post">
+              {{csrf_field()}}
+                <div class="input-group">
+                      <input type="text" name="username" class="form-control" placeholder="Busqueda de Usuarios por Username...">
+                      <span class="input-group-btn">
+                      <button class="btn btn-default" type="submit">Buscar</button>
+                      </span>
+                 </div>
+            </form>
+        </div>
+        </center>
+      </li>
+    </ul>
+  </nav>.
 </center>
-
-<form action="/searchUser" method="GET">
-<div class="inner_main_agile_section">
-    <div class="col-md-6">
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="Busqueda de Post por Username...">
-          <span class="input-group-btn">
-          <button class="btn btn-default" type="submit">Buscar</button>
-          </span>
-         </div>
-     </div>
-</div>
-</form>
-
 
 <article class="container">
   <div class="inner_main_agile_section">

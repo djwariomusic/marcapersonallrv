@@ -14,7 +14,7 @@
 				<h1>Editar o Crear Post</h1>
 			</div>
 
-	    <form action="/savedPost" method="POST">
+	    <form action="{{url('/savedPost')}}" method="POST">
 	     {{ csrf_field() }}
 	     <label for="title">Título</label>
 			     <input type="hidden" name="user_id" value="{{ Auth::user()->id }}">

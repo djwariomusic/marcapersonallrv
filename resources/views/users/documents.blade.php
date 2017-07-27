@@ -90,31 +90,25 @@
                 <td><h3><a href="#"><span class="label label-warning">Descargar PDF</span></h3></a></td>
               </tr>
               <tr>
-                <th><div align="left">2.4 Casos de Uso</div></th>
+                <th><div align="left">2.4 Diagramas de Flujo</div></th>
                 <td><h3><a href="#"><span class="label label-warning">Ver HTML</span></h3></a></td>
                 <td><h3><a href="#"><span class="label label-warning">Ver PDF</span></h3></a></td>
                 <td><h3><a href="#"><span class="label label-warning">Descargar PDF</span></h3></a></td>
               </tr>
               <tr>
-                <th><div align="left">2.5 Diagramas de Flujo</div></th>
+                <th><div align="left">2.5 Diccionario de Datos</div></th>
                 <td><h3><a href="#"><span class="label label-warning">Ver HTML</span></h3></a></td>
                 <td><h3><a href="#"><span class="label label-warning">Ver PDF</span></h3></a></td>
                 <td><h3><a href="#"><span class="label label-warning">Descargar PDF</span></h3></a></td>
               </tr>
               <tr>
-                <th><div align="left">2.6 Diccionario de Datos</div></th>
+                <th><div align="left">2.6 Infraestructura</div></th>
                 <td><h3><a href="#"><span class="label label-warning">Ver HTML</span></h3></a></td>
                 <td><h3><a href="#"><span class="label label-warning">Ver PDF</span></h3></a></td>
                 <td><h3><a href="#"><span class="label label-warning">Descargar PDF</span></h3></a></td>
               </tr>
               <tr>
-                <th><div align="left">2.7 Infraestructura</div></th>
-                <td><h3><a href="#"><span class="label label-warning">Ver HTML</span></h3></a></td>
-                <td><h3><a href="#"><span class="label label-warning">Ver PDF</span></h3></a></td>
-                <td><h3><a href="#"><span class="label label-warning">Descargar PDF</span></h3></a></td>
-              </tr>
-              <tr>
-                <th><div align="left">2.8 Arquitectura del Sitio</div></th>
+                <th><div align="left">2.7 Arquitectura del Sitio</div></th>
                 <td><h3><a href="#"><span class="label label-warning">Ver HTML</span></h3></a></td>
                 <td><h3><a href="#"><span class="label label-warning">Ver PDF</span></h3></a></td>
                 <td><h3><a href="#"><span class="label label-warning">Descargar PDF</span></h3></a></td>
@@ -127,7 +121,7 @@
               </tr>
               <tr>
                 <th><div align="left">2.9 Recursos y Conocimientos</div></th>
-                <td><h3><a href="#"><span class="label label-warning">Ver HTML</span></h3></a></td>
+                <td><h3><a href="{{url('/documents/html/2/29')}}"><span class="label label-warning">Ver HTML</span></h3></a></td>
                 <td><h3><a href="#"><span class="label label-warning">Ver PDF</span></h3></a></td>
                 <td><h3><a href="#"><span class="label label-warning">Descargar PDF</span></h3></a></td>
               </tr>
@@ -141,49 +135,43 @@
                 <th colspan="4" scope="row"><h4><font color="#0ac876"><strong>3. DESARROLLO</strong></font></h4></th>
                 </tr>
               <tr>
-                <th><div align="left">3.1 Componentes Fisicos</div></th>
+                <th><div align="left">3.1 Componentes Físicos y Lógicos</div></th>
+                <td><h3><a href="{{url('/documents/html/3/31')}}"><span class="label label-warning">Ver HTML</span></h3></a></td>
+                <td><h3><a href="#"><span class="label label-warning">Ver PDF</span></h3></a></td>
+                <td><h3><a href="#"><span class="label label-warning">Descargar PDF</span></h3></a></td>
+              </tr>
+              <tr>
+                <th><div align="left">3.2 Suite Desarrollo</div></th>
                 <td><h3><a href="#"><span class="label label-warning">Ver HTML</span></h3></a></td>
                 <td><h3><a href="#"><span class="label label-warning">Ver PDF</span></h3></a></td>
                 <td><h3><a href="#"><span class="label label-warning">Descargar PDF</span></h3></a></td>
               </tr>
               <tr>
-                <th><div align="left">3.2 Componentes Lógicos</div></th>
+                <th><div align="left">3.3 Componentes de Laravel 5</div></th>
                 <td><h3><a href="#"><span class="label label-warning">Ver HTML</span></h3></a></td>
                 <td><h3><a href="#"><span class="label label-warning">Ver PDF</span></h3></a></td>
                 <td><h3><a href="#"><span class="label label-warning">Descargar PDF</span></h3></a></td>
               </tr>
               <tr>
-                <th><div align="left">3.3 Suite Desarrollo</div></th>
+                <th><div align="left">3.4 Motor de Base de Datos PostgreSQL</div></th>
                 <td><h3><a href="#"><span class="label label-warning">Ver HTML</span></h3></a></td>
                 <td><h3><a href="#"><span class="label label-warning">Ver PDF</span></h3></a></td>
                 <td><h3><a href="#"><span class="label label-warning">Descargar PDF</span></h3></a></td>
               </tr>
               <tr>
-                <th><div align="left">3.4 Componentes de Laravel 5</div></th>
+                <th><div align="left">3.5 Sistema de Versionamiento GIT y Github</div></th>
                 <td><h3><a href="#"><span class="label label-warning">Ver HTML</span></h3></a></td>
                 <td><h3><a href="#"><span class="label label-warning">Ver PDF</span></h3></a></td>
                 <td><h3><a href="#"><span class="label label-warning">Descargar PDF</span></h3></a></td>
               </tr>
               <tr>
-                <th><div align="left">3.5 Motor de Base de Datos PostgreSQL</div></th>
+                <th><div align="left">3.6 Componentes Adicionales ChartJS, Jquery, API Google Maps y otros</div></th>
                 <td><h3><a href="#"><span class="label label-warning">Ver HTML</span></h3></a></td>
                 <td><h3><a href="#"><span class="label label-warning">Ver PDF</span></h3></a></td>
                 <td><h3><a href="#"><span class="label label-warning">Descargar PDF</span></h3></a></td>
               </tr>
               <tr>
-                <th><div align="left">3.6 Sistema de Versionamiento GIT y Github</div></th>
-                <td><h3><a href="#"><span class="label label-warning">Ver HTML</span></h3></a></td>
-                <td><h3><a href="#"><span class="label label-warning">Ver PDF</span></h3></a></td>
-                <td><h3><a href="#"><span class="label label-warning">Descargar PDF</span></h3></a></td>
-              </tr>
-              <tr>
-                <th><div align="left">3.7 Componentes Adicionales ChartJS, Jquery, API Google Maps y otros</div></th>
-                <td><h3><a href="#"><span class="label label-warning">Ver HTML</span></h3></a></td>
-                <td><h3><a href="#"><span class="label label-warning">Ver PDF</span></h3></a></td>
-                <td><h3><a href="#"><span class="label label-warning">Descargar PDF</span></h3></a></td>
-              </tr>
-              <tr>
-                <th><div align="left">3.8 Pantallas Finales</div></th>
+                <th><div align="left">3.7 Pantallas Finales</div></th>
                 <td><h3><a href="#"><span class="label label-warning">Ver HTML</span></h3></a></td>
                 <td><h3><a href="#"><span class="label label-warning">Ver PDF</span></h3></a></td>
                 <td><h3><a href="#"><span class="label label-warning">Descargar PDF</span></h3></a></td>

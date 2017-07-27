@@ -1,9 +1,9 @@
-          <h3>{{ $post->title }}</h3><br/ ><h4><small>{{ $post->publish_date }} creado por:<a href="/home/{{$post->user->username}}"> {{$post->user->name}} </a></small></h4>
+          <h3>{{ $post->title }}</h3><br/ ><h4><small>{{ $post->publish_date }} creado por:<a href="{{url('/home/'. $post->user->username)}}"> {{$post->user->name}} </a></small></h4>
 					</div>
           <img class="img-thumbnail" src="{{ $post->imagen }}">
 					<p>{{ $post->resume }}</p>
 					<h2><a href="{{ url('blog/getPost/'.$post->id) }}"><span class="label label-success"><font size="2">Ver post  <i class="fa fa-sticky-note-o"></i></font></span></a>
-          <form id="deletedPost" action="/deletedPost" method="post">
+          <form id="deletedPost" action="{{url('/deletedPost')}}" method="post">
             {{csrf_field()}}
           @if(Auth::check())
             <input type="hidden" name="id" value="{{$post->id}}">

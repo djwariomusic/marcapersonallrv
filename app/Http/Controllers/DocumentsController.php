@@ -15,4 +15,10 @@ class DocumentsController extends Controller
   public function show221(){
     return View('documents.2-21');
   }
+  public function show229(){
+    return View('documents.2-29');
+  }
+  public function show331(){
+    return View('documents.3-31');
+  }
 }

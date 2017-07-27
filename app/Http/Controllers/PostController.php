@@ -16,22 +16,21 @@ class PostController extends Controller
   public function getList() {
     $data= Post::where('user_id', 2)->get();
     $data= Post::with('user')->where('user_id', 2)->orderBy('publish_date','desc')->Paginate(5);
-
   return view('blog', ['posts'=> $data]);
   }
+
   public function getPost($id) {
     $post = Post::where('id',$id)->firstorFail();
     if($post != null){
         $users = User::where('id',$post->user_id)->firstorFail();
         $data['post'] = $post;
         $data['comments'] = Comment::where('post_id', $id)->get();
-        return view('posts.post',$data,[ 'users'=>$users]);
+        return view('posts.post',$data,['users'=>$users]);
     }
   }
+
   public function postSavepost() {
-
     $input = Input::all();
-
     if(isset($input['post_id'])) {
         $post = Post::with('user')->where('id','=',$input['post_id'])->firstorFail();
     }
@@ -48,9 +47,10 @@ class PostController extends Controller
     $post->save(); // Guarda el objeto en la BD
     return redirect()->to('/home')->with('alerts','Post guardado');
   }
+
   public function getEditpost($id = null, Request $request) {
-  $alerts=NULL;
-  $me = $request->user();
+    $alerts=NULL;
+    $me = $request->user();
 
     if ($id == null){
         return view('posts.edit-post');
@@ -66,8 +66,8 @@ class PostController extends Controller
       return view('posts.edit-post',['alerts'=>$alerts,'data'=>$data,]);
     }
   }
-  public function getDeletepost() {
 
+  public function getDeletepost() {
     $input = Input::all();
     $post = Post::where('id','=',$input['id'])->firstorFail();
         if($post == null){
@@ -81,4 +81,5 @@ class PostController extends Controller
             return redirect()->to('/home')->with('alerts','No Permitido');
           }
   }
+
 }
