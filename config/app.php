@@ -170,6 +170,7 @@ return [
         Laravel\Socialite\SocialiteServiceProvider::class,
         Barryvdh\DomPDF\ServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
+        Yajra\Datatables\DatatablesServiceProvider::class,
 
 
 

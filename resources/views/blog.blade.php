@@ -112,7 +112,7 @@
 
       @if(count($posts))
           <div class="mt-2 mx-auto">
-          {{ $posts->links('pagination::bootstrap-4') }}
+          {{ $posts->links('pagination::bootstrap-4') }}<br><br>
           </div>
       @endif
     </section>

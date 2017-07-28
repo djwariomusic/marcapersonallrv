@@ -2,7 +2,7 @@
 
 @section('contenido')
 <!--/ banner -->
-  <div class="banner1">
+  <div class="banner1"
   		<div class="w3_agileits_service_banner_info">
   			<h2>DASHBOARD</h2>
   		</div>
@@ -17,7 +17,7 @@
       <li class="pager-next"><a href="{{url('/home/'.$me)}}">Mis Posts</a></li>
       <li class="pager-next"><a href="{{url('/home/'.$me.'/graphs')}}">Grafica</a></li>
       <li class="pager-next"><a href="{{url('/documents')}}">Documentación</a></li>
-      <li class="pager-next"><a href="#">DataTables Jquery</a></li>
+      <li class="pager-next"><a href="{{url('/datatable')}}">DataTables Jquery</a></li>
       <li class="pager-next"><a href="#">GIS</a></li>
       <li class="pager-next"><a href="#">API Restful JSON</a></li>
     </ul>
@@ -70,7 +70,7 @@
 
       @if(count($posts))
           <div class="mt-2 mx-auto">
-          {{ $posts->links('pagination::bootstrap-4') }}
+          {{ $posts->links('pagination::bootstrap-4') }}<br><br>
           </div>
       @endif
     </section>

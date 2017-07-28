@@ -8,7 +8,7 @@ use App\User;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
-
+use Yajra\Datatables\Datatables;
 
 class PostController extends Controller
 {
@@ -82,4 +82,15 @@ class PostController extends Controller
           }
   }
 
+     public function indexDatatable()
+       {
+           return view('users.datatables');
+       }
+
+     public function getDatatable()
+        {
+            $data = Post::with('user')->select(['id','title','publish_date','user_id']);
+            return Datatables::of($data)
+                ->make(true);
+        }
 }

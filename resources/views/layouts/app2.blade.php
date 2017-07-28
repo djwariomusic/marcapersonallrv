@@ -26,6 +26,10 @@ Maquetacion Bootstrap" />
 <!-- //font-awesome-icons -->
 <link href="{{ url('css/index.css')}}" rel="stylesheet" type="text/css" media="all" />
 
+<link rel="stylesheet" href="{{url('css/dataTables.bootstrap.css')}}">
+<link rel="stylesheet" href="{{url('css/dataTables.bootstrap.min.css')}}">
+
+
 <meta name="csrf-token" content="{{ csrf_token() }}">
 
 </head>
