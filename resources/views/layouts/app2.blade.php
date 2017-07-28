@@ -53,7 +53,7 @@ Maquetacion Bootstrap" />
 	      <!-- Authentication Links -->
 		 	      @if (Auth::guest())
 		  			    <li><a href="{{ route('login') }}">Login</a></li>
-								<li><a href="{{ route('register') }}">Register</a></li>
+								<li><a href="{{ route('register') }}">Registrarse</a></li>
 		 	      @else
 								<label style="display:none;">{{$me = Auth::user()->username}}</label>
 		 			      <li class="dropdown">
@@ -62,22 +62,31 @@ Maquetacion Bootstrap" />
 		 					  </a>
 
 		 					      <ul class="dropdown-menu agile_forms2" role="menu">
-											  <li>
-											  <a href="{{ url('/home') }}">
-												    Dashboard
-											  </a>
-											</li>
-												<li>
-												<a href="{{url('/home/'.$me)}}">
-														Mis Posts
-												</a>
-												</li>
-		 							      <li>
-		 									  <a href="{{ route('logout') }}"
-		 											onclick="event.preventDefault();
-		 															 document.getElementById('logout-form').submit();">
-		 											Logout
-		 									  </a>
+											<center>
+		                  <li>
+		                      <img class="img-thumbnail" width="100" height="100" src="{{url('images/avatar/avatar.jpg')}}">
+		                  </li>
+		                  </center>
+											<li>
+		                  <a href="{{ url('/home') }}"><i class="fa fa-dashboard"></i>
+		                    Dashboard
+		                  </a>
+		                  </li>
+		                  <ol>
+		                    <li><i class="fa fa-edit"></i><a href="{{url('/edit-post')}}"> Crear Posts</a></li>
+		                    <li><i class="fa fa-folder-open-o"></i><a href="{{url('/home/'.$me)}}"> Mis Posts</a></li>
+		                    <li><i class="fa fa-bar-chart-o"></i><a href="{{url('/home/'.$me.'/graphs')}}"> Graficas</a></li>
+		                    <li><i class="fa fa-table"></i><a href="{{url('/datatable')}}"> DataTables</a></li>
+		                    <li><i class="fa fa-map-marker"></i><a href="{{url('/gis')}}"> Google Maps</a></li>
+		                    <li><i class="fa fa-code"></i><a href="{{url('/apijson')}}"> API JSON</a></li>
+		                  </ol>
+		                  <li><a href="{{url('/documents')}}"><i class="fa fa-files-o"></i> Documentación</a></li>
+		                  <li>
+		                  <a href="{{ route('logout') }}"
+		                    onclick="event.preventDefault();
+		                             document.getElementById('logout-form').submit();"><i class="fa fa-sign-out"></i>
+		                    Logout
+		                  </a>
 
 		 									  <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
 		 											{{ csrf_field() }}

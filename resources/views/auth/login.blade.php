@@ -60,7 +60,8 @@
                             </div>
                         </div>
                     </form>
-                    <a class="btn btn-primary" href="/auth/facebook">Logear Facebook</a>
+                    
+                    <h3><a href="{{ url('/auth/facebook') }}"><span class="label label-primary"><font size="2"><i class="fa fa-facebook-square"></i> Ingresar con Facebook</font></span></a></h3>
                 </div>
             </div>
         </div>

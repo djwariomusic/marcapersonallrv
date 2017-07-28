@@ -4,7 +4,7 @@
 <!--/ banner -->
   <div class="banner1">
   		<div class="w3_agileits_service_banner_info">
-  			<h2>RESULTADO DE BUSQUEDA POR USERNAME</h2>
+  			<h2>BUSQUEDA</h2>
   		</div>
   	</div>
 <!--/ banner -->
@@ -13,7 +13,7 @@
 	<div class="col-md-12 wthree_services_grid_left">
 		<div class="well">
 			<div class="page-header">
-				<h1>Listado de Post's</h1>
+				<h1>Consulta Busqueda de Usuarios por username</h1>
 			</div>
       <p>Desarrollo en Framework Laravel 5 PHP, componentes Laravel: Migrates, Controllers, Models, Routes, Factory, Seeds, Bootstrap. Sistema de Autenticación para la creación de post's, los cuales podrán ser editados o eliminados siempre y cuando sea su creador se encuentre logeado.
       Al dar click al creador de un post se podrán observar todos los post's relacionados a ese usuario creador. Los comentarios están asociados a los post's para su creación.</p>

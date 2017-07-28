@@ -37,7 +37,11 @@ Route::post('/auth/facebook/register', 'SocialAuthController@register');
 Route::post('/comments/createcomment', 'CommentController@postCreatecomment');
 Route::get('/comments/deletecomment/{opc}', 'CommentController@getDeletecomment');
 
+
 Auth::routes();
+Route::get('/datatable/datatable', 'PostController@getDatatable')->name('dtt');
+Route::get('/datatable', 'PostController@indexDatatable');
+
 
 Route::group(['middleware' => 'auth'], function () {
   Route::get('/edit-post', 'PostController@getEditpost');
@@ -48,9 +52,8 @@ Route::group(['middleware' => 'auth'], function () {
   Route::get('/home/{username}', 'UsersController@showPost');
   Route::get('/home/{username}/graphs', 'UsersController@showGraph');
   Route::post('/searchUser', 'UsersController@searchUser');
-  Route::get('/datatable', 'PostController@indexDatatable');
-  Route::get('/datatable/datatable', 'PostController@getDatatable')->name('dtt');
-
+  Route::get('/apijson', 'PostController@showApiJson');
+  Route::get('/apijson/posts/apirest', 'PostController@getApiJson');
 
   Route::get('/documents', 'UsersController@showDocs');
   Route::get('/documents/html/1/11', 'DocumentsController@show111');

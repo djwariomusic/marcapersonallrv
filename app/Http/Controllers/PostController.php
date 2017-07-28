@@ -82,15 +82,21 @@ class PostController extends Controller
           }
   }
 
-     public function indexDatatable()
-       {
-           return view('users.datatables');
-       }
+  public function indexDatatable() {
+    return view('users.datatables');
+  }
 
-     public function getDatatable()
-        {
-            $data = Post::with('user')->select(['id','title','publish_date','user_id']);
-            return Datatables::of($data)
-                ->make(true);
-        }
+  public function getDatatable() {
+    $data = Post::with('user')->select(['id','title','publish_date','user_id']);
+    return Datatables::of($data)->make(true);
+  }
+
+  public function showApiJson() {
+    return view('posts.apijson');
+  }
+
+  public function getApiJson() {
+    $data= Post::where('user_id', 2)->orderBy('publish_date','desc')->get();
+    return $data;
+  }
 }

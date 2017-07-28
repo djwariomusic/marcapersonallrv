@@ -4,7 +4,7 @@
 <!--/ banner -->
   <div class="banner1">
   		<div class="w3_agileits_service_banner_info">
-  			<h2>DOCUMENTACIÓN DESARROLLO WEB</h2>
+  			<h2>DATATABLES JQUERY</h2>
   		</div>
   	</div>
 <!--/ banner -->
@@ -12,8 +12,8 @@
 	<div class="inner_main_agile_section">
 		<div class="container">
 		<h6>Desarrollo Web a la Medida</h6>
-		<h3 class="w3l_header w3_agileits_header">Documentación <span class="fixed_w3">Marca Personal</span></h3>
-		<p class="sub_para_agile two">Descarga de Archivos PDF</p>
+		<h3 class="w3l_header w3_agileits_header">Tablas <span class="fixed_w3">Dinamicas</span></h3>
+		<p class="sub_para_agile two">Jquery Datatables plugin</p>
     			<div class="agile_inner_grids">
     				<div class="col-md-12 w3_agileits_about2_grid_left">
               <p>Datatables hace parte de Jquery</p>
@@ -21,9 +21,9 @@
                       <thead>
                       <tr>
                           <th>Id</th>
-                          <th>Task</th>
-                          <th>Category</th>
-                          <th>State</th>
+                          <th>Titulo</th>
+                          <th>Fecha Publicación</th>
+                          <th>User Id</th>
                       </tr>
                       </thead>
                   </table>

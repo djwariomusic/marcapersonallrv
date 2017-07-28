@@ -2,49 +2,46 @@
 
 @section('contenido')
 <!--/ banner -->
-  <div class="banner1"
+  <div class="banner1">
   		<div class="w3_agileits_service_banner_info">
   			<h2>DASHBOARD</h2>
   		</div>
   	</div>
 <!--/ banner -->
 
-<center>
-  <label style="display:none;">{{$me = Auth::user()->username}}</label>
-  <nav>
-    <ul class="pager">
-      <li class="pager-prev"><a href="{{url('/edit-post')}}">Crear Post</a></li>
-      <li class="pager-next"><a href="{{url('/home/'.$me)}}">Mis Posts</a></li>
-      <li class="pager-next"><a href="{{url('/home/'.$me.'/graphs')}}">Grafica</a></li>
-      <li class="pager-next"><a href="{{url('/documents')}}">Documentación</a></li>
-      <li class="pager-next"><a href="{{url('/datatable')}}">DataTables Jquery</a></li>
-      <li class="pager-next"><a href="#">GIS</a></li>
-      <li class="pager-next"><a href="#">API Restful JSON</a></li>
-    </ul>
-    <ul class="pager">
-      <li class="pager-next">
-        <center>
-        <div class="col-md-5">
-            <form action="{{url('/searchUser')}}" method="post">
-              {{csrf_field()}}
-                <div class="input-group">
-                      <input type="text" name="username" class="form-control" placeholder="Busqueda de Usuarios por Username...">
-                      <span class="input-group-btn">
-                      <button class="btn btn-default" type="submit">Buscar</button>
-                      </span>
-                 </div>
-            </form>
-        </div>
-        </center>
-      </li>
-    </ul>
-  </nav>.
-</center>
-
 <article class="container">
   <div class="inner_main_agile_section">
 	<div class="col-md-12 wthree_services_grid_left">
-		<div class="well">
+      <div class="alert alert-success" role="alert">
+      <center>
+        <label style="display:none;">{{$me = Auth::user()->username}}</label>
+        <div class="col-md-12">
+        <nav>
+          <ul class="pager">
+            <li class="pager-prev"><a href="{{url('/edit-post')}}">Crear Post</a></li>
+            <li class="pager-next"><a href="{{url('/home/'.$me)}}">Mis Posts</a></li>
+            <li class="pager-next"><a href="{{url('/home/'.$me.'/graphs')}}">Grafica</a></li>
+            <li class="pager-next"><a href="{{url('/datatable')}}">DataTables Jquery</a></li>
+            <li class="pager-next"><a href="#">GIS</a></li>
+            <li class="pager-next"><a href="{{url('/apijson')}}">API JSON</a></li>
+            <li class="pager-next"><a href="{{url('/documents')}}">Documentación</a></li>
+          </ul>
+          <ul class="pager">
+            <li class="pager-next">
+                  <form action="{{url('/searchUser')}}" method="post">
+                    {{csrf_field()}}
+                      <div class="input-group">
+                            <input type="text" name="username" class="form-control" placeholder="Busqueda de Usuarios por Username...">
+                            <span class="input-group-btn">
+                            <button class="btn btn-default" type="submit">Buscar</button>
+                            </span>
+                       </div>
+                  </form>
+            </li>
+          </ul>
+        </nav>
+        </div>
+      </center>
 			<div class="page-header">
 				<h1>Listado de Post's</h1>
 			</div>
@@ -116,8 +113,6 @@
      </script>
   <input type="hidden" data-toggle="modal"  id="buttonpost" data-target="#myModalDened">
 @endif
-
 <!-- js -->
 <script type="text/javascript" src="{{url('js/jquery-2.1.4.min.js')}}"></script>
-
 @endsection
