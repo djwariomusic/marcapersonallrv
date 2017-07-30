@@ -73,10 +73,12 @@
   				<p>Construyendo un website comercial tipo Responsive que permita a esta clínica tener presencia en la Internet,
   				brindando la posibilidad de solicitar contacto a través de un formulario el cual envíe notificaciones vía Email.</p>
   			</div>
+      </div>
+        </div>
 
         <!--/portfolio-->
         <div class="inner_main_agile_section">
-
+          <div class="container">
         	<h3 class="w3l_header w3_agileits_header"> GALERIA DE <span>PROYECTOS</span></h3>
         				<div class="agile_inner_grids">
                     <ul class="simplefilter">

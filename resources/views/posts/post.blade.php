@@ -36,9 +36,9 @@
 	<div class="col-md-12 wthree_services_grid_left">
 		<section class="post">
       @if(Auth::check())
-        <a href="{{ url('/home') }}" class="btn btn-success"><- Listado</a>
+        <h2><a href="{{ url('/home') }}"  class="btn btn-success"><font size="3"><i class="fa fa-list-alt"></i> Ir a Listado</font></a></h2>
       @else
-        <a href="{{ url('/blog') }}" class="btn btn-success"><- Listado</a>
+        <h2><a href="{{ url('/blog') }}"  class="btn btn-success"><font size="3"><i class="fa fa-list-alt"></i> Ir a Listado</font></a></h2>
       @endif
 
 			<article class="post">

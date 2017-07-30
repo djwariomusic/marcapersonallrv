@@ -185,29 +185,35 @@ Maquetacion Bootstrap" />
 					</ul>
 				</div>
 				<div class="col-md-6 w3_agileits_about_grid_right">
-							  <div id="chart">
-							  <ul id="numbers">
-								<li><span>100%</span></li>
-								<li><span>90%</span></li>
-								<li><span>80%</span></li>
-								<li><span>70%</span></li>
-								<li><span>60%</span></li>
-								<li><span>50%</span></li>
-								<li><span>40%</span></li>
-								<li><span>30%</span></li>
-								<li><span>20%</span></li>
-								<li><span>10%</span></li>
-								<li><span>0%</span></li>
-							  </ul>
-							  <ul id="bars">
-								<li><div data-percentage="72" class="bar"></div><span>Backend</span></li>
-								<li><div data-percentage="50" class="bar"></div><span>Frontend</span></li>
-								<li><div data-percentage="80" class="bar"></div><span>Database</span></li>
-								<li><div data-percentage="50" class="bar"></div><span>Framework</span></li>
-								<li><div data-percentage="75" class="bar"></div><span>Git-hub</span></li>
-								<li><div data-percentage="45" class="bar"></div><span>Linux</span></li>
-							  </ul>
-							</div>
+					<div class="chart-container" style="width:100%;">
+						<p class="sub_para_agile two">Gráfica de Red</p>
+						<canvas id="chartjs-3"></canvas>
+					</div>
+					      <script src="{{url('/js/Chart.min.js')}}"></script>
+					<div class="clearfix"></div>
+							<script>
+								new Chart(document.getElementById("chartjs-3"),{
+									"type":"radar","data":{
+										"labels":["Curiosidad","Claridad","Lectura","Detallista","Aprendizaje","Pasión","Adaptabilidad"],
+										"datasets":[{
+																"label":"Grafica de Habilidades","data":[80,85,78,87,78,95,75],
+																"fill":true,
+																"backgroundColor":"rgba(255, 99, 132, 0.2)",
+																"borderColor":"rgb(255, 99, 132)",
+																"pointBackgroundColor":"rgb(255, 99, 132)",
+																"pointBorderColor":"#fff","pointHoverBackgroundColor":
+																"#fff","pointHoverBorderColor":"rgb(255, 99, 132)"
+																}]
+									},
+									"options":{
+										"elements":{
+											"line":{
+												"tension":0,"borderWidth":3
+											 }
+										}
+									}
+								});
+							</script>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
@@ -524,6 +530,7 @@ Maquetacion Bootstrap" />
 				</div>
 				<div class="col-md-6 w3_agileits_about_grid_right">
 							  <div id="chart">
+							
 							  <ul id="numbers">
 								<li><span>100%</span></li>
 								<li><span>90%</span></li>
@@ -537,14 +544,16 @@ Maquetacion Bootstrap" />
 								<li><span>10%</span></li>
 								<li><span>0%</span></li>
 							  </ul>
+
 							  <ul id="bars">
-								<li><div data-percentage="72" class="bar"></div><span>Backend</span></li>
-								<li><div data-percentage="50" class="bar"></div><span>Frontend</span></li>
-								<li><div data-percentage="80" class="bar"></div><span>Database</span></li>
-								<li><div data-percentage="50" class="bar"></div><span>Framework</span></li>
-								<li><div data-percentage="75" class="bar"></div><span>Git-hub</span></li>
+								<li><div data-percentage="75" class="bar"></div><span>PHP, JS, Python y .NET</span></li>
+								<li><div data-percentage="50" class="bar"></div><span>HTML5, CSS3 y Bootstrap</span></li>
+								<li><div data-percentage="85" class="bar"></div><span>MySQL y PGSQL</span></li>
+								<li><div data-percentage="60" class="bar"></div><span>Laravel 5, Visual. NET, Eclipse</span></li>
+								<li><div data-percentage="75" class="bar"></div><span>Git y Git-hub</span></li>
 								<li><div data-percentage="45" class="bar"></div><span>Linux</span></li>
 							  </ul>
+
 							</div>
 
 				</div>

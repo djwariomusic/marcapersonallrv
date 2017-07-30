@@ -21,15 +21,16 @@
 		{{-- Esta sección sera un bucle de Posts (Los listará todos)--}}
 		<section class="col-md-9">
 
+      @if(Auth::check())
+      <h2><a href="{{ url('/home') }}"  class="btn btn-success"><font size="3"><i class="fa fa-list-alt"></i> Ir a Listado</font></a></h2>
+      @else
+      <h2><a href="{{ url('/blog') }}"  class="btn btn-success"><font size="3"><i class="fa fa-list-alt"></i> Ir a Listado</font></a></h2>
+      @endif
+      
 			@forelse($posts as $post)
 				<article class="post">
 					<div class="page-header">
               @include('posts.lastpost')
-          @if(Auth::check())
-            <a href="{{ url('/home') }}" class="btn btn-success"><- Listado</a>
-          @else
-            <a href="{{ url('/blog') }}" class="btn btn-success"><- Listado</a>
-          @endif
       @empty
           <article class="post">
             <div class="page-header">

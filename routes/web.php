@@ -39,8 +39,7 @@ Route::get('/comments/deletecomment/{opc}', 'CommentController@getDeletecomment'
 
 
 Auth::routes();
-Route::get('/datatable/datatable', 'PostController@getDatatable')->name('dtt');
-Route::get('/datatable', 'PostController@indexDatatable');
+
 
 
 Route::group(['middleware' => 'auth'], function () {
@@ -54,6 +53,9 @@ Route::group(['middleware' => 'auth'], function () {
   Route::post('/searchUser', 'UsersController@searchUser');
   Route::get('/apijson', 'PostController@showApiJson');
   Route::get('/apijson/posts/apirest', 'PostController@getApiJson');
+
+  Route::any('/datatable/datatable', 'PostController@getDatatable')->name('dtt');
+  Route::get('/datatable', 'PostController@indexDatatable');
 
   Route::get('/documents', 'UsersController@showDocs');
   Route::get('/documents/html/1/11', 'DocumentsController@show111');

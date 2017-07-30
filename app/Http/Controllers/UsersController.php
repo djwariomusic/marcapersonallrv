@@ -18,8 +18,10 @@ class UsersController extends Controller
     }
     public function searchUser(){
       $input =Input::all();
-      $user = User::where('username','LIKE', "%".$input['username']."%")->get();
-      $user = User::where('username','LIKE', "%".$input['username']."%")->orderBy('username')->Paginate(5);
+      $data =(strtolower($input['username']));
+
+      $user = User::where('username','LIKE', "%$data%")->get();
+      $user = User::where('username','LIKE', "%$data%")->orderBy('username')->Paginate(5);
       return view('users.search',['users'=>$user,]);
     }
     public function showGraph($username){

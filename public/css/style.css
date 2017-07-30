@@ -1167,7 +1167,7 @@ div#graph-wrapper button {
     font-size: 2em;
     font-weight: 700;
     letter-spacing: 2px;
-    color: #fff;
+    color: #000;
     margin: 0.5em 0;
 }
 .w3layouts_stats_left2 h3 {
@@ -3101,7 +3101,6 @@ h3.agileinfo_sign  {
 	.stats2 {
 		min-height: 430px;
 		text-align: center;
-		background: #06080e;
 	}
 	.w3layouts_stats_left {
 		padding: 3.5em 0 0em 0;
