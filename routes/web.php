@@ -29,13 +29,14 @@ Route::get('/pdfs',function(){
 Route::post('/contactar','MessagesController@getMessage');
 
 Route::get('/blog', 'PostController@getList');
-Route::get('/blog/getPost/{postid}', 'PostController@getPost');
+Route::get('/blog/getPost/{postid}', 'PostController@getPosts');
 
 Route::get('/auth/facebook', 'SocialAuthController@facebook');
 Route::get('/auth/facebook/callback', 'SocialAuthController@callback');
 Route::post('/auth/facebook/register', 'SocialAuthController@register');
 Route::post('/comments/createcomment', 'CommentController@postCreatecomment');
 Route::get('/comments/deletecomment/{opc}', 'CommentController@getDeletecomment');
+Route::get('/prueba', 'CommentController@buscarincidencias');
 
 
 Auth::routes();
@@ -43,10 +44,13 @@ Auth::routes();
 
 
 Route::group(['middleware' => 'auth'], function () {
+  Route::Auth();
   Route::get('/edit-post', 'PostController@getEditpost');
   Route::get('/edit-post/{id}/', 'PostController@getEditpost');
+  Route::get('/home/getPost/{postid}', 'PostController@getPost');
   Route::post('/savedPost', 'PostController@postSavepost');
   Route::post('/deletedPost', 'PostController@getDeletepost');
+  Route::get('/showposts', 'HomeController@showPosts');
   Route::get('/home', 'HomeController@index')->name('home');
   Route::get('/home/{username}', 'UsersController@showPost');
   Route::get('/home/{username}/graphs', 'UsersController@showGraph');

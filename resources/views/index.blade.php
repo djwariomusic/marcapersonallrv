@@ -5,7 +5,7 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 <title>Desarrollo Web - Freelance Edwin Beltrán</title>
 <!-- custom-theme -->
@@ -170,7 +170,7 @@ Maquetacion Bootstrap" />
 		<h3 class="w3l_header w3_agileits_header">Perfil <span class="fixed_w3">Profesional</span></h3>
 		<p class="sub_para_agile two">Descripción Competencias Laborales</p>
 			<div class="agile_inner_grids">
-				<div class="col-md-6 w3_agileits_about2_grid_left">
+				<div class="col-md-12 w3_agileits_about2_grid_left">
 					<p>Profesional en Ingeniería de Sistemas. Especialista Base de Datos para Sistemas de Información Geográfica,
 						conocimientos en Desarrollo  de  Páginas  WEB  HTML5,  CSS3,  PHP,  JavaScript  y  diseño Responsive.
 						Experiencia en Coordinación de Soporte Técnico en desarrollo de Software y sistemas de rastreo o seguimiento GPS,
@@ -180,40 +180,7 @@ Maquetacion Bootstrap" />
 						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Ingeniero en Sistemas</li>
 						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Tecnólogo en Sistemas</li>
 						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Especialista en Base de Datos</li>
-						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Desarrollador en Platzi</li>
-						<li><input type="button" data-toggle="modal" data-target="#myModal4" value="Solicitar Ahora"></li>
 					</ul>
-				</div>
-				<div class="col-md-6 w3_agileits_about_grid_right">
-					<div class="chart-container" style="width:100%;">
-						<p class="sub_para_agile two">Gráfica de Red</p>
-						<canvas id="chartjs-3"></canvas>
-					</div>
-					      <script src="{{url('/js/Chart.min.js')}}"></script>
-					<div class="clearfix"></div>
-							<script>
-								new Chart(document.getElementById("chartjs-3"),{
-									"type":"radar","data":{
-										"labels":["Curiosidad","Claridad","Lectura","Detallista","Aprendizaje","Pasión","Adaptabilidad"],
-										"datasets":[{
-																"label":"Grafica de Habilidades","data":[80,85,78,87,78,95,75],
-																"fill":true,
-																"backgroundColor":"rgba(255, 99, 132, 0.2)",
-																"borderColor":"rgb(255, 99, 132)",
-																"pointBackgroundColor":"rgb(255, 99, 132)",
-																"pointBorderColor":"#fff","pointHoverBackgroundColor":
-																"#fff","pointHoverBorderColor":"rgb(255, 99, 132)"
-																}]
-									},
-									"options":{
-										"elements":{
-											"line":{
-												"tension":0,"borderWidth":3
-											 }
-										}
-									}
-								});
-							</script>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
@@ -476,99 +443,6 @@ Maquetacion Bootstrap" />
 						</div>
 					</div>
 	<!-- //services -->
-<!-- stats -->
-	<div class="stats" id="stats">
-	    <div class="container">
-			<div class="inner_w3l_agile_grids">
-		<div class="col-md-3 w3layouts_stats_left w3_counter_grid">
-		   	<i class="fa fa-wordpress" aria-hidden="true"></i>
-			<p class="counter">3</p>
-			<h3><a href="https://edwinbeltrandev.wordpress.com/" target="_blank">Publicaciones</a></h3>
-		</div>
-		<div class="col-md-3 w3layouts_stats_left w3_counter_grid1">
-		    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-			<p class="counter">165</p>
-			<h3><a href="https://www.linkedin.com/in/edwin-beltran-80b20641/" target="_blank">Contactos</a></h3>
-		</div>
-		<div class="col-md-3 w3layouts_stats_left w3_counter_grid2">
-		<i class="fa fa-trophy" aria-hidden="true"></i>
-			<p class="counter">17</p>
-			<h3><a href="https://www.hackerrank.com/mario_edwin" target="_blank">Retos Hackerrank</a></h3>
-		</div>
-		<div class="col-md-3 w3layouts_stats_left w3_counter_grid3">
-		<i class="fa fa-certificate" aria-hidden="true"></i>
-			<p class="counter">20</p>
-			<h3>Certificaciónes</h3>
-		</div>
-		<div class="clearfix"> </div>
-	</div>
-   </div>
-</div>
-<!-- //stats -->
-
-<!-- about -->
-	<div class="inner_main_agile_section">
-		<div class="container">
-		<h6>Desarrollo Web a la Medida</h6>
-		<h3 class="w3l_header w3_agileits_header">Perfil <span class="fixed_w3">Profesional</span></h3>
-		<p class="sub_para_agile two">Descripción Competencias Laborales</p>
-
-			<div class="agile_inner_grids">
-
-				<div class="col-md-6 w3_agileits_about2_grid_left">
-					<p>Profesional en Ingeniería de Sistemas. Especialista Base de Datos para Sistemas de Información Geográfica,
-						conocimientos en Desarrollo  de  Páginas  WEB  HTML5,  CSS3,  PHP,  JavaScript  y  diseño Responsive.
-						Experiencia en Coordinación de Soporte Técnico en desarrollo de Software y sistemas de rastreo o seguimiento GPS,
-						Sistemas de Información Geográfica, geolocalización, consultas SQL sobre diferentes motores de Base de Datos,
-						gestión de calidad con enfoque al desarrollo de Software.</p><br>
-					<ul>
-						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Ingeniero en Sistemas</li>
-						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Tecnólogo en Sistemas</li>
-						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Especialista en Base de Datos</li>
-						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Desarrollador en Platzi</li>
-					</ul>
-				</div>
-				<div class="col-md-6 w3_agileits_about_grid_right">
-							  <div id="chart">
-							
-							  <ul id="numbers">
-								<li><span>100%</span></li>
-								<li><span>90%</span></li>
-								<li><span>80%</span></li>
-								<li><span>70%</span></li>
-								<li><span>60%</span></li>
-								<li><span>50%</span></li>
-								<li><span>40%</span></li>
-								<li><span>30%</span></li>
-								<li><span>20%</span></li>
-								<li><span>10%</span></li>
-								<li><span>0%</span></li>
-							  </ul>
-
-							  <ul id="bars">
-								<li><div data-percentage="75" class="bar"></div><span>PHP, JS, Python y .NET</span></li>
-								<li><div data-percentage="50" class="bar"></div><span>HTML5, CSS3 y Bootstrap</span></li>
-								<li><div data-percentage="85" class="bar"></div><span>MySQL y PGSQL</span></li>
-								<li><div data-percentage="60" class="bar"></div><span>Laravel 5, Visual. NET, Eclipse</span></li>
-								<li><div data-percentage="75" class="bar"></div><span>Git y Git-hub</span></li>
-								<li><div data-percentage="45" class="bar"></div><span>Linux</span></li>
-							  </ul>
-
-							</div>
-
-				</div>
-				<div class="col-md-6">
-				<span><br><p><center>
-				   Gráfico de Manejo de Herramientas
-				</center></p></span>
-			</div>
-				<div class="clearfix"> </div>
-
-			</div>
-		</div>
-	</div>
-<!-- //about -->
-
 <!-- agile_testimonials -->
 <div class="test">
 	<div class="container">
@@ -657,14 +531,6 @@ Maquetacion Bootstrap" />
 <!-- footer -->
 	<div class="footer">
 		<div class="container">
-			<div class="w3_newsletter_footer_grids">
-				<div class="w3_newsletter_footer_grid_left">
-					<form action="#" method="post">
-						<input type="email" name="Email" placeholder="Ingresar Email...." required="">
-						<input type="submit" value="ENVIAR">
-					</form>
-				</div>
-			</div>
 			<div class="w3ls_address_mail_footer_grids">
 				<div class="col-md-3 w3ls_footer_grid_left">
 					<div class="wthree_footer_grid_left">
@@ -694,7 +560,7 @@ Maquetacion Bootstrap" />
 				<div class="clearfix"> </div>
 			</div>
 			<div class="agileinfo_copyright" >
-				<p>© 2017 Consultancy. All Rights Reserved | Design by <a href="https://w3layouts.com/">W3layouts</a></p>
+				<p>© 2018 Edwin Beltrán. Material Académico.</p>
 			</div>
 		</div>
 	</div>

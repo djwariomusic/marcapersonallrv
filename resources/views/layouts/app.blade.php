@@ -5,7 +5,7 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 <title>Desarrollo Web - Freelance Edwin Beltrán</title>
 <!-- custom-theme -->
@@ -116,14 +116,6 @@ Maquetacion Bootstrap" />
 <!-- footer -->
 	<div class="footer">
 		<div class="container">
-			<div class="w3_newsletter_footer_grids">
-				<div class="w3_newsletter_footer_grid_left">
-					<form action="#" method="post">
-						<input type="email" name="Email" placeholder="Ingresar Email...." required="">
-						<input type="submit" value="ENVIAR">
-					</form>
-				</div>
-			</div>
 			<div class="w3ls_address_mail_footer_grids">
 				<div class="col-md-3 w3ls_footer_grid_left">
 					<div class="wthree_footer_grid_left">
@@ -153,7 +145,7 @@ Maquetacion Bootstrap" />
 				<div class="clearfix"> </div>
 			</div>
 			<div class="agileinfo_copyright" >
-				<p>© 2017 Consultancy. All Rights Reserved | Design by <a href="https://w3layouts.com/">W3layouts</a></p>
+					<p>© 2018 Edwin Beltrán. Material Académico.</p>
 			</div>
 		</div>
 	</div>

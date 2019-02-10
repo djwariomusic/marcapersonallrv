@@ -19,7 +19,7 @@ class PostController extends Controller
   return view('blog', ['posts'=> $data]);
   }
 
-  public function getPost($id) {
+  public function getPosts($id) {
     $post = Post::where('id',$id)->firstorFail();
     if($post != null){
         $users = User::where('id',$post->user_id)->firstorFail();
@@ -29,9 +29,19 @@ class PostController extends Controller
     }
   }
 
+  public function getPost($id) {
+    $post = Post::where('id',$id)->firstorFail();
+    if($post != null){
+        $users = User::where('id',$post->user_id)->firstorFail();
+        $data['post'] = $post;
+        $data['comments'] = Comment::where('post_id', $id)->get();
+        return view('adminlte::posts.post',$data,['users'=>$users]);
+    }
+  }
+
   public function postSavepost() {
     $input = Input::all();
-    if(isset($input['post_id'])) {
+    if($input['post_id'] != NULL) {
         $post = Post::with('user')->where('id','=',$input['post_id'])->firstorFail();
     }
     else {
@@ -53,17 +63,17 @@ class PostController extends Controller
     $me = $request->user();
 
     if ($id == null){
-        return view('posts.edit-post');
+        return view('adminlte::posts.edit-post');
       }
     else{
         $data = Post::where('id','=',$id)->firstorFail();
               if($data == null){
-                  return view('posts.edit-post');
+                  return view('adminlte::posts.edit-post');
               }
               elseif($data->user_id != $me->id){
                   return redirect()->to('/home')->with('alerts','No Permitido');
               }
-      return view('posts.edit-post',['alerts'=>$alerts,'data'=>$data,]);
+      return view('adminlte::posts.edit-post',['alerts'=>$alerts,'post'=>$data,]);
     }
   }
 
@@ -71,7 +81,7 @@ class PostController extends Controller
     $input = Input::all();
     $post = Post::where('id','=',$input['id'])->firstorFail();
         if($post == null){
-          return view('posts.edit-post');
+          return view('adminlte::posts.edit-post');
           }
           elseif($post->user_id == $input['login']){
             $post->delete();
@@ -83,7 +93,7 @@ class PostController extends Controller
   }
 
   public function indexDatatable() {
-    return view('users.datatables');
+    return view('adminlte::users.datatables');
   }
 
   public function getDatatable() {
@@ -92,7 +102,7 @@ class PostController extends Controller
   }
 
   public function showApiJson() {
-    return view('posts.apijson');
+    return view('adminlte::posts.apijson');
   }
 
   public function getApiJson() {

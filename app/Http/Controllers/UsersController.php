@@ -10,11 +10,10 @@ use Illuminate\Support\Facades\Input;
 
 class UsersController extends Controller
 {
-    //
     public function showPost($username){
       $user= $this->findByUsername($username);
       $data= Post::with('user')->where('user_id','=', $user->id)->orderBy('publish_date','desc')->Paginate(5);
-      return view('users.show',['posts'=> $data,'users'=>$user,]);
+      return view('adminlte::users.show',['posts'=> $data,'users'=>$user,]);
     }
     public function searchUser(){
       $input =Input::all();
@@ -22,7 +21,7 @@ class UsersController extends Controller
 
       $user = User::where('username','LIKE', "%$data%")->get();
       $user = User::where('username','LIKE', "%$data%")->orderBy('username')->Paginate(5);
-      return view('users.search',['users'=>$user,]);
+      return view('adminlte::users.search',['users'=>$user,]);
     }
     public function showGraph($username){
       $data2017= Post::whereYear('created_at','=','2017')->count();
@@ -34,7 +33,7 @@ class UsersController extends Controller
 
       $user= $this->findByUsername($username);
       $dataEnero17= Post::whereYear('created_at','=','2017')->whereMonth('created_at','=','01')->where('user_id','=', $user->id)->count();
-      $dataFebrero17= Post::whereYear('created_at','=','2017')->whereMonth('created_at','=','02')->where('user_id','=', $user->id)->count();
+      $dataFebrero17 = Post::whereYear('created_at','=','2017')->whereMonth('created_at','=','02')->where('user_id','=', $user->id)->count();
       $dataMarzo17= Post::whereYear('created_at','=','2017')->whereMonth('created_at','=','03')->where('user_id','=', $user->id)->count();
       $dataAbril17= Post::whereYear('created_at','=','2017')->whereMonth('created_at','=','04')->where('user_id','=', $user->id)->count();
       $dataMayo17= Post::whereYear('created_at','=','2017')->whereMonth('created_at','=','05')->where('user_id','=', $user->id)->count();
@@ -44,7 +43,7 @@ class UsersController extends Controller
       $query=Post::join('users','user_id','=','users.id')->groupBy('users.name')->selectRaw('users.name, count(posts.id) as count')->orderBy('count','desc')->take(5)->get();
 
 
-      return view('users.graphs',['posts2017'=> $data2017,'posts2016'=> $data2016,
+      return view('adminlte::users.graphs',['posts2017'=> $data2017,'posts2016'=> $data2016,
                                   'posts2015'=> $data2015,'posts2014'=> $data2014,
                                   'posts2013'=> $data2013,'posts2012'=> $data2012,
                                   'dataEnero17'=> $dataEnero17,'dataFebrero17'=> $dataFebrero17,
@@ -56,6 +55,7 @@ class UsersController extends Controller
     public function showDocs(){
       return view('users.documents');
     }
+    
     private function findByUsername($username){
       return User::where('username', $username)->firstorFail();
     }

@@ -53,7 +53,7 @@
             },
             "processing": true,
             "serverSide": true,
-            "ajax": "{{ route('dtt') }}",
+            "ajax": "{{ route('/datatable/datatable') }}",
             "headers": "{'X-CSRF-TOKEN': '{{csrf_token()}}'}",
             "columns": [
                 {data: 'id', name: 'id'},
