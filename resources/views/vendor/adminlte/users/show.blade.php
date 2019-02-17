@@ -41,49 +41,40 @@
 						donde podra modificar el contenido puntual del Post´s seleccionado y por ultimo esta la opcion de Eliminar Post.
 						</p>
       		</div>
-      		{{-- Esta sección sera un bucle de Posts (Los listará todos)--}}
-      		<section class="col-md-9">
+					<div class="box box-warning">
+							<div class="box-header with-border">
+								<h3 class="box-title">Mis Indicadores</h3>
+							</div>
+					<!-- /.box-header -->
+					<div class="box-body">
+							<div class="row">
+									<div class="col-md-12">
+						      		<section class="col-md-9">
+						      			@forelse($posts as $post)
+						      				<article class="post">
+						      					<div class="page-header">
+						                    @include('adminlte::posts.lastpost')
+						            @empty
+						                <article class="post">
+						                  <div class="page-header">
+						                    <h3>No hay Mensajes</h3><br/>
+						                  </div>
+						                </article>
+						                <div class="clearfix"><br></div>
+						            @endforelse
 
-            @if(Auth::check())
-            <h2><a href="{{ url('/home') }}"  class="btn btn-success"><font size="3"><i class="fa fa-list-alt"></i> Ir a Listado</font></a></h2>
-            @else
-            <h2><a href="{{ url('/blog') }}"  class="btn btn-success"><font size="3"><i class="fa fa-list-alt"></i> Ir a Listado</font></a></h2>
-            @endif
 
-      			@forelse($posts as $post)
-      				<article class="post">
-      					<div class="page-header">
-                    @include('adminlte::posts.lastpost')
-            @empty
-                <article class="post">
-                  <div class="page-header">
-                    <h3>No hay Mensajes</h3><br/>
-                  </div>
-                </article>
-                <div class="clearfix"><br></div>
-            @endforelse
+						            @if(count($posts))
+						                <div class="mt-2 mx-auto">
+						                {{ $posts->links('pagination::bootstrap-4') }}
+						                </div>
+						            @endif
+						          </section>
+										</div>
 
-
-            @if(count($posts))
-                <div class="mt-2 mx-auto">
-                {{ $posts->links('pagination::bootstrap-4') }}
-                </div>
-            @endif
-          </section>
-            		{{-- END Esta seccion sera un bucle de Posts --}}
-                <div class="col-md-3">
-                  <div class="col-md-3">
-                    <i class="fa fa-phone" aria-hidden="true"></i>
-                  </div>
-                  <p>+(57) 301 2388303</p>
-                </div>
-                <div class="col-md-3">
-                  <div class="col-md-3">
-                    <i class="fa fa-phone" aria-hidden="true"></i>
-                  </div>
-                  <p>+(57) 301 2388303</p>
-                </div>
-                <div class="clearfix"> </div>
+								</div>
+							</div>
+					</div>
         </div>
       </div>
 @endsection

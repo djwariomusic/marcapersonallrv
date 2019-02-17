@@ -41,43 +41,46 @@
 					<p>A continuacion observara un listado de los Ultimos Post's creados con su correspondiente Autor, Fecha y Resumen.
 					Si es usuario propietario del Post's podra editar o eliminar el comentario segun lo deseado.</p>
         </div>
-      			<section class="col-md-9">
-      			  @forelse($posts as $post)
-      			    <article class="post">
-      			      <div class="page-header">
-      			          @include('adminlte::posts.lastpost')
+				<div class="col-md-12">
 
-      			  @empty
-      			    <article class="post">
-      			      <div class="page-header">
-      			        <h3>No hay Mensajes</h3><br/>
-      			      </div>
-      			    </article>
-      			    <div class="clearfix"><br></div>
-      			  @endforelse
 
-      			  @if(count($posts))
-      			      <div class="mt-2 mx-auto">
-      			      {{ $posts->links('pagination::bootstrap-4') }}<br><br>
-      			      </div>
-      			  @endif
-      			</section>
+			<div class="box box-warning">
+					<div class="box-header with-border">
+						<h3 class="box-title">Mis Indicadores</h3>
+					</div>
+			<!-- /.box-header -->
+			<div class="box-body">
+					<div class="row">
+							<div class="col-md-12">
+		      			<section class="col-md-12">
+		      			  @forelse($posts as $post)
+		      			    <article class="post">
+		      			      <div class="page-header">
+		      			          @include('adminlte::posts.lastpost')
 
-			<div class="col-md-3">
-				<div class="col-md-3">
-					<i class="fa fa-phone" aria-hidden="true"></i>
+		      			  @empty
+		      			    <article class="post">
+		      			      <div class="page-header">
+		      			        <h3>No hay Mensajes</h3><br/>
+		      			      </div>
+		      			    </article>
+		      			    <div class="clearfix"><br></div>
+		      			  @endforelse
+
+		      			  @if(count($posts))
+		      			      <div class="mt-2 mx-auto">
+		      			      {{ $posts->links('pagination::bootstrap-4') }}<br><br>
+		      			      </div>
+		      			  @endif
+		      			</section>
+							</div>
+
+					</div>
 				</div>
-				<p>+(57) 301 2388303</p>
-			</div>
-			<div class="col-md-3">
-				<div class="col-md-3">
-					<i class="fa fa-phone" aria-hidden="true"></i>
-				</div>
-				<p>+(57) 301 2388303</p>
-			</div>
-			<div class="clearfix"> </div>
 		</div>
+		<!--FIN.-->
 	</div>
+</div>
 
 
 

@@ -42,27 +42,39 @@
       				<h1>Editar o Crear Post</h1>
       			</div>
       		</div>
-          <form action="{{url('/savedPost')}}" method="POST">
-           {{ csrf_field() }}
-           <label for="title">Título</label>
-               <input type="hidden" name="user_id" value="{{ Auth::user()->id }}">
-               <input type="hidden" name="post_id" value="{{ isset($post) ? $post->id : '' }}">
-               <input type="text" name="title" id="title" class="form-control" placeholder="Título..." value="{{isset($post) ? $post->title : '' }}">
-           <label for="publish_date">Fecha de Publicación</label>
-               <input type="date" name="publish_date" id="publish_date" class="form-control" placeholder="" value="{{isset($post) ? $post->publish_date : '' }}">
-           <label for="resume">Resumen</label>
-               <textarea type="text" name="resume" id="resume" class="form-control" placeholder="Resumen..." rows="3" maxlength="300">{{ isset($post) ? $post->resume : '' }}</textarea>
-           <label for="description">Descripción</label>
-               <textarea class="ckeditor" name="description" id="description" placeholder="Descripcion..." rows="7" cols="80">{{ isset($post) ? $post->description : '' }}</textarea>
-           <label for="title">Publicado?</label>
-               <select name="status" id="status" class="form-control">
-                   <option value="0" {{ (isset($post) && $post->status == 0)  ? 'selected' : '' }}>NO</option>
-                   <option value="1" {{ (isset($post) && $post->status == 1)  ? 'selected' : '' }} selected>SI</option>
-               </select>
-           <input type="submit" class="btn btn-success" value="Guardar"><br>
-        </form>
 
-			  </div>
+          <div class="box box-warning">
+            <div class="box-header with-border">
+              <h3 class="box-title">Mis Indicadores</h3>
+            </div>
+          <!-- /.box-header -->
+          <div class="box-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <form action="{{url('/savedPost')}}" method="POST">
+                     {{ csrf_field() }}
+                     <label for="title">Título</label>
+                         <input type="hidden" name="user_id" value="{{ Auth::user()->id }}">
+                         <input type="hidden" name="post_id" value="{{ isset($post) ? $post->id : '' }}">
+                         <input type="text" name="title" id="title" class="form-control" placeholder="Título..." value="{{isset($post) ? $post->title : '' }}">
+                     <label for="publish_date">Fecha de Publicación</label>
+                         <input type="date" name="publish_date" id="publish_date" class="form-control" placeholder="" value="{{isset($post) ? $post->publish_date : '' }}">
+                     <label for="resume">Resumen</label>
+                         <textarea type="text" name="resume" id="resume" class="form-control" placeholder="Resumen..." rows="3" maxlength="300">{{ isset($post) ? $post->resume : '' }}</textarea>
+                     <label for="description">Descripción</label>
+                         <textarea class="ckeditor" name="description" id="description" placeholder="Descripcion..." rows="7" cols="80">{{ isset($post) ? $post->description : '' }}</textarea>
+                     <label for="title">Publicado?</label>
+                         <select name="status" id="status" class="form-control">
+                             <option value="0" {{ (isset($post) && $post->status == 0)  ? 'selected' : '' }}>NO</option>
+                             <option value="1" {{ (isset($post) && $post->status == 1)  ? 'selected' : '' }} selected>SI</option>
+                         </select>
+                     <input type="submit" class="btn btn-success" value="Guardar"><br>
+                  </form>
+      			   </div>
+             </div>
+          </div>
+          </div>
+<!--FIN.-->
 		</div>
 	</div>
 	<!-- js -->

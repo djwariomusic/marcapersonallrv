@@ -37,9 +37,43 @@
         <ul class="sidebar-menu">
             <li class="header">FUNCIONALIDADES</li>
             <!-- Optionally, you can add icons to the links -->
-            <li><a href="{{url('/showposts') }}"><i class='fa fa-list-alt' style="color:#00ba66;"></i> <span>Ultimos Post's</span></a></li>
-            <li><a href="{{url('/edit-post')}}"><i class='fa fa-edit' style="color:#00ba66;"></i> <span>Crear Post's</span></a></li>
-            <li><a href="{{url('/home/'.$me)}}"><i class='fa fa-folder-open-o' style="color:#00ba66;"></i> <span>Mis Post's</span></a></li>
+            <li class="treeview">
+              <a href="#">
+                <i class="fa fa-dashboard" style="color:#00ba66;"></i> <span>Mensajes</span>
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="{{url('/messages') }}"><i class="fa fa-circle-o"  style="color:#00ba66;"></i><span> Todos los Mensajes</span></a></li>
+              </ul>
+            </li>
+            <li class="treeview">
+              <a href="#">
+                <i class="fa fa-dashboard" style="color:#00ba66;"></i> <span>Proyectos</span>
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="{{url('/proyects') }}"><i class="fa fa-circle-o"  style="color:#00ba66;"></i><span> Todos los Proyectos</span></a></li>
+                <li><a href="{{url('/proyects') }}"><i class="fa fa-circle-o"  style="color:#00ba66;"></i><span> Crear Proyecto</span></a></li>
+                <li><a href="{{url('/proyects') }}"><i class="fa fa-circle-o"  style="color:#00ba66;"></i><span> Actualizar Galeria</span></a></li>
+              </ul>
+            </li>
+            <li class="treeview">
+              <a href="#">
+                <i class="fa fa-dashboard" style="color:#00ba66;"></i> <span>Gestión Post's</span>
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="{{url('/showposts') }}"><i class='fa fa-list-alt' style="color:#00ba66;"></i> <span>Ultimos Post's</span></a></li>
+                <li><a href="{{url('/edit-post')}}"><i class='fa fa-edit' style="color:#00ba66;"></i> <span>Crear Post's</span></a></li>
+                <li><a href="{{url('/home/'.$me)}}"><i class='fa fa-folder-open-o' style="color:#00ba66;"></i> <span>Mis Post's</span></a></li>
+              </ul>
+            </li>
             <li><a href="{{url('/home/'.$me.'/graphs')}}"><i class='fa fa-bar-chart-o' style="color:#00ba66;"></i> <span>Gráficos</span></a></li>
             <li><a href="{{url('/datatable')}}"><i class='fa fa-table' style="color:#00ba66;"></i> <span>DataTables</span></a></li>
             <li><a href="{{url('/apijson')}}"><i class='fa fa-code' style="color:#00ba66;"></i> <span>API JSON</span></a></li>
