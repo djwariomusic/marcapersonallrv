@@ -23,4 +23,9 @@ class MessagesController extends Controller
      $alerts = "Mensaje Confirmado";
      return View('contact',['alerts'=>$alerts,]);
    }
+
+   public function getlistmessages(){
+     $messages = Message::orderby('created_at','desc')->Paginate(5);
+     return view('adminlte::messages.listmessages',$messages,['messages'=>$messages]);
+   }
 }

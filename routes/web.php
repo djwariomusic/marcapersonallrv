@@ -36,7 +36,7 @@ Route::get('/auth/facebook/callback', 'SocialAuthController@callback');
 Route::post('/auth/facebook/register', 'SocialAuthController@register');
 Route::post('/comments/createcomment', 'CommentController@postCreatecomment');
 Route::get('/comments/deletecomment/{opc}', 'CommentController@getDeletecomment');
-Route::get('/prueba', 'CommentController@buscarincidencias');
+
 
 
 Auth::routes();
@@ -51,10 +51,16 @@ Route::group(['middleware' => 'auth'], function () {
   Route::post('/savedPost', 'PostController@postSavepost');
   Route::post('/deletedPost', 'PostController@getDeletepost');
   Route::get('/showposts', 'HomeController@showPosts');
+
   Route::get('/home', 'HomeController@index')->name('home');
   Route::get('/home/{username}', 'UsersController@showPost');
+
+  Route::get('/messages', 'MessagesController@getlistmessages');
+
   Route::get('/home/{username}/graphs', 'UsersController@showGraph');
+
   Route::post('/searchUser', 'UsersController@searchUser');
+
   Route::get('/apijson', 'PostController@showApiJson');
   Route::get('/apijson/posts/apirest', 'PostController@getApiJson');
 

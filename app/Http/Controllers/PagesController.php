@@ -22,4 +22,5 @@ class PagesController extends Controller
     public function showblog(){
       return View('blog');
     }
+
 }
