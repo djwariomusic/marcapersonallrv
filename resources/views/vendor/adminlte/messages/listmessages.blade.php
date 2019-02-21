@@ -75,7 +75,7 @@
                         <td>{{ $message->description }}</td>
                         <td align="center"><a href="{{url('/messages/'.$message->id)}}"><i class="fas fa-file"></i></a></td>
                         <td align="center">
-                          <a href="" data-toggle="modal" data-target="#MyModal" data-id="{{$message->id_message}}" href="#addIdModal" class="open-AddIdModal">
+                          <a href="" data-toggle="modal" data-target="#MyModal" data-id="{{$message->id}}" href="#addIdModal" class="open-AddIdModal">
                             <i class="fas fa-trash-alt"></i>DEL
                           </a>
                           </td>
@@ -122,9 +122,9 @@
       </div>
 
       <div class="modal-footer">
-        <form action="{{url('/delmessages')}}" method="post">
+        <form action="{{url('/delmessage')}}" method="post">
           {{ csrf_field() }}
-          <input type="hidden" name="idmessage" id="idmessage" value=""/>
+          <input type="text" name="idmessage" id="idmessage" value=""/>
           <button type="submit" class="btn btn-danger">Eliminar</button>
           <button type="button" id="btnmodalclose" class="btn btn-default" data-dismiss="modal">Cerrar</button>
         </form>
@@ -134,3 +134,13 @@
 </div>
 
 	@endsection
+  @section('scripts')
+  @include('adminlte::layouts.partials.scripts')
+  <script>
+    $(document).on("click", ".open-AddIdModal", function () {
+       var myId = $(this).data('id');
+       $(".modal-footer #idmessage").val( myId );
+      $('#addIdModal').modal('show');
+    });
+  </script>
+  @endsection

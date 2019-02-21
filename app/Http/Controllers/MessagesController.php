@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Message;
 
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
 
 class MessagesController extends Controller
@@ -24,8 +24,25 @@ class MessagesController extends Controller
      return View('contact',['alerts'=>$alerts,]);
    }
 
-   public function getlistmessages(){
+   public function showlistmessages(){
      $messages = Message::orderby('created_at','desc')->Paginate(5);
      return view('adminlte::messages.listmessages',$messages,['messages'=>$messages]);
+   }
+
+   public function showmessage($id){
+     $messages = Message::orderby('created_at','desc')->Paginate(5);
+     return view('adminlte::messages.listmessages',$messages,['messages'=>$messages]);
+   }
+
+   public function delmessage(){
+     $input = Input::all();
+     $message = Message::where('id','=',$input['idmessage'])->firstorFail();
+         if($message == null){
+           return view('adminlte::messages.listmessages');
+           }
+           else{
+             $message->delete();
+             return redirect()->to('/home')->with('alerts','El Mensaje fue eliminado');
+           }
    }
 }

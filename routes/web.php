@@ -55,7 +55,9 @@ Route::group(['middleware' => 'auth'], function () {
   Route::get('/home', 'HomeController@index')->name('home');
   Route::get('/home/{username}', 'UsersController@showPost');
 
-  Route::get('/messages', 'MessagesController@getlistmessages');
+  Route::get('/messages', 'MessagesController@showlistmessages');
+  Route::get('/messages/{id}', 'MessagesController@showmessage');
+  Route::post('/delmessage', 'MessagesController@delmessage');
 
   Route::get('/home/{username}/graphs', 'UsersController@showGraph');
 
