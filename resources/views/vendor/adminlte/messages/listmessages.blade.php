@@ -59,10 +59,10 @@
 
                       <tr>
                        <th> Nombres y Apellidos </th>
-                       <th> Telefono </th>
-                       <th> Email</th>
-                       <th><center> Descripcion</center></th>
-                       <th><center> Ver Mas</center></th>
+                       <th> Email </th>
+                       <th> Estado </th>
+                       <th><center> Descripción</center></th>
+                       <th><center> Ver Más</center></th>
                        <th><center> Eliminar</center></th>
                       </tr>
                     <!-- Conditional x  Variable Listado de Usuarios-->
@@ -70,8 +70,8 @@
                     @forelse($messages as $message)
                       <tr>
                         <td>{{ $message->name }}</td>
-                        <td>{{ $message->telephone }}</td>
                         <td>{{ $message->email }}</td>
+                        <td>{{ $message->state }}</td>
                         <td>{{ $message->description }}</td>
                         <td align="center"><a href="{{url('/messages/'.$message->id)}}"><i class="fas fa-file"></i></a></td>
                         <td align="center">

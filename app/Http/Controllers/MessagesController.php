@@ -26,12 +26,12 @@ class MessagesController extends Controller
 
    public function showlistmessages(){
      $messages = Message::orderby('created_at','desc')->Paginate(5);
-     return view('adminlte::messages.listmessages',$messages,['messages'=>$messages]);
+     return view('adminlte::messages.listmessages',['messages'=>$messages]);
    }
 
    public function showmessage($id){
-     $messages = Message::orderby('created_at','desc')->Paginate(5);
-     return view('adminlte::messages.listmessages',$messages,['messages'=>$messages]);
+     $message = Message::where('id',$id)->first();
+     return view('adminlte::messages.message',['message'=>$message]);
    }
 
    public function delmessage(){
@@ -43,6 +43,19 @@ class MessagesController extends Controller
            else{
              $message->delete();
              return redirect()->to('/home')->with('alerts','El Mensaje fue eliminado');
+           }
+   }
+
+   public function savemessage(){
+     $input = Input::all();
+     $message = Message::where('id','=',$input['idmessage'])->firstorFail();
+         if($message == null){
+           return view('adminlte::messages.listmessages');
+           }
+           else{
+             $message->state = $input['state'];
+             $message->save();
+             return redirect()->to('/home')->with('alerts','El Mensaje fue Actualizado');
            }
    }
 }
