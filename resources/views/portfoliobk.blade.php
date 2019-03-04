@@ -38,19 +38,47 @@
       @empty
   			<div class="col-md-12 wthree_services_grid_left">
   				<br>
-  				<h3>No se encontrarón Proyectos Registrados</span> </h3>
-
+  				<h3>SITIMOVIL <span>SERVINFORMACION S. A </span> </h3>
+  				<strong>URL:</strong> <a href="http://sitimovil.sitimapa.com" target="_blank">http://sitimovil.sitimapa.com</a><br>
+  				<strong>Galería Flickr:</strong> <a href="https://www.flickr.com/gp/150113091@N02/M90968" target="_blank"><span class="label label-info">Ir a Flickr</span></a>
+  				<p><strong>Descripción: </strong>Plataforma Web para la Administración y Gestión de dispositivos GPS Vehicular y Telefonía Móvil para control de visitas, cumplimiento de rutas y ubicación actual.<br>
+  				<strong>Tecnologías: </strong>: HTML5, JSON, WebServices, Ruteadores, API Google Maps, PostgreSQL, Receptores de Datos, Ruteadores Logísticos, Trigger B.D y Stored Procedures PL-PGSQL<br>
+  				<strong>Participación: </strong>Administrador de la Plataforma, configuración de equipos GPS y smartphone	, Coordinación de Personal Técnico,
+  				Consultas de datos por Sentencias SQL, Despliegue del Servicio a Cliente nuevos, Testing a Requerimientos Nuevos, Seguimiento a más de 4000 Dispositivos
+  				transmitiendo x minuto. Apoyo a procesos de preventa y soporte postventa</p>
   			</div>
   			<br>
-        @endforelse
 
-        @if(count($posts))
-            <div class="mt-2 mx-auto">
-            {{ $posts->links('pagination::bootstrap-4') }}<br><br>
-            </div>
-        @endif
+  			<div class="col-md-12 wthree_services_grid_left">
+  				<br>
+  				<h3>DENTISALUD - CIUDAD DE MEXICO <span>UNAM</span> </h3>
+  				<strong>URL:</strong> <a href="#">NO DISPONIBLE</a><br>
+  				<strong>Galería Flickr:</strong> <a href="https://www.flickr.com/gp/150113091@N02/5TFa43" target="_blank"><span class="label label-info">Ir a Flickr</span></a>
+  				<p><strong>Descripción: </strong>Website Comercial que brinda alterna mente un sistema de gestión médica, basado en
+  				asignación de citas, creación de pacientes, relaciones directas entre la Historia Clínica, Consulta Médica y Cita en
+  				Ejecución. Proyecto Académico tipo tesis realizado en Ciudad de México en el Segundo Semestre del 2016 para la Universidad
+  				Nacional Autónoma de México – UNAM en modalidad de Intercambio con énfasis en Programación.<br>
+  				<strong>Tecnologías: </strong>HTML5, CSS3, JSON, JQuery, PHP5, MySQL, SendMail, API Google Maps, API FPDF, Uso de
+  				Bootstrap para Diseño Responsive.<br>
+  				<strong>Participación: </strong>Este proyecto se realizó de forma Full Stack e Independiente se contactó a una entidad
+  				odontológica la cual no tenía presencia la Internet, se identificó la necesidad critica de asignar y gestionar citas,
+  				se procedió a un levantamiento de requerimientos, siguiendo   recomendaciones de las metodologías CMMI, ISO  9126 y
+  				W3C se realizó un software web que solucionara esa necesidad y a través de un diseño atractivo brindando confianza a sus
+  				servicios.<br><font color="#0ac876"><em>El intercambio realizado me permitió reforzar habilidades en programación,
+  				incluir en el desarrollo el Modelo -  Vista -  Controlador (MVC) para mejorar su comprensión y mantenimiento.
+  				Realizar el documento en las secciones de Planeación, Costos y Asignación de Recursos en el desarrollo me brindo una
+  				serie de recomendaciones a tener en cuenta para evitar retrasos en el Cronograma de Trabajo.</em></font></p>
+  			</div>
+  			<br>
+  			<div class="col-md-12 wthree_services_grid_left">
+  				<br>
+  				<h3>CLINICA ESTETICA DANIEL MAHECHA <span>EN CONSTRUCCION</span> </h3>
+  				<strong>URL:</strong> <a href="#">NO DISPONIBLE</a><br>
+  				<p>Construyendo un website comercial tipo Responsive que permita a esta clínica tener presencia en la Internet,
+  				brindando la posibilidad de solicitar contacto a través de un formulario el cual envíe notificaciones vía Email.</p>
+  			</div>
       </div>
-    </div>
+        </div>
 
         <!--/portfolio-->
         <div class="inner_main_agile_section">

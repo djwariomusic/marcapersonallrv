@@ -29,8 +29,6 @@
                     <li><i class="fa fa-edit"></i><a href="{{url('/edit-post')}}"> Crear Posts</a></li>
                     <li><i class="fa fa-folder-open-o"></i><a href="{{url('/home/'.$me)}}"> Mis Posts</a></li>
                     <li><i class="fa fa-bar-chart-o"></i><a href="{{url('/home/'.$me.'/graphs')}}"> Graficas</a></li>
-                    <li><i class="fa fa-table"></i><a href="{{url('/datatable')}}"> DataTables</a></li>
-                    <li><i class="fa fa-map-marker"></i><a href="{{url('/gis')}}"> Google Maps</a></li>
                     <li><i class="fa fa-code"></i><a href="{{url('/apijson')}}"> API JSON</a></li>
                   </ol>
                   <li><a href="{{url('/documents')}}"><i class="fa fa-files-o"></i> Documentación</a></li>
