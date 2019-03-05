@@ -16,6 +16,7 @@ class CreateTableProjects extends Migration
       schema::create('projects', function (Blueprint $table){
         $table->increments('idproject');
         $table->string('name');
+        $table->string('enterprise');
         $table->string('url');
         $table->string('urlgaleria');
         $table->string('description');

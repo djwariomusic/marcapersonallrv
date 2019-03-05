@@ -39,13 +39,13 @@
             <!-- Optionally, you can add icons to the links -->
             <li class="treeview">
               <a href="#">
-                <i class="fa fa-dashboard" style="color:#00ba66;"></i> <span>Mensajes</span>
+                <i class="fa fa-envelope-open" style="color:#00ba66;"></i> <span>Mensajes</span>
                 <span class="pull-right-container">
                   <i class="fa fa-angle-left pull-right"></i>
                 </span>
               </a>
               <ul class="treeview-menu">
-                <li><a href="{{url('/messages') }}"><i class="fa fa-circle-o"  style="color:#00ba66;"></i><span> Todos los Mensajes</span></a></li>
+                <li><a href="{{url('/messages') }}"><i class="fa fa-envelope-open-o"  style="color:#00ba66;"></i><span> Todos los Mensajes</span></a></li>
               </ul>
             </li>
             <li class="treeview">

@@ -21,21 +21,19 @@
   	<div class="container">
   	<h3 class="w3l_header w3_agileits_header"> Participación / <span>Proyectos</span></h3>
   			<p class="sub_para_agile two">Algunos Proyectos Destacados</p>
-        @forelse($posts as $post)
+        @forelse($projects as $project)
   			<div class="col-md-12 wthree_services_grid_left">
   				<br>
 
-  				<h3>MAPA CULTURAL <span>MINCULTURA</span> </h3>
-  				<strong>URL:</strong> <a href="http://www.sinic.gov.co/mapacultural/index.html" target="_blank">http://www.sinic.gov.co/mapacultural/index.html</a><br>
-  				<strong>Galería Flickr:</strong> <a href="https://www.flickr.com/gp/150113091@N02/b5A1tn" target="_blank"><span class="label label-info">Ir a Flickr</span></a>
-  				<p><strong>Descripción: </strong>WebGIS que suministra datos Georreferenciados de alrededor 50.000 Inmuebles de Patrimonio Cultural a nivel nacional.<br>
-  				<strong>Tecnologías: </strong>HTML5, JSON, WebServices, Georreferenciador, API Google Maps, SQL Server.<br>
-  				<strong>Participación: </strong>Coordine todo el análisis de datos y validación de los mismos para que
-  				los datos tuvieran Modelo 3D asociado, existencia de integridad referencial con los múltiples llaves. Soporte
-  				y Toma de Requerimientos hacia ajustes o mejoras. Testing y Documentación</p>
+  				<h3 style="font-size: 1em;">{{ $project->name }} <span>{{ $project->enterprise }} </span> </h3>
+          <?php if($project->url != 'NO DISPONIBLE') {echo '<strong>URL: </strong> <a href="'.$project->url.'" target="_blank">'.$project->url.'</a><br>'; }?> 
+  				<?php if($project->urlgaleria != 'NO DISPONIBLE') {echo '<strong>Galería Flickr:</strong> <a href="'.$project->urlgaleria.'" target="_blank"><span class="label label-info">Ir a Flickr</span></a>'; }?>
+  				<p style="text-align: justify"><strong>Descripción: </strong>{{ $project->description }}<br>
+  				<strong>Tecnologías: </strong>{{ $project->technology }}<br>
+  				<strong>Participación: </strong>{{ $project->participation }}</p>
   			</div>
   			<br>
-      @empty
+        @empty
   			<div class="col-md-12 wthree_services_grid_left">
   				<br>
   				<h3>No se encontrarón Proyectos Registrados</span> </h3>
@@ -44,9 +42,9 @@
   			<br>
         @endforelse
 
-        @if(count($posts))
+        @if(count($projects))
             <div class="mt-2 mx-auto">
-            {{ $posts->links('pagination::bootstrap-4') }}<br><br>
+            {{ $projects->links('pagination::bootstrap-4') }}<br><br>
             </div>
         @endif
       </div>

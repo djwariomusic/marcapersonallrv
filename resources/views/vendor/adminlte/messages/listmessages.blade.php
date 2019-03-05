@@ -5,7 +5,7 @@
 @endsection
 
 @section('contentheader_title')
-	<i class='fa fa-edit' style="color:#00ba66;"></i> Crear Post's
+	<i class='fa fa-envelope-open-o' style="color:#00ba66;"></i> Listado Mensajes
 @endsection
 
 
@@ -28,8 +28,6 @@
 					</div>
 					<div class="box-body">
 						 Por medio de Eloquent y una conexion a PostgresSQL, se esta realizando un CRUD sobre la Base de Datos.
-						 Actividad frecuente, validando que el usuario que desea realizar estas acciones sea propietario del Post's y se
-						 encuentre Auntenticado.
 					</div>
 					<!-- /.box-body -->
 				</div>
@@ -39,13 +37,13 @@
 			<div class="col-md-12 wthree_services_grid_left">
 					<div class="alert alert-success" role="alert">
             <div class="page-header">
-      				<h1>Editar o Crear Post</h1>
+      				<h1>Listado de Mensajes</h1>
       			</div>
       		</div>
 
           <div class="box box-warning">
             <div class="box-header with-border">
-              <h3 class="box-title">Mis Indicadores</h3>
+              <h3 class="box-title">Mis Mensajes</h3>
             </div>
           <!-- /.box-header -->
           <div class="box-body">
@@ -53,10 +51,6 @@
                 <div class="col-md-12">
                   <table class="table table-bordered">
                     <tbody>
-                      <tr>
-                       <th colspan="3"> <h3>LISTADO DE MENSAJES</h3> </th>
-                      </tr>
-
                       <tr>
                        <th> Nombres y Apellidos </th>
                        <th> Email </th>
@@ -73,10 +67,10 @@
                         <td>{{ $message->email }}</td>
                         <td>{{ $message->state }}</td>
                         <td>{{ $message->description }}</td>
-                        <td align="center"><a href="{{url('/messages/'.$message->id)}}"><i class="fas fa-file"></i></a></td>
+                        <td align="center"><a href="{{url('/messages/'.$message->id)}}"><i class="fa fa-file"></i></a></td>
                         <td align="center">
                           <a href="" data-toggle="modal" data-target="#MyModal" data-id="{{$message->id}}" href="#addIdModal" class="open-AddIdModal">
-                            <i class="fas fa-trash-alt"></i>DEL
+                            <i class="fa fa-trash"></i>
                           </a>
                           </td>
                       </tr>
@@ -124,7 +118,7 @@
       <div class="modal-footer">
         <form action="{{url('/delmessage')}}" method="post">
           {{ csrf_field() }}
-          <input type="text" name="idmessage" id="idmessage" value=""/>
+          <input type="hidden" name="idmessage" id="idmessage" value=""/>
           <button type="submit" class="btn btn-danger">Eliminar</button>
           <button type="button" id="btnmodalclose" class="btn btn-default" data-dismiss="modal">Cerrar</button>
         </form>

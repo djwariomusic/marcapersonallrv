@@ -14,7 +14,6 @@
 Route::get('/', 'PagesController@showindex');
 Route::get('/index', 'PagesController@showindex');
 Route::get('/servicios','PagesController@showservices');
-Route::get('/proyectos','PagesController@showportfolio');
 Route::get('/contacto','PagesController@showcontact');
 
 Route::get('/pdf',function(){
@@ -30,6 +29,8 @@ Route::post('/contactar','MessagesController@getMessage');
 
 Route::get('/blog', 'PostController@getList');
 Route::get('/blog/getPost/{postid}', 'PostController@getPosts');
+
+Route::get('/proyectos','ProjectController@getList');
 
 Route::get('/auth/facebook', 'SocialAuthController@facebook');
 Route::get('/auth/facebook/callback', 'SocialAuthController@callback');

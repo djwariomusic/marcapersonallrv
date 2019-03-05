@@ -13,7 +13,7 @@
 				<!-- Default box -->
 				<div class="box">
 					<div class="box-header with-border">
-						<h3 class="box-title">Home</h3>
+						<h3 class="box-title">CRUD</h3>
 
 						<div class="box-tools pull-right">
 							<button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
@@ -23,7 +23,7 @@
 						</div>
 					</div>
 					<div class="box-body">
-						{{ trans('adminlte_lang::message.logged') }}. Start creating your amazing application!
+						 Por medio de Eloquent y una conexion a PostgresSQL, se esta realizando un CRUD sobre la Base de Datos.
 					</div>
 					<!-- /.box-body -->
 				</div>
@@ -33,14 +33,14 @@
 			<div class="col-md-12 wthree_services_grid_left">
 					<div class="alert alert-success" role="alert">
             <div class="page-header">
-      				<h1>Detalle Post's</h1>
+      				<h1>Detalle Mensaje</h1>
       			</div>
 					</div>
 
 					<div class="col-md-12">
 				        <div class="box box-warning">
 				            <div class="box-header with-border">
-				              <h3 class="box-title">Mis Indicadores</h3>
+				              <h3 class="box-title">Mensaje Seleccionado</h3>
 
 				              <div class="box-tools pull-right">
 				                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
@@ -54,12 +54,13 @@
 													  <form method="post" action="/savemessage">
 															{{ csrf_field() }}
 												    <div class="page-header">
-												    	<h3>{{ $message->name }}<br/><small>{{$message->email}} - {{$message->telephone}}</small></h3>
+												    	<h3><b>Nombre Contacto:</b> {{ $message->name }}<br/><small><b>Datos de Contacto:</b> <br>{{$message->email}} - {{$message->telephone}}</small></h3>
 												    </div>
 															<input type="hidden" name="idmessage" value=" {{ $message->id }}">
 															<h4><b>Asunto:</b></h3>
 															 {!! $message->description  !!}
 															<br><br>
+															<b>Contenido Mensaje:</b><br>
 												       {!! $message->message  !!}
 															<input type="hidden" value="{{$message->id}}">
 															<br><br>
