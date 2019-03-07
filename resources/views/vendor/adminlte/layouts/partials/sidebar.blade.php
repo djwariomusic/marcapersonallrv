@@ -56,7 +56,7 @@
                 </span>
               </a>
               <ul class="treeview-menu">
-                <li><a href="{{url('/proyects') }}"><i class="fa fa-circle-o"  style="color:#00ba66;"></i><span> Todos los Proyectos</span></a></li>
+                <li><a href="{{url('/projects') }}"><i class="fa fa-circle-o"  style="color:#00ba66;"></i><span> Todos los Proyectos</span></a></li>
                 <li><a href="{{url('/proyects') }}"><i class="fa fa-circle-o"  style="color:#00ba66;"></i><span> Crear Proyecto</span></a></li>
                 <li><a href="{{url('/proyects') }}"><i class="fa fa-circle-o"  style="color:#00ba66;"></i><span> Actualizar Galeria</span></a></li>
               </ul>

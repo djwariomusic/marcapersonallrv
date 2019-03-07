@@ -61,6 +61,10 @@ Route::group(['middleware' => 'auth'], function () {
   Route::post('/delmessage', 'MessagesController@delmessage');
   Route::post('/savemessage', 'MessagesController@savemessage');
 
+  Route::get('/projects', 'ProjectController@showlistprojects');
+  Route::get('/project/{id}', 'ProjectController@showproject');
+  Route::post('/delproject', 'ProjectController@delproject');
+
   Route::get('/home/{username}/graphs', 'UsersController@showGraph');
 
   Route::post('/searchUser', 'UsersController@searchUser');
