@@ -39,7 +39,7 @@
 			<div class="col-md-12 wthree_services_grid_left">
 					<div class="alert alert-success" role="alert">
             <div class="page-header">
-      				<h1>Editar Proyecto</h1>
+      				<h1>Crear Proyecto</h1>
       			</div>
       		</div>
 
@@ -51,27 +51,27 @@
           <div class="box-body">
             <div class="row">
                 <div class="col-md-12">
-                    <form action="{{url('/savedProject')}}" method="POST">
+                    <form action="{{url('/createProject')}}" method="POST">
                      {{ csrf_field() }}
                      <label for="title"><b>Nombre Proyecto:</b></label>
-                         <input type="text" name="idproject" value="{{ isset($project) ? $project->idproject : '' }}">
-                         <input type="text" name="name" id="name" class="form-control" placeholder="Nombre Proyecto..." value="{{isset($project) ? $project->name : '' }}">
+                         <input type="hidden" name="post_id" value="">
+                         <input type="text" name="name" id="name" class="form-control" placeholder="Nombre Proyecto..." value="">
                      <label for="publish_date"><b>Empresa u Organización:</b></label>
-                         <input type="text" name="enterprise" id="enterprise" class="form-control" placeholder="Empresa u Organización..." value="{{isset($project) ? $project->enterprise : '' }}">
+                         <input type="text" name="enterprise" id="enterprise" class="form-control" placeholder="Empresa u Organización..." value="">
                      <label for="publish_date"><b>URL Proyecto:</b></label>
-                         <input type="text" name="url" id="url" class="form-control" placeholder="URL Proyecto..." value="{{isset($project) ? $project->url : '' }}">
+                         <input type="text" name="url" id="url" class="form-control" placeholder="URL Proyecto..." value="">
                      <label for="publish_date"><b>URL Galería:</b></label>
-                         <input type="text" name="urlgaleria" id="urlgaleria" class="form-control" placeholder="URL Galería..." value="{{isset($project) ? $project->urlgaleria : '' }}">
+                         <input type="text" name="urlgaleria" id="urlgaleria" class="form-control" placeholder="URL Galería..." value="">
                      <label for="publish_date"><b>Tecnologías:</b></label>
-                         <textarea type="text" name="technology" id="technology" class="form-control" placeholder="Tecnologías..." rows="3">{{ isset($project) ? $project->technology : '' }}</textarea>
+                         <textarea type="text" name="technology" id="technology" class="form-control" placeholder="Tecnologías..." rows="3"></textarea>
                      <label for="publish_date"><b>Descripción del Proyecto:</b></label>
-                         <textarea type="text" name="description" id="description" class="form-control" placeholder="Descripción..." rows="5">{{ isset($project) ? $project->description : '' }}</textarea>
+                         <textarea type="text" name="description" id="description" class="form-control" placeholder="Descripción..." rows="5"></textarea>
                      <label for="publish_date"><b>Participación en el Proyecto:</b></label>
-                         <textarea type="text" name="participation" id="participation" class="form-control" placeholder="Participación..." rows="3">{{ isset($project) ? $project->participation : '' }}</textarea>
+                         <textarea type="text" name="participation" id="participation" class="form-control" placeholder="Participación..." rows="3"></textarea>
                      <label for="title"><b>Estado Publicación</b></label>
                          <select name="status" id="status" class="form-control">
-                             <option value="0" {{ (isset($project) && $project->status == 0)  ? 'selected' : '' }}>NO</option>
-                             <option value="1" {{ (isset($project) && $project->status == 1)  ? 'selected' : '' }} selected>SI</option>
+                             <option value="0">NO</option>
+                             <option value="1">SI</option>
                          </select>
                       <br><br>
                      <input type="submit" class="btn btn-success" value="Guardar"><br>

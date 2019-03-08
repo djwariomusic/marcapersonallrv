@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Projects;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Input;
 
 class ProjectController extends Controller
 {
@@ -34,5 +35,41 @@ class ProjectController extends Controller
             $project->delete();
             return redirect()->to('/home')->with('alerts','El Proyecto fue eliminado');
           }
+  }
+
+  public function createproject() {
+    $project = new Projects();
+    $project->name = $input['name'];
+    $project->enterprise = $input['enterprise'];
+    $project->url = $input['url'];
+    $project->urlgaleria = $input['urlgaleria'];
+    $project->description = $input['description'];
+    $project->technology = $input['technology'];
+    $project->participation = $input['participation'];
+    $project->status = $input['status'];
+    $project->save(); // Guarda el objeto en la BD
+    return redirect()->to('/home')->with('alerts','Proyecto Guardado');
+  }
+
+  public function saveproject() {
+    $input = Input::all();
+
+    if($input['idproject'] == NULL) {
+        return view('adminlte::projects.listprojects');
+    }
+    else {
+    $project = Projects::where('idproject','=',$input['idproject'])->firstorFail();
+
+    $project->name = $input['name'];
+    $project->enterprise = $input['enterprise'];
+    $project->url = $input['url'];
+    $project->urlgaleria = $input['urlgaleria'];
+    $project->description = $input['description'];
+    $project->technology = $input['technology'];
+    $project->participation = $input['participation'];
+    $project->status = $input['status'];
+    $project->save(); // Guarda el objeto en la BD
+    return redirect()->to('/home')->with('alerts','Proyecto Actualizado');
+    }
   }
 }

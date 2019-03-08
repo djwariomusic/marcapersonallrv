@@ -63,7 +63,10 @@ Route::group(['middleware' => 'auth'], function () {
 
   Route::get('/projects', 'ProjectController@showlistprojects');
   Route::get('/project/{id}', 'ProjectController@showproject');
-  Route::post('/delproject', 'ProjectController@delproject');
+  Route::post('/savedProject', 'ProjectController@saveproject');
+  Route::get('/project', 'HomeController@createproject');
+  Route::get('/createProject', 'ProjectController@createproject');
+  Route::post('/delProject', 'ProjectController@delproject');
 
   Route::get('/home/{username}/graphs', 'UsersController@showGraph');
 

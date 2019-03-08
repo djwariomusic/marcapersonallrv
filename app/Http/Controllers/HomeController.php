@@ -44,4 +44,9 @@ class HomeController extends Controller
     {
         return view('adminlte::home');
     }
+
+    public function createproject()
+    {
+        return view('adminlte::projects.project');
+    }
 }

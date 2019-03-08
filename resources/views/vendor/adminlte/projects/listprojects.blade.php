@@ -112,7 +112,7 @@
       </div>
 
       <div class="modal-footer">
-        <form action="{{url('/delproject')}}" method="post">
+        <form action="{{url('/delProject')}}" method="post">
           {{ csrf_field() }}
           <input type="hidden" name="idproject" id="idproject" value=""/>
           <button type="submit" class="btn btn-danger">Eliminar</button>

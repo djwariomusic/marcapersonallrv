@@ -37,6 +37,9 @@
         <ul class="sidebar-menu">
             <li class="header">FUNCIONALIDADES</li>
             <!-- Optionally, you can add icons to the links -->
+          @if(Auth::check())
+            @if(Auth::user()->email=='mario-edwin@hotmail.com')
+
             <li class="treeview">
               <a href="#">
                 <i class="fa fa-envelope-open" style="color:#00ba66;"></i> <span>Mensajes</span>
@@ -50,17 +53,19 @@
             </li>
             <li class="treeview">
               <a href="#">
-                <i class="fa fa-dashboard" style="color:#00ba66;"></i> <span>Proyectos</span>
+                <i class="fa fa-book" style="color:#00ba66;"></i> <span>Proyectos</span>
                 <span class="pull-right-container">
                   <i class="fa fa-angle-left pull-right"></i>
                 </span>
               </a>
               <ul class="treeview-menu">
-                <li><a href="{{url('/projects') }}"><i class="fa fa-circle-o"  style="color:#00ba66;"></i><span> Todos los Proyectos</span></a></li>
-                <li><a href="{{url('/proyects') }}"><i class="fa fa-circle-o"  style="color:#00ba66;"></i><span> Crear Proyecto</span></a></li>
-                <li><a href="{{url('/proyects') }}"><i class="fa fa-circle-o"  style="color:#00ba66;"></i><span> Actualizar Galeria</span></a></li>
+                <li><a href="{{url('/projects') }}"><i class="fa fa-list"  style="color:#00ba66;"></i><span> Todos los Proyectos</span></a></li>
+                <li><a href="{{url('/project') }}"><i class="fa fa-address-card-o"  style="color:#00ba66;"></i><span> Crear Proyecto</span></a></li>
+                <li><a href="{{url('/proyects') }}"><i class="fa fa-picture-o"  style="color:#00ba66;"></i><span> Actualizar Galeria</span></a></li>
               </ul>
             </li>
+            @endif
+           @endif
             <li class="treeview">
               <a href="#">
                 <i class="fa fa-dashboard" style="color:#00ba66;"></i> <span>Gestión Post's</span>

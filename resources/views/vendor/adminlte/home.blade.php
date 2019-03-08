@@ -86,7 +86,7 @@
                     <span class="progress-number"><b>75</b>/100</span>
 
                     <div class="progress sm">
-                      <div class="progress-bar progress-bar-green" style="width: 75%" data-toggle="tooltip" title="Laravel 5 - Eclipse - Jquery"></div>
+                      <div class="progress-bar progress-bar-green" style="width: 85%" data-toggle="tooltip" title="Laravel 5 - Eclipse - Jquery"></div>
                     </div>
                   </div>
                   <!-- /.progress-group -->
@@ -95,7 +95,7 @@
                     <span class="progress-number" ><b>75</b>/100</span>
 
                     <div class="progress sm">
-                      <div class="progress-bar progress-bar-yellow" style="width: 75%" data-toggle="tooltip" title="MySQL - PostgreSQL - SQL Server"></div>
+                      <div class="progress-bar progress-bar-yellow" style="width: 70%" data-toggle="tooltip" title="MySQL - PostgreSQL - SQL Server"></div>
                     </div>
                   </div>
                   <!-- /.progress-group -->
@@ -110,8 +110,8 @@
                 <div class="col-sm-3 col-xs-6">
                   <div class="description-block border-right">
                     <span class="description-percentage text-green"><i class="fa fa-caret-up"></i> 17%</span>
-                    <h5 class="description-header">$35,210.43</h5>
-                    <span class="description-text">TOTAL REVENUE</span>
+                    <h5 class="description-header">181</h5>
+                    <span class="description-text">TOTAL POST'S</span>
                   </div>
                   <!-- /.description-block -->
                 </div>
@@ -119,8 +119,8 @@
                 <div class="col-sm-3 col-xs-6">
                   <div class="description-block border-right">
                     <span class="description-percentage text-yellow"><i class="fa fa-caret-left"></i> 0%</span>
-                    <h5 class="description-header">$10,390.90</h5>
-                    <span class="description-text">TOTAL COST</span>
+                    <h5 class="description-header">14</h5>
+                    <span class="description-text">TOTAL USUARIOS</span>
                   </div>
                   <!-- /.description-block -->
                 </div>
@@ -128,8 +128,8 @@
                 <div class="col-sm-3 col-xs-6">
                   <div class="description-block border-right">
                     <span class="description-percentage text-green"><i class="fa fa-caret-up"></i> 20%</span>
-                    <h5 class="description-header">$24,813.53</h5>
-                    <span class="description-text">TOTAL PROFIT</span>
+                    <h5 class="description-header">2</h5>
+                    <span class="description-text">TOTAL MENSAJES</span>
                   </div>
                   <!-- /.description-block -->
                 </div>
@@ -137,8 +137,8 @@
                 <div class="col-sm-3 col-xs-6">
                   <div class="description-block">
                     <span class="description-percentage text-red"><i class="fa fa-caret-down"></i> 18%</span>
-                    <h5 class="description-header">1200</h5>
-                    <span class="description-text">GOAL COMPLETIONS</span>
+                    <h5 class="description-header">8</h5>
+                    <span class="description-text">TOTAL PROYECTOS</span>
                   </div>
                   <!-- /.description-block -->
                 </div>
@@ -347,85 +347,10 @@
 							</div>
 						</div>
 					</div>
-								<div class="col-md-12">
-																<!-- PRODUCT LIST -->
-									<div class="box box-danger">
-										<div class="box-header with-border">
-											<h3 class="box-title">Recently Added Products</h3>
-
-											<div class="box-tools pull-right">
-												<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-												</button>
-											</div>
-										</div>
-										<!-- /.box-header -->
-										<div class="box-body">
-											<ul class="products-list product-list-in-box">
-												<li class="item">
-													<div class="product-img">
-														<img src="./AdminLTE 2 _ Dashboard_files/default-50x50.gif" alt="Product Image">
-													</div>
-													<div class="product-info">
-														<a href="javascript:void(0)" class="product-title">Samsung TV
-															<span class="label label-warning pull-right">$1800</span></a>
-														<span class="product-description">
-																	Samsung 32" 1080p 60Hz LED Smart HDTV.
-																</span>
-													</div>
-												</li>
-												<!-- /.item -->
-												<li class="item">
-													<div class="product-img">
-														<img src="./AdminLTE 2 _ Dashboard_files/default-50x50.gif" alt="Product Image">
-													</div>
-													<div class="product-info">
-														<a href="javascript:void(0)" class="product-title">Bicycle
-															<span class="label label-info pull-right">$700</span></a>
-														<span class="product-description">
-																	26" Mongoose Dolomite Men's 7-speed, Navy Blue.
-																</span>
-													</div>
-												</li>
-												<!-- /.item -->
-												<li class="item">
-													<div class="product-img">
-														<img src="./AdminLTE 2 _ Dashboard_files/default-50x50.gif" alt="Product Image">
-													</div>
-													<div class="product-info">
-														<a href="javascript:void(0)" class="product-title">Xbox One <span class="label label-danger pull-right">$350</span></a>
-														<span class="product-description">
-																	Xbox One Console Bundle with Halo Master Chief Collection.
-																</span>
-													</div>
-												</li>
-												<!-- /.item -->
-												<li class="item">
-													<div class="product-img">
-														<img src="./AdminLTE 2 _ Dashboard_files/default-50x50.gif" alt="Product Image">
-													</div>
-													<div class="product-info">
-														<a href="javascript:void(0)" class="product-title">PlayStation 4
-															<span class="label label-success pull-right">$399</span></a>
-														<span class="product-description">
-																	PlayStation 4 500GB Console (PS4)
-																</span>
-													</div>
-												</li>
-												<!-- /.item -->
-											</ul>
-										</div>
-										<!-- /.box-body -->
-										<div class="box-footer text-center">
-											<a href="javascript:void(0)" class="uppercase">View All Products</a>
-										</div>
-										<!-- /.box-footer -->
-									</div>
-									<!-- /.box -->
-								</div>
-								<!-- /.col -->
-							</div>
-							<!-- /.row -->
-								</div>
+				<!-- /.col -->
+			</div>
+		<!-- /.row -->
+	</div>
 
 	@if(session('alerts')==null)
 	    <input type="hidden" data-toggle="modal"  data-target="#myModalPost"  value="">
