@@ -26,7 +26,7 @@
   				<br>
 
   				<h3 style="font-size: 1em;">{{ $project->name }} <span>{{ $project->enterprise }} </span> </h3>
-          <?php if($project->url != 'NO DISPONIBLE') {echo '<strong>URL: </strong> <a href="'.$project->url.'" target="_blank">'.$project->url.'</a><br>'; }?> 
+          <?php if($project->url != 'NO DISPONIBLE') {echo '<strong>URL: </strong> <a href="'.$project->url.'" target="_blank">'.$project->url.'</a><br>'; }?>
   				<?php if($project->urlgaleria != 'NO DISPONIBLE') {echo '<strong>Galería Flickr:</strong> <a href="'.$project->urlgaleria.'" target="_blank"><span class="label label-info">Ir a Flickr</span></a>'; }?>
   				<p style="text-align: justify"><strong>Descripción: </strong>{{ $project->description }}<br>
   				<strong>Tecnologías: </strong>{{ $project->technology }}<br>
@@ -55,13 +55,14 @@
           <div class="container">
         	<h3 class="w3l_header w3_agileits_header"> GALERIA DE <span>PROYECTOS</span></h3>
         				<div class="agile_inner_grids">
-                    <ul class="simplefilter">
-                        <li class="active" data-filter="all">Todos</li>
-                        <li data-filter="1">Mincultura</li>
-                        <li data-filter="2">Sitimovil</li>
-                        <li data-filter="3">Dentisalud</li>
-                        <li data-filter="4">Marca Personal</li>
-                        <li data-filter="5">GIS</li>
+                    <ul class="simplefilter" style="text-align: left;">
+                        <li class="active" data-filter="all" tyle="font-size: 0.6em;">Todos</li>
+                        @forelse($projects2 as $project2)
+                        <li data-filter="{{ $project2->idproject }}" style="font-size: 0.6em;">{{ $project2->name }}</li>
+                        @empty
+                        <li class="active" style="font-size: 0.6em;">No se encontraron Proyectos</li>
+                        @endforelse
+
                     </ul>
                 </div>
                     <div class="filtr-container">

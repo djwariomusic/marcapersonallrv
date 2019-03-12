@@ -12,7 +12,8 @@ class ProjectController extends Controller
   public function getList() {
     $projects= Projects::where('status', 1)->get();
     $projects= Projects::where('status', 1)->orderBy('idproject','desc')->Paginate(5);
-    return view('portfolio', ['projects'=> $projects]);
+    $projects2= Projects::where('status', 1)->orderBy('idproject','desc')->get();;
+    return view('portfolio', ['projects'=> $projects, 'projects2'=> $projects2]);
   }
 
   public function showlistprojects(){
