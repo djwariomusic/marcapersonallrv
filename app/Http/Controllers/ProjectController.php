@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Projects;
+use App\Image;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
@@ -13,7 +14,8 @@ class ProjectController extends Controller
     $projects= Projects::where('status', 1)->get();
     $projects= Projects::where('status', 1)->orderBy('idproject','desc')->Paginate(5);
     $projects2= Projects::where('status', 1)->orderBy('idproject','desc')->get();;
-    return view('portfolio', ['projects'=> $projects, 'projects2'=> $projects2]);
+    $images= Image::orderBy('idproject','desc')->get();;
+    return view('portfolio', ['projects'=> $projects, 'projects2'=> $projects2, 'images'=> $images]);
   }
 
   public function showlistprojects(){

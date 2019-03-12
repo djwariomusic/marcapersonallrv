@@ -10,8 +10,11 @@ namespace App\Http\Controllers;
 use App\Models\Post;
 use App\Models\Comment;
 
+use App\Projects;
+
 use App\Http\Requests;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Input;
 
 /**
  * Class HomeController
@@ -48,5 +51,11 @@ class HomeController extends Controller
     public function createproject()
     {
         return view('adminlte::projects.project');
+    }
+
+    public function showgallery()
+    {
+        $projects= Projects::where('status', 1)->orderBy('idproject','desc')->get();;
+        return view('adminlte::projects.gallery',['projects'=> $projects]);
     }
 }

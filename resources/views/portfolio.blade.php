@@ -78,109 +78,27 @@
                   					</figure>
                   				</a>
                         </div>
-                        <div class=" filtr-item" data-category="1, 5" data-sort="Luminous night">
-                           <a href="{{url('images/mapacultural2.jpg')}}" class="b-link-stripe b-animate-go  thickbox">
-                  					<figure>
-                  					 <img src="{{url('images/mapacultural2.jpg')}}" class="img-responsive" alt=" " />	<figcaption>
+                        @forelse($images as $image)
+                        <div class="filtr-item gallery-t" data-category="{{ $image->idproject}}" data-sort="Busy streets">
+                          <a href="{{ $image->path }}" class="b-link-stripe b-animate-go  thickbox">
+                            <figure>
+                             <img src="{{ $image->path }}" class="img-responsive" alt=" " />	<figcaption>
                                <h3>CONSULTAR</h3>
                                <p>
                                  Ampliar Imagen
                                </p>
-                  						</figcaption>
-                  					</figure>
-                  				</a>
+                              </figcaption>
+                            </figure>
+                          </a>
                         </div>
-                        <div class=" filtr-item" data-category="2, 5" data-sort="City wonders">
-                            <a href="{{url('images/sitimovil1.jpg')}}" class="b-link-stripe b-animate-go  thickbox">
-                    					<figure>
-                    					 <img src="{{url('images/sitimovil1.jpg')}}" class="img-responsive" alt=" " />	<figcaption>
-                                 <h3>CONSULTAR</h3>
-                                 <p>
-                                   Ampliar Imagen
-                                 </p>
-                    						</figcaption>
-                    					</figure>
-                    				</a>
-                        </div>
-                        <div class="  filtr-item" data-category="2, 5" data-sort="In production">
-                           <a href="{{url('images/sitimovil2.jpg')}}" class="b-link-stripe b-animate-go  thickbox">
-                    					<figure>
-                    					 <img src="{{url('images/sitimovil2.jpg')}}" class="img-responsive" alt=" " />	<figcaption>
-                                 <h3>CONSULTAR</h3>
-                                 <p>
-                                   Ampliar Imagen
-                                 </p>
-                    						</figcaption>
-                    					</figure>
-                    				</a>
-                        </div>
-                        <div class=" filtr-item" data-category="3" data-sort="Industrial site">
-                          <a href="{{url('images/dentisalud1.jpg')}}" class="b-link-stripe b-animate-go  thickbox">
-                  					<figure>
-                  					 <img src="{{url('images/dentisalud1.jpg')}}" class="img-responsive" alt=" " />	<figcaption>
-                               <h3>CONSULTAR</h3>
-                               <p>
-                                 Ampliar Imagen
-                               </p>
-                  						</figcaption>
-                  					</figure>
-                  				</a>
-                        </div>
-                        <div class=" filtr-item" data-category="3" data-sort="Peaceful lake">
-                            <a href="{{url('images/dentisalud2.jpg')}}" class="b-link-stripe b-animate-go  thickbox">
-                    					<figure>
-                    					 <img src="{{url('images/dentisalud2.jpg')}}" class="img-responsive" alt=" " />	<figcaption>
-                                 <h3>CONSULTAR</h3>
-                                 <p>
-                                   Ampliar Imagen
-                                 </p>
-                    						</figcaption>
-                    					</figure>
-                    				</a>
-                        </div>
-                        <div class="  filtr-item" data-category="3" data-sort="City lights">
-                           <a href="{{url('images/dentisalud3.jpg')}}" class="b-link-stripe b-animate-go  thickbox">
-                    					<figure>
-                    					 <img src="{{url('images/dentisalud3.jpg')}}" class="img-responsive" alt=" " />	<figcaption>
-                                 <h3>CONSULTAR</h3>
-                                 <p>
-                                   Ampliar Imagen
-                                 </p>
-                    						</figcaption>
-                    					</figure>
-                    				</a>
-                        </div>
-                        <div class=" filtr-item" data-category="3" data-sort="Dreamhouse">
-                           <a href="{{url('images/dentisalud4.jpg')}}" class="b-link-stripe b-animate-go  thickbox">
-                    					<figure>
-                    					 <img src="{{url('images/dentisalud4.jpg')}}" class="img-responsive" alt=" " />	<figcaption>
-                    							<h3>CONSULTAR</h3>
-                    							<p>
-                    								Ampliar Imagen
-                    							</p>
-                    						</figcaption>
-                    					</figure>
-                    				</a>
-                        </div>
-        				        <div class=" filtr-item" data-category="4" data-sort="Dreamhouse">
-                          <a href="{{url('images/marcapersonal1.jpg')}}" class="b-link-stripe b-animate-go  thickbox">
-                  					<figure>
-                  					 <img src="{{url('images/marcapersonal1.jpg')}}" class="img-responsive" alt=" " />	<figcaption>
-                  							<h3>CONSULTAR</h3>
-                  							<p>
-                  								Ampliar Imagen
-                  							</p>
-                  						</figcaption>
-                  					</figure>
-                  				</a>
-                        </div>
+                        @empty
+                        <span style="font-size: 0.6em;">No se encontraron Proyectos</span>
+                        @endforelse
                        <div class="clearfix"> </div>
-        			</div>
+        			      </div>
 
+           </div>
         </div>
-        </div>
-        </div>
-
 
 <!-- //main -->
 

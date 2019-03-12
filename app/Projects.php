@@ -9,4 +9,9 @@ class Projects extends Model
     protected $table = 'projects';
 
     protected $primaryKey = 'idproject';
+
+    public function images()
+    {
+    return $this->hasMany('App\Image');
+    }
 }
