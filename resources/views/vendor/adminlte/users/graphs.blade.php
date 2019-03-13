@@ -82,9 +82,9 @@
   		var myChart = new Chart(ctx, {
   		    type: 'bar',
   		    data: {
-  		        labels: ["2017", "2016", "2015", "2014", "2013", "2012"],
+  		        labels: ["Marzo-19", "Febrero-19", "Enero-19", "Diciembre-18", "Noviembre-18", "Octubre-18"],
   		        datasets: [{
-  		            label: '# de Post por Año',
+  		            label: '# de Post por Meses',
   		            data: [{{$posts2017}}, {{$posts2016}}, {{$posts2015}}, {{$posts2014}}, {{$posts2013}}, {{$posts2012}}],
   		            backgroundColor: [
   		                'rgba(255, 99, 132, 0.2)',
@@ -120,7 +120,7 @@
   		    <script>
   		      new Chart(document.getElementById("chartjs-0"),{
   		          "type":"line","data":{
-  		            "labels":["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio"],
+  		            "labels":["Marzo-19","Febrero-19","Enero-19","Diciembre-18","Noviembre-18","Octubre-18","Septiembre-18"],
   		            "datasets":[{
   		              "label":"Mis # de Posts",
   		              "data":[{{$dataEnero17}},{{$dataFebrero17}},{{$dataMarzo17}},{{$dataAbril17}},{{$dataMayo17}},{{$dataJunio17}},{{$dataJulio17}}],

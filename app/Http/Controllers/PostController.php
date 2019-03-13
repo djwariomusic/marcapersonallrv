@@ -14,8 +14,8 @@ class PostController extends Controller
 {
 
   public function getList() {
-    
-    $data= Post::whereHas('user', function ($query) {
+
+    $data= Post::where('status',1)->orderBy('publish_date', 'DESC')->whereHas('user', function ($query) {
       $query->where('email', '=', 'mario-edwin@hotmail.com');
     })->Paginate(5);
 
