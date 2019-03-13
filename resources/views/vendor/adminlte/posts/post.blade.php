@@ -120,7 +120,7 @@
 						</div>
 
 
-					<script id="dsq-count-scr" src="//edwinbeltrandev.disqus.com/count.js" async></script>
+
 			  </div>
 		</div>
 	</div>
@@ -133,8 +133,12 @@
 @section('scripts')
 	@include('adminlte::layouts.partials.scripts')
 
-<!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5a7ce0bb8ed3af77"></script>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<!--
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5a7ce0bb8ed3af77"></script>
+-->
 
+<script id="dsq-count-scr" src="//edwinbeltrandev.disqus.com/count.js" async></script>
 <script>
 
 /**

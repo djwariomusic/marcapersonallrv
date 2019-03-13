@@ -63,7 +63,7 @@
                        @endforelse
                      </select>
                      <label for="publish_date"><b>Imagén a Cargar:</b></label>
-                         <input type="file" name="file" id="file" class="form-control">
+                         <input type="file" name="file" id="file" class="form-control" required>
                      <br><br>
                      <input type="submit" class="btn btn-success" value="Guardar"><br>
                   </form>

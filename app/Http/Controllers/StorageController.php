@@ -11,7 +11,6 @@ class StorageController extends Controller
 {
     public function store(Request $request)
     {
-
         $input = Input::all();
         $path = $request->file->store('public');
         $image = new Image();
@@ -19,7 +18,5 @@ class StorageController extends Controller
         $image->path = $path;
         $image->save();
         return redirect()->to('/home')->with('alerts','Proyecto Guardado');
-
-
     }
 }

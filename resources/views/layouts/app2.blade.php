@@ -176,6 +176,26 @@ Maquetacion Bootstrap" />
 		</div>
 	</div>
 <!-- //bootstrap-pop-up -->
+<!-- //bootstrap-pop-up -->
+<div class="modal video-modal fade" id="myModalMsj" tabindex="-1" role="dialog" aria-labelledby="myModal">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			</div>
+			<section>
+				<div class="modal-body">
+					<h5>El Mensaje a sido Creado o Actualizado!</h5>
+					<img src="{{url('images/check-form.jpg')}}" width="64" height="64" alt=" " class="img-responsive" />
+					<center>
+					<p><a href="/home/{{Auth::user()->username}}"><input type="button" value="Mis Posts"></a></p>
+					</center>
+				</div>
+			</section>
+		</div>
+	</div>
+</div>
+<!-- //bootstrap-pop-up -->
 @endif
 @yield('contenido')
 <!-- footer -->

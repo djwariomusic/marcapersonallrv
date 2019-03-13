@@ -32,6 +32,7 @@
 					<!-- /.box-body -->
 				</div>
 				<!-- /.box -->
+
 			</div>
 				<div class="col-md-12">
           <div class="box box-warning">
@@ -352,53 +353,86 @@
 		<!-- /.row -->
 	</div>
 
-	@if(session('alerts')==null)
-	    <input type="hidden" data-toggle="modal"  data-target="#myModalPost"  value="">
-	@elseif (session('alerts')=='Post guardado')
-	    <script language="JavaScript">
-	        function load() {
-	            document.getElementById("buttonpost").click();
-	        }
-	        window.onload = load;
-	    </script>
-	  <input type="hidden" data-toggle="modal"  id="buttonpost" data-target="#myModalPost">
-	@elseif (session('alerts')=='Post Eliminado')
-	    <script language="JavaScript">
-	        function load() {
-	            document.getElementById("buttonpost").click();
-	        }
-	        window.onload = load;
-	     </script>
-	  <input type="hidden" data-toggle="modal"  id="buttonpost" data-target="#myModalPostDel">
-	@elseif (session('alerts')=='No Permitido')
-	    <script language="JavaScript">
-	        function load() {
-	            document.getElementById("buttonpost").click();
-	        }
-	        window.onload = load;
-	     </script>
-	  <input type="hidden" data-toggle="modal"  id="buttonpost" data-target="#myModalDened">
-	@elseif (session('alerts')=='Comentario Creado')
-	    <script language="JavaScript">
-	        function load() {
-	            document.getElementById("buttonpost").click();
-	        }
-	        window.onload = load;
-	     </script>
-	  <input type="hidden" data-toggle="modal"  id="buttonpost" data-target="#myModalComment">
-	@elseif (session('alerts')=='Comentario Eliminado')
-			<script language="JavaScript">
-					function load() {
-							document.getElementById("buttonpost").click();
-					}
-					window.onload = load;
-			 </script>
-		<input type="hidden" data-toggle="modal"  id="buttonpost" data-target="#myModalCommentDel">
-	@endif
+
 
 @endsection
 
 @section('scripts')
 		@include('adminlte::layouts.partials.scripts')
 		@include('adminlte::layouts.partials.scripts_graphs')
+		@if(session('alerts')==null)
+				<input type="hidden" data-toggle="modal"  data-target="#myModalPost"  value="">
+		@elseif (session('alerts')=='Post guardado')
+				<script language="JavaScript">
+						function load() {
+								document.getElementById("buttonpost").click();
+						}
+						window.onload = load;
+				</script>
+			<input type="hidden" data-toggle="modal"  id="buttonpost" data-target="#myModalPost">
+		@elseif (session('alerts')=='Post Eliminado')
+				<script language="JavaScript">
+						function load() {
+								document.getElementById("buttonpost").click();
+						}
+						window.onload = load;
+				 </script>
+			<input type="hidden" data-toggle="modal"  id="buttonpost" data-target="#myModalPostDel">
+		@elseif (session('alerts')=='No Permitido')
+				<script language="JavaScript">
+						function load() {
+								document.getElementById("buttonpost").click();
+						}
+						window.onload = load;
+				 </script>
+			<input type="hidden" data-toggle="modal"  id="buttonpost" data-target="#myModalDened">
+		@elseif (session('alerts')=='Comentario Creado')
+				<script language="JavaScript">
+						function load() {
+								document.getElementById("buttonpost").click();
+						}
+						window.onload = load;
+				 </script>
+			<input type="hidden" data-toggle="modal"  id="buttonpost" data-target="#myModalComment">
+		@elseif (session('alerts')=='Comentario Eliminado')
+				<script language="JavaScript">
+						function load() {
+								document.getElementById("buttonpost").click();
+						}
+						window.onload = load;
+				 </script>
+			<input type="hidden" data-toggle="modal"  id="buttonpost" data-target="#myModalMsj">
+		@elseif (session('alerts')=='Mensaje Guardado')
+				<script language="JavaScript">
+						function load() {
+								document.getElementById("buttonpost").click();
+						}
+						window.onload = load;
+				 </script>
+			<input type="hidden" data-toggle="modal"  id="buttonpost" data-target="#myModalMsj">
+		@elseif (session('alerts')=='Mensaje Eliminado')
+				<script language="JavaScript">
+						function load() {
+								document.getElementById("buttonpost").click();
+						}
+						window.onload = load;
+				 </script>
+			<input type="hidden" data-toggle="modal"  id="buttonpost" data-target="#myModalMsjDel">
+		@elseif (session('alerts')=='Proyecto Guardado')
+				<script language="JavaScript">
+						function load() {
+								document.getElementById("buttonpost").click();
+						}
+						window.onload = load;
+				 </script>
+			<input type="hidden" data-toggle="modal"  id="buttonpost" data-target="#myModalProj">
+		@elseif (session('alerts')=='Proyecto Eliminado')
+				<script language="JavaScript">
+						function load() {
+								document.getElementById("buttonpost").click();
+						}
+						window.onload = load;
+				 </script>
+			<input type="hidden" data-toggle="modal"  id="buttonpost" data-target="#myModalProjDel">
+		@endif
 @endsection

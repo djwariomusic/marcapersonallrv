@@ -66,18 +66,6 @@
                     </ul>
                 </div>
                     <div class="filtr-container">
-                        <div class="filtr-item gallery-t" data-category="1, 5" data-sort="Busy streets">
-                          <a href="{{url('images/mapacultural.jpg')}}" class="b-link-stripe b-animate-go  thickbox">
-                  					<figure>
-                  					 <img src="{{url('images/mapacultural1.jpg')}}" class="img-responsive" alt=" " />	<figcaption>
-                               <h3>CONSULTAR</h3>
-                               <p>
-                                 Ampliar Imagen
-                               </p>
-                  						</figcaption>
-                  					</figure>
-                  				</a>
-                        </div>
                         @forelse($images as $image)
                         <div class="filtr-item gallery-t" data-category="{{ $image->idproject}}" data-sort="Busy streets">
                           <a href="{{ $image->path }}" class="b-link-stripe b-animate-go  thickbox">

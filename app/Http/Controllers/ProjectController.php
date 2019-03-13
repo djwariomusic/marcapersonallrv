@@ -36,7 +36,7 @@ class ProjectController extends Controller
           }
           else{
             $project->delete();
-            return redirect()->to('/home')->with('alerts','El Proyecto fue eliminado');
+            return redirect()->to('/home')->with('alerts','Proyecto Eliminado');
           }
   }
 
@@ -72,7 +72,7 @@ class ProjectController extends Controller
     $project->participation = $input['participation'];
     $project->status = $input['status'];
     $project->save(); // Guarda el objeto en la BD
-    return redirect()->to('/home')->with('alerts','Proyecto Actualizado');
+    return redirect()->to('/home')->with('alerts','Proyecto Guardado');
     }
   }
 }

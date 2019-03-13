@@ -42,11 +42,12 @@ class MessagesController extends Controller
            }
            else{
              $message->delete();
-             return redirect()->to('/home')->with('alerts','El Mensaje fue eliminado');
+             return redirect()->to('/home')->with('alerts','Mensaje Eliminado');
            }
    }
 
    public function savemessage(){
+     $alerts=NULL;
      $input = Input::all();
      $message = Message::where('id','=',$input['idmessage'])->firstorFail();
          if($message == null){
@@ -55,7 +56,7 @@ class MessagesController extends Controller
            else{
              $message->state = $input['state'];
              $message->save();
-             return redirect()->to('/home')->with('alerts','El Mensaje fue Actualizado');
+             return redirect()->to('/home')->with('alerts','Mensaje Guardado');
            }
    }
 }

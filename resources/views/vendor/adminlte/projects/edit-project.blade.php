@@ -54,7 +54,7 @@
                     <form action="{{url('/savedProject')}}" method="POST">
                      {{ csrf_field() }}
                      <label for="title"><b>Nombre Proyecto:</b></label>
-                         <input type="text" name="idproject" value="{{ isset($project) ? $project->idproject : '' }}">
+                         <input type="hidden" name="idproject" value="{{ isset($project) ? $project->idproject : '' }}">
                          <input type="text" name="name" id="name" class="form-control" placeholder="Nombre Proyecto..." value="{{isset($project) ? $project->name : '' }}">
                      <label for="publish_date"><b>Empresa u Organización:</b></label>
                          <input type="text" name="enterprise" id="enterprise" class="form-control" placeholder="Empresa u Organización..." value="{{isset($project) ? $project->enterprise : '' }}">
