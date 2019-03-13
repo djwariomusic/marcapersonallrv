@@ -27,6 +27,7 @@
 						</div>
 					</div>
 					<div class="box-body">
+						Hola <font color="#00ba66">{{Auth::user()->name}}</font> <br>
 						{{ trans('adminlte_lang::message.logged') }}. Interactua con nuestra Dashboard realizada con AdminLTE.
 					</div>
 					<!-- /.box-body -->
@@ -49,7 +50,7 @@
               <div class="row">
                 <div class="col-md-8">
                   <p class="text-center">
-                    <strong>Sales: 1 Jan, 2014 - 30 Jul, 2014</strong>
+                    <strong>Cantidad de Posts: 1 Ene, 2020 - 30 Jul, 2020</strong>
                   </p>
 
                   <div class="chart">
@@ -84,7 +85,7 @@
                   <!-- /.progress-group -->
                   <div class="progress-group">
                     <span class="progress-text">Frameworks</span>
-                    <span class="progress-number"><b>75</b>/100</span>
+                    <span class="progress-number"><b>85</b>/100</span>
 
                     <div class="progress sm">
                       <div class="progress-bar progress-bar-green" style="width: 85%" data-toggle="tooltip" title="Laravel 5 - Eclipse - Jquery"></div>
@@ -93,7 +94,7 @@
                   <!-- /.progress-group -->
                   <div class="progress-group">
                     <span class="progress-text">Base de Datos</span>
-                    <span class="progress-number" ><b>75</b>/100</span>
+                    <span class="progress-number" ><b>70</b>/100</span>
 
                     <div class="progress sm">
                       <div class="progress-bar progress-bar-yellow" style="width: 70%" data-toggle="tooltip" title="MySQL - PostgreSQL - SQL Server"></div>
@@ -111,7 +112,7 @@
                 <div class="col-sm-3 col-xs-6">
                   <div class="description-block border-right">
                     <span class="description-percentage text-green"><i class="fa fa-caret-up"></i> 17%</span>
-                    <h5 class="description-header">181</h5>
+                    <h5 class="description-header">@if(isset($countp)) {{ $countp }} @endif</h5>
                     <span class="description-text">TOTAL POST'S</span>
                   </div>
                   <!-- /.description-block -->
@@ -120,7 +121,7 @@
                 <div class="col-sm-3 col-xs-6">
                   <div class="description-block border-right">
                     <span class="description-percentage text-yellow"><i class="fa fa-caret-left"></i> 0%</span>
-                    <h5 class="description-header">14</h5>
+                    <h5 class="description-header">@if(isset($countu)) {{ $countu }} @endif</h5>
                     <span class="description-text">TOTAL USUARIOS</span>
                   </div>
                   <!-- /.description-block -->
@@ -129,7 +130,7 @@
                 <div class="col-sm-3 col-xs-6">
                   <div class="description-block border-right">
                     <span class="description-percentage text-green"><i class="fa fa-caret-up"></i> 20%</span>
-                    <h5 class="description-header">2</h5>
+                    <h5 class="description-header">@if(isset($countm)) {{ $countm }} @endif</h5>
                     <span class="description-text">TOTAL MENSAJES</span>
                   </div>
                   <!-- /.description-block -->
@@ -138,7 +139,7 @@
                 <div class="col-sm-3 col-xs-6">
                   <div class="description-block">
                     <span class="description-percentage text-red"><i class="fa fa-caret-down"></i> 18%</span>
-                    <h5 class="description-header">8</h5>
+                    <h5 class="description-header">@if(isset($countpj)) {{ $countpj }} @endif</h5>
                     <span class="description-text">TOTAL PROYECTOS</span>
                   </div>
                   <!-- /.description-block -->
@@ -153,9 +154,9 @@
 
 				<!-- TABLE: LATEST ORDERS -->
 				<div class="col-md-8">
-				          <div class="box box-info">
+				          <div class="box box-success">
 				            <div class="box-header with-border">
-				              <h3 class="box-title">Top de Usuarios con mas Post's</h3>
+				              <h3 class="box-title">Los ultimos Post's Registrados</h3>
 
 				              <div class="box-tools pull-right">
 				                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
@@ -175,78 +176,23 @@
 				                  </tr>
 				                  </thead>
 				                  <tbody>
-				                  <tr>
-				                    <td><a href="https://adminlte.io/themes/AdminLTE/pages/examples/invoice.html">OR9842</a></td>
-				                    <td>Call of Duty IV</td>
-				                    <td>mario-edwin@hotmail.com</td>
-				                    <td>
-				                      <span class="label label-info">Processing</span>
-				                    </td>
-				                  </tr>
-				                  <tr>
-				                    <td><a href="https://adminlte.io/themes/AdminLTE/pages/examples/invoice.html">OR1848</a></td>
-				                    <td>Samsung Smart TV</td>
-				                    <td><span class="label label-warning">Pending</span></td>
-				                    <td>
-				                      <span class="label label-info">Processing</span>
-				                    </td>
-				                  </tr>
-				                  <tr>
-				                    <td><a href="https://adminlte.io/themes/AdminLTE/pages/examples/invoice.html">OR7429</a></td>
-				                    <td>iPhone 6 Plus</td>
-				                    <td><span class="label label-danger">Delivered</span></td>
-				                    <td>
-				                      <span class="label label-info">Processing</span>
-				                    </td>
-				                  </tr>
-				                  <tr>
-				                    <td><a href="https://adminlte.io/themes/AdminLTE/pages/examples/invoice.html">OR7429</a></td>
-				                    <td>Samsung Smart TV</td>
-				                    <td><span class="label label-info">Processing</span></td>
-				                    <td>
-				                      <span class="label label-info">Processing</span>
-				                    </td>
-				                  </tr>
-				                  <tr>
-				                    <td><a href="https://adminlte.io/themes/AdminLTE/pages/examples/invoice.html">OR1848</a></td>
-				                    <td>Samsung Smart TV</td>
-				                    <td><span class="label label-warning">Pending</span></td>
-				                    <td>
-				                      <span class="label label-info">Processing</span>
-				                    </td>
-				                  </tr>
-				                  <tr>
-				                    <td><a href="https://adminlte.io/themes/AdminLTE/pages/examples/invoice.html">OR7429</a></td>
-				                    <td>iPhone 6 Plus</td>
-				                    <td><span class="label label-danger">Delivered</span></td>
-				                    <td>
-				                      <span class="label label-info">Processing</span>
-				                    </td>
-				                  </tr>
-				                  <tr>
-				                    <td><a href="https://adminlte.io/themes/AdminLTE/pages/examples/invoice.html">OR9842</a></td>
-				                    <td>Call of Duty IV</td>
-				                    <td><span class="label label-success">Shipped</span></td>
-				                    <td>
-				                      <span class="label label-info">Processing</span>
-				                    </td>
-				                  </tr>
-													<tr>
-				                    <td><a href="https://adminlte.io/themes/AdminLTE/pages/examples/invoice.html">OR9842</a></td>
-				                    <td>Call of Duty IV</td>
-				                    <td><span class="label label-success">Shipped</span></td>
-				                    <td>
-				                      <span class="label label-info">Processing</span>
-				                    </td>
-				                  </tr>
-													<tr>
-				                    <td><a href="https://adminlte.io/themes/AdminLTE/pages/examples/invoice.html">OR9842</a></td>
-				                    <td>Call of Duty IV</td>
-				                    <td><span class="label label-success">Shipped</span></td>
-				                    <td>
-				                      <span class="label label-info">Processing</span>
-				                    </td>
-				                  </tr>
+														@if(isset($posts))
+														@forelse($posts as $post)
+															<tr>
+																<td><a href="{{url('/home/'. $post->user->username) }}">{{ $post->user->username }}</a></td>
+																<td>{{ $post->user->name}}</td>
+																<td>{{ $post->user->email}}</td>
+																<td>
+																	<span class="label label-info">{{ $post->status}}</span>
+																</td>
+															</tr>
+														<!-- Conditional Variable Empty Variable listado-->
+														@empty
+															<tr>
+																<td colspan="6" scope="col">No Existen Post's Recientes</td>
+															</tr>
+														@endforelse
+														@endif
 				                  </tbody>
 				                </table>
 				              </div>
@@ -254,8 +200,9 @@
 				            </div>
 				            <!-- /.box-body -->
 				            <div class="box-footer clearfix">
-				              <a href="javascript:void(0)" class="btn btn-sm btn-info btn-flat pull-left">Place New Order</a>
-				              <a href="javascript:void(0)" class="btn btn-sm btn-default btn-flat pull-right">View All Orders</a>
+				              <a href="{{url('/edit-post')}}" class="btn btn-sm btn-info btn-flat pull-left">Crear Post's</a>
+											<label style="display:none;">{{$me = Auth::user()->username}}</label>
+				              <a href="{{url('/home/'.$me)}}" class="btn btn-sm btn-default btn-flat pull-right">Ver Mis Post's</a>
 				            </div>
 				            <!-- /.box-footer -->
 				          </div>
@@ -281,7 +228,7 @@
 
 									<div class="info-box-content">
 										<span class="info-box-text">Post's</span>
-										<span class="info-box-number">5,200</span>
+										<span class="info-box-number">@if(isset($countp)) {{ $countp }} @endif</span>
 
 										<div class="progress">
 											<div class="progress-bar" style="width: 10%"></div>
@@ -298,7 +245,7 @@
 
 									<div class="info-box-content">
 										<span class="info-box-text">Usuarios</span>
-										<span class="info-box-number">92,050</span>
+										<span class="info-box-number">@if(isset($countu)) {{ $countu }} @endif</span>
 
 										<div class="progress">
 											<div class="progress-bar" style="width: 20%"></div>
@@ -315,7 +262,7 @@
 
 									<div class="info-box-content">
 										<span class="info-box-text">Comentarios</span>
-										<span class="info-box-number">114,381</span>
+										<span class="info-box-number">@if(isset($countc)) {{ $countc }} @endif</span>
 
 										<div class="progress">
 											<div class="progress-bar" style="width: 5%"></div>
@@ -332,7 +279,7 @@
 
 									<div class="info-box-content">
 										<span class="info-box-text">Mensajes Directos</span>
-										<span class="info-box-number">163,921</span>
+										<span class="info-box-number">@if(isset($countm)) {{ $countm }} @endif</span>
 
 										<div class="progress">
 											<div class="progress-bar" style="width: 50%"></div>

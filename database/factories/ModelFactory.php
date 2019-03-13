@@ -31,10 +31,10 @@ $factory->define(App\Models\Post::class, function(Faker\Generator $faker){
     'resume'=>$faker->realText(random_int(20,160)),
     'description'=>$faker->text,
     'imagen'=>$faker->imageUrl(500,338),
-    'publish_date' => $faker->dateTimeThisDecade,
+    'publish_date' => $faker->dateTimeThisYear,
     'status' => (1),
-    'created_at' => $faker->dateTimeThisDecade,
-    'updated_at' => $faker->dateTimeThisDecade,
+    'created_at' => $faker->dateTimeThisYear,
+    'updated_at' => $faker->dateTimeThisYear,
   ];
 });
 
@@ -45,7 +45,7 @@ $factory->define(App\Message::class, function(Faker\Generator $faker){
     'email' => $faker->safeEmail,
     'description'=>$faker->realText(random_int(20,160)),
     'message'=>$faker->text,
-    'created_at' => $faker->dateTimeThisDecade,
-    'updated_at' => $faker->dateTimeThisDecade,
+    'created_at' => $faker->dateTimeThisYear,
+    'updated_at' => $faker->dateTimeThisYear,
   ];
 });

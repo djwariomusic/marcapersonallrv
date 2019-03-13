@@ -80,7 +80,8 @@
               </ul>
             </li>
             <li><a href="{{url('/home/'.$me.'/graphs')}}"><i class='fa fa-bar-chart-o' style="color:#00ba66;"></i> <span>Gráficos</span></a></li>
-            <li><a href="{{url('/datatable')}}"><i class='fa fa-table' style="color:#00ba66;"></i> <span>DataTables</span></a></li>
+
+            <!--<li><a href="{{url('/datatable')}}"><i class='fa fa-table' style="color:#00ba66;"></i> <span>DataTables</span></a></li>-->
             <li><a href="{{url('/apijson')}}"><i class='fa fa-code' style="color:#00ba66;"></i> <span>API JSON</span></a></li>
             <li><a href="{{url('/documents')}}"><i class='fa fa-link' style="color:#00ba66;"></i> <span>Documentación</span></a></li>
         </ul><!-- /.sidebar-menu -->

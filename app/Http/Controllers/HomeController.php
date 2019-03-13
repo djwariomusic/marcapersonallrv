@@ -9,6 +9,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Post;
 use App\Models\Comment;
+use App\Models\User;
+use App\Message;
 
 use App\Projects;
 
@@ -45,7 +47,13 @@ class HomeController extends Controller
     }
     public function index()
     {
-        return view('adminlte::home');
+        $posts= Post::where('status', 1)->with('user')->orderBy('publish_date','desc')->take(9)->get();
+        $countp = Post::where('status', 1)->count();
+        $countu = User::count();
+        $countc = Comment::count();
+        $countm = Message::count();
+        $countpj = Projects::count();
+        return view('adminlte::home',['posts'=> $posts, 'countp'=> $countp, 'countu'=> $countu, 'countc'=> $countc, 'countm'=> $countm, 'countpj'=> $countpj]);
     }
 
     public function createproject()
