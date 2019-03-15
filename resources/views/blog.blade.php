@@ -120,7 +120,7 @@
           </div>
       @endif
     </section>
-      		{{-- END Esta seccion sera un bucle de Posts --}}
+
           <div class="clearfix"> </div>
   </div>
   </div>
