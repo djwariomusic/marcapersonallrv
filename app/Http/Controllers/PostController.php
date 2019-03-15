@@ -15,11 +15,22 @@ class PostController extends Controller
 
   public function getList() {
 
-    $data= Post::where('status',1)->orderBy('publish_date', 'DESC')->whereHas('user', function ($query) {
-      $query->where('email', '=', 'mario-edwin@hotmail.com');
-    })->Paginate(5);
 
-  return view('blog', ['posts'=> $data]);
+    $data2= Post::where('status',1)->take(1)->orderBy('publish_date', 'DESC')->whereHas('user', function ($query) {
+      $query->where('email', '=', 'mario-edwin@hotmail.com');
+    })->get();
+
+    $data2id= Post::where('status',1)->take(1)->orderBy('publish_date', 'DESC')->whereHas('user', function ($query) {
+      $query->where('email', '=', 'mario-edwin@hotmail.com');
+    })->firstorFail();
+
+
+
+    $data= Post::where('status',1)->whereNotIn('id',[$data2id->id])->orderBy('publish_date', 'DESC')->whereHas('user', function ($query) {
+      $query->where('email', '=', 'mario-edwin@hotmail.com');
+    })->Paginate(3);
+
+  return view('blog', ['posts'=> $data, 'postsp'=> $data2]);
   }
 
   public function getPosts($id) {

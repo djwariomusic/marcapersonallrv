@@ -78,8 +78,8 @@
       Al dar click al creador de un post se podrán observar todos los post's relacionados a ese usuario creador. Los comentarios están asociados a los post's para su creación.</p>
 		</div>
 		{{-- Esta sección sera un bucle de Post's (Los listará todos) --}}
-		<section class="col-md-9">
-			@forelse($posts as $post)
+		<section class="col-md-12">
+			@forelse($postsp as $postp)
 				<article class="post">
 					<div class="page-header">
               @include('posts.lastpost')
@@ -92,6 +92,28 @@
         <div class="clearfix"><br></div>
       @endforelse
 
+      @forelse($posts as $post)
+      <div class="col-md-4">
+        <div class="well" style="height:40em;">
+    			<div class="page-header" style="height:3em;">
+    				<h4><strong>{{ $post->title }}</strong></h47>
+    			</div>
+          <img class="img-thumbnail" src="{{ $post->imagen }}"><br>
+          <p>{{ $post->resume }}</p>
+    		</div>
+        <a href="{{ url('blog/getPost/'.$post->id) }}" class="btn btn-success"><font size="3">Ver post  <i class="fa fa-sticky-note-o"></i></font></a>
+      </div>
+      @empty
+      <div class="col-md-12">
+        <div class="well">
+          <div class="page-header">
+            <h1>No hay Mensajes</h1>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"><br></div>
+      @endforelse
+
       @if(count($posts))
           <div class="mt-2 mx-auto">
           {{ $posts->links('pagination::bootstrap-4') }}<br><br>
@@ -99,18 +121,6 @@
       @endif
     </section>
       		{{-- END Esta seccion sera un bucle de Posts --}}
-          <div class="col-md-3">
-            <div class="col-md-3">
-              <i class="fa fa-phone" aria-hidden="true"></i>
-            </div>
-            <p>+(57) 301 2388303</p>
-          </div>
-          <div class="col-md-3">
-            <div class="col-md-3">
-              <i class="fa fa-phone" aria-hidden="true"></i>
-            </div>
-            <p>+(57) 301 2388303</p>
-          </div>
           <div class="clearfix"> </div>
   </div>
   </div>

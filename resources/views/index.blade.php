@@ -171,7 +171,7 @@ Maquetacion Bootstrap" />
 		<p class="sub_para_agile two">Descripción Competencias Laborales</p>
 			<div class="agile_inner_grids">
 				<div class="col-md-12 w3_agileits_about2_grid_left">
-					<p>Profesional en Ingeniería de Sistemas. Especialista Base de Datos para Sistemas de Información Geográfica,
+					<p style="line-height: 2em;">Profesional en Ingeniería de Sistemas. Especialista Base de Datos para Sistemas de Información Geográfica,
 						conocimientos en Desarrollo  de  Páginas  WEB  HTML5,  CSS3,  PHP,  JavaScript  y  diseño Responsive.
 						Experiencia en Coordinación de Soporte Técnico en desarrollo de Software y sistemas de rastreo o seguimiento GPS,
 						Sistemas de Información Geográfica, geolocalización, consultas SQL sobre diferentes motores de Base de Datos,

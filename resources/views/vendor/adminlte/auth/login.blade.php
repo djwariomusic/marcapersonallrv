@@ -9,7 +9,7 @@
     <div id="app" v-cloak>
         <div class="login-box">
             <div class="login-logo">
-                <a href="{{ url('/home') }}"><b>Inicio</b> Sesión</a>
+                <a href="{{ url('/home') }}"><b>Edwin</b> Beltrán</a>
             </div><!-- /.login-logo -->
 
         @if (count($errors) > 0)
@@ -30,7 +30,7 @@
                     domain="{{ config('auth.defaults.domain','') }}"></login-form>
 
 
-        <a href="{{ url('/password/reset') }}">{{ trans('adminlte_lang::message.forgotpassword') }}</a><br>
+        <!--<a href="{{ url('/password/reset') }}">{{ trans('adminlte_lang::message.forgotpassword') }}</a><br>-->
         <a href="{{ url('/register') }}" class="text-center">{{ trans('adminlte_lang::message.registermember') }}</a>
 
     </div>
