@@ -118,7 +118,14 @@ class PostController extends Controller
   }
 
   public function getApiJson() {
-    $data= Post::where('user_id', 2)->orderBy('publish_date','desc')->get();
-    return $data;
+
+    $data2id= Post::where('status',1)->take(1)->orderBy('publish_date', 'DESC')->whereHas('user', function ($query) {
+      $query->where('email', '=', 'mario-edwin@hotmail.com');
+    })->firstorFail();
+
+    $data= Post::where('status',1)->whereNotIn('id',[$data2id->id])->orderBy('publish_date', 'DESC')->whereHas('user', function ($query) {
+      $query->where('email', '=', 'mario-edwin@hotmail.com');
+    })->get();
+    return $data->toJson();
   }
 }

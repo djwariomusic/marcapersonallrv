@@ -32,21 +32,21 @@ class UsersController extends Controller
     }
 
     public function showGraph($username){
-      $data2017= Post::whereYear('publish_date','=','2019')->whereMonth('publish_date','=','03')->count();
-      $data2016= Post::whereYear('publish_date','=','2019')->whereMonth('publish_date','=','02')->count();
-      $data2015= Post::whereYear('publish_date','=','2019')->whereMonth('publish_date','=','01')->count();
-      $data2014= Post::whereYear('publish_date','=','2018')->whereMonth('publish_date','=','12')->count();
-      $data2013= Post::whereYear('publish_date','=','2018')->whereMonth('publish_date','=','11')->count();
-      $data2012= Post::whereYear('publish_date','=','2018')->whereMonth('publish_date','=','03')->count();
+      $data2017= Post::whereYear('publish_date','=','2019')->whereMonth('publish_date','=','04')->count();
+      $data2016= Post::whereYear('publish_date','=','2019')->whereMonth('publish_date','=','03')->count();
+      $data2015= Post::whereYear('publish_date','=','2019')->whereMonth('publish_date','=','02')->count();
+      $data2014= Post::whereYear('publish_date','=','2019')->whereMonth('publish_date','=','01')->count();
+      $data2013= Post::whereYear('publish_date','=','2018')->whereMonth('publish_date','=','12')->count();
+      $data2012= Post::whereYear('publish_date','=','2018')->whereMonth('publish_date','=','11')->count();
 
       $user= $this->findByUsername($username);
-      $dataEnero17= Post::whereYear('publish_date','=','2019')->whereMonth('publish_date','=','03')->where('user_id','=', $user->id)->count();
-      $dataFebrero17 = Post::whereYear('publish_date','=','2019')->whereMonth('publish_date','=','02')->where('user_id','=', $user->id)->count();
-      $dataMarzo17= Post::whereYear('publish_date','=','2019')->whereMonth('publish_date','=','03')->where('user_id','=', $user->id)->count();
-      $dataAbril17= Post::whereYear('publish_date','=','2018')->whereMonth('publish_date','=','12')->where('user_id','=', $user->id)->count();
-      $dataMayo17= Post::whereYear('publish_date','=','2018')->whereMonth('publish_date','=','11')->where('user_id','=', $user->id)->count();
-      $dataJunio17= Post::whereYear('publish_date','=','2018')->whereMonth('publish_date','=','10')->where('user_id','=', $user->id)->count();
-      $dataJulio17= Post::whereYear('publish_date','=','2018')->whereMonth('publish_date','=','09')->where('user_id','=', $user->id)->count();
+      $dataEnero17= Post::whereYear('publish_date','=','2019')->whereMonth('publish_date','=','04')->where('user_id','=', $user->id)->count();
+      $dataFebrero17 = Post::whereYear('publish_date','=','2019')->whereMonth('publish_date','=','03')->where('user_id','=', $user->id)->count();
+      $dataMarzo17= Post::whereYear('publish_date','=','2019')->whereMonth('publish_date','=','02')->where('user_id','=', $user->id)->count();
+      $dataAbril17= Post::whereYear('publish_date','=','2019')->whereMonth('publish_date','=','01')->where('user_id','=', $user->id)->count();
+      $dataMayo17= Post::whereYear('publish_date','=','2018')->whereMonth('publish_date','=','12')->where('user_id','=', $user->id)->count();
+      $dataJunio17= Post::whereYear('publish_date','=','2018')->whereMonth('publish_date','=','11')->where('user_id','=', $user->id)->count();
+      $dataJulio17= Post::whereYear('publish_date','=','2018')->whereMonth('publish_date','=','10')->where('user_id','=', $user->id)->count();
 
       $query=Post::join('users','user_id','=','users.id')->groupBy('users.name')->selectRaw('users.name, count(posts.id) as count')->orderBy('count','desc')->take(5)->get();
 

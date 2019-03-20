@@ -51,7 +51,7 @@
 						</div>
 
 						<div class="chart-container" style="width:100%;">
-						  <h4>Gráfico de Numero de Post's los Últimos Años</h4>
+						  <h4>Gráfico de Numero de Post's los Últimos Meses</h4>
 						  <canvas id="myChart"></canvas><br>
 						</div>
 
@@ -61,7 +61,7 @@
 						</div>
 
 						<div class="chart-container" style="width:100%;">
-						  <h4>Gráfica de Red</h4>
+						  <h4>Gráfica de Red Habilidades Desarrollo Web</h4>
 						  <canvas id="chartjs-3"></canvas><br>
 						</div>
 
@@ -82,7 +82,7 @@
   		var myChart = new Chart(ctx, {
   		    type: 'bar',
   		    data: {
-  		        labels: ["Marzo-19", "Febrero-19", "Enero-19", "Diciembre-18", "Noviembre-18", "Octubre-18"],
+  		        labels: ["Abril-19", "Marzo-19", "Febrero-19", "Enero-19", "Diciembre-18", "Noviembre-18"],
   		        datasets: [{
   		            label: '# de Post por Meses',
   		            data: [{{$posts2017}}, {{$posts2016}}, {{$posts2015}}, {{$posts2014}}, {{$posts2013}}, {{$posts2012}}],
@@ -120,7 +120,7 @@
   		    <script>
   		      new Chart(document.getElementById("chartjs-0"),{
   		          "type":"line","data":{
-  		            "labels":["Marzo-19","Febrero-19","Enero-19","Diciembre-18","Noviembre-18","Octubre-18","Septiembre-18"],
+  		            "labels":["Abril-19","Marzo-19","Febrero-19","Enero-19","Diciembre-18","Noviembre-18","Octubre-18"],
   		            "datasets":[{
   		              "label":"Mis # de Posts",
   		              "data":[{{$dataEnero17}},{{$dataFebrero17}},{{$dataMarzo17}},{{$dataAbril17}},{{$dataMayo17}},{{$dataJunio17}},{{$dataJulio17}}],
