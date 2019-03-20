@@ -24,8 +24,6 @@ class PostController extends Controller
       $query->where('email', '=', 'mario-edwin@hotmail.com');
     })->firstorFail();
 
-
-
     $data= Post::where('status',1)->whereNotIn('id',[$data2id->id])->orderBy('publish_date', 'DESC')->whereHas('user', function ($query) {
       $query->where('email', '=', 'mario-edwin@hotmail.com');
     })->Paginate(3);

@@ -380,6 +380,14 @@
 						}
 						window.onload = load;
 				 </script>
+			<input type="hidden" data-toggle="modal"  id="buttonpost" data-target="#myModalGal">
+		@elseif (session('alerts')=='Galeria Guardada')
+				<script language="JavaScript">
+						function load() {
+								document.getElementById("buttonpost").click();
+						}
+						window.onload = load;
+				 </script>
 			<input type="hidden" data-toggle="modal"  id="buttonpost" data-target="#myModalProjDel">
 		@endif
 @endsection

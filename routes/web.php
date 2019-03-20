@@ -46,6 +46,8 @@ Auth::routes();
 
 Route::group(['middleware' => 'auth'], function () {
   Route::Auth();
+  Route::get('/myacount/{username}', 'UsersController@showAcount');
+
   Route::get('/edit-post', 'PostController@getEditpost');
   Route::get('/edit-post/{id}/', 'PostController@getEditpost');
   Route::get('/home/getPost/{postid}', 'PostController@getPost');

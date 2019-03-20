@@ -81,9 +81,8 @@ Maquetacion Bootstrap" />
 					<div class="w3layouts-banner-top w3layouts-banner-top1">
 					<div class="container">
 							<div class="agileits-banner-info">
-
 								<h3>Asesorías en TI</h3>
-								<div  class="alert alert-warning">
+								<div class="alert alert-warning">
 									 Asesoría Gratuita en temas de Tecnología y Desarrollo
 								 </div>
 									<div class="more">
@@ -247,7 +246,7 @@ Maquetacion Bootstrap" />
 					</div>
 					<center>
 					  <span><font color="#0ac876"><strong>Sistema Información Geográfico</strong></font></span><br>
-					  <a href="http://www.google.com" target="_blank"><span class="label label-warning"><i class="fa fa-link" aria-hidden="true"></i>  Visitar</span></a>
+					  <a href="http://www.sinic.gov.co/mapacultural/index.html" target="_blank"><span class="label label-warning"><i class="fa fa-link" aria-hidden="true"></i>  Visitar</span></a>
 					</center>
     		</div>
 				<div class="col-md-3 agileits_banner_bottom_grid">
@@ -257,8 +256,8 @@ Maquetacion Bootstrap" />
 						</div>
 					</div>
 					<center>
-					<span><font color="#0ac876"><strong>Sistema Seguimiento Satélital</strong></font></span><br>
-					<a href="http://www.google.com" target="_blank"><span class="label label-warning"><i class="fa fa-link" aria-hidden="true"></i>  Visitar</span></a>
+					<span><font color="#0ac876"><strong>Sistema Gestión Documental y RRHH</strong></font></span><br>
+					<a href="http://www.secancol.com" target="_blank"><span class="label label-warning"><i class="fa fa-link" aria-hidden="true"></i>  Visitar</span></a>
 				</center>
 				</div>
 				<div class="col-md-3 agileits_banner_bottom_grid">
@@ -268,8 +267,8 @@ Maquetacion Bootstrap" />
 						</div>
 					</div>
 					<center>
-					  <span><font color="#0ac876"><strong>Sistema Agendamiento de Citas</strong></font></span><br>
-					  <a href="http://www.google.com" target="_blank"><span class="label label-warning"><i class="fa fa-link" aria-hidden="true"></i>  Visitar</span></a>
+					  <span><font color="#0ac876"><strong>Sistema de Gestión de Toma de Muestras Medicas</strong></font></span><br>
+					  <a href="http://www.biolabtracking.laboratorioclinicobiolab.com/biolabweb2/" target="_blank"><span class="label label-warning"><i class="fa fa-link" aria-hidden="true"></i>  Visitar</span></a>
 				  </center>
 				</div>
 				<div class="col-md-3 agileits_banner_bottom_grid">
@@ -279,8 +278,8 @@ Maquetacion Bootstrap" />
 						</div>
 					</div>
 					<center>
-					  <span><font color="#0ac876"><strong>Desarrollo Web Freelance</strong></font></span><br>
-					  <a href="http://www.google.com" target="_blank"><span class="label label-warning"><i class="fa fa-link" aria-hidden="true"></i>  Visitar</span></a></span>
+					  <span><font color="#0ac876"><strong>Community Vecinos Verdes - MINTIC</strong></font></span><br>
+					  <a href="https://djwariomusic.github.io/vecinosverdesweb/docs/" target="_blank"><span class="label label-warning"><i class="fa fa-link" aria-hidden="true"></i>  Visitar</span></a></span>
 				  </center>
 				</div>
 				<div class="clearfix"> </div>

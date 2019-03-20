@@ -17,6 +17,6 @@ class StorageController extends Controller
         $image->idproject = $input['idproject'];
         $image->path = $path;
         $image->save();
-        return redirect()->to('/home')->with('alerts','Proyecto Guardado');
+        return redirect()->to('/home')->with('alerts','Galeria Guardada');
     }
 }

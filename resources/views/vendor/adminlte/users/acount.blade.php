@@ -39,33 +39,31 @@
 			<div class="col-md-12 wthree_services_grid_left">
 					<div class="alert alert-success" role="alert">
             <div class="page-header">
-      				<h1>Actualizar Proyecto</h1>
+      				<h1>Perfil Usuario</h1>
       			</div>
       		</div>
 
           <div class="box box-warning">
             <div class="box-header with-border">
-              <h3 class="box-title">Mi Galería de Proyectos</h3>
+              <h3 class="box-title">Mi Perfil Usuario</h3>
             </div>
           <!-- /.box-header -->
           <div class="box-body">
             <div class="row">
                 <div class="col-md-12">
-                    <form action="{{url('/saveGallery')}}" method="POST" enctype="multipart/form-data">
+                    <form action="{{url('/saveAcount')}}" method="POST">
                      {{ csrf_field() }}
-                     <label for="title"><b>Nombre Proyecto:</b></label>
-                     <select name="idproject" id="idproject" style="width:100%;height:40px;">
-                       <option disabled value=""> -- Seleccionar una Opción -- </option>
-                       @forelse($projects as $project)
-                       <option value="{{$project->idproject}}"> {{$project->name}} </option>
-                       @empty
-                       <option disabled select value> No se encontrarón Resultados </option>
-                       @endforelse
-                     </select>
-                     <label for="publish_date"><b>Imagén a Cargar:</b></label>
-                         <input type="file" name="file" id="file" class="form-control" required>
-                     <br><br>
-                     <input type="submit" class="btn btn-success" value="Guardar"><br>
+                     <label for="title"><b>Nombre Usuario:</b></label>
+                         <input type="hidden" name="user_id" value="">
+                         <input type="text" name="name" id="name" class="form-control" placeholder="Nombre Usuario..." value="{{ $user->name }}">
+                     <label for="publish_date"><b>Email Usuario:</b></label>
+                         <input type="text" name="email" id="email" class="form-control" placeholder="Email Usuario..." value="{{ $user->email }}">
+                     <label for="publish_date"><b>Username o Alias:</b></label>
+                         <input type="text" name="username" id="username" class="form-control" placeholder="Alias Usuario..." value="{{ $user->username }}">
+                     <label for="publish_date"><b>Contraseña:</b></label>
+                         <input type="password" name="pass" id="pass" class="form-control" placeholder="Contraseña Cifrada..." value="{{ $user->password }}">
+                      <br><br>
+                     <!--<input type="submit" class="btn btn-success" value="Actualizar"><br>-->
                   </form>
       			   </div>
              </div>

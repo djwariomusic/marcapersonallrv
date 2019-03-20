@@ -10,11 +10,18 @@ use Illuminate\Support\Facades\Input;
 
 class UsersController extends Controller
 {
+
+    public function showAcount($username){
+      $data= User::where('username','=', $username)->firstorFail();
+      return view('adminlte::users.acount',['user'=>$data]);
+    }
+
     public function showPost($username){
       $user= $this->findByUsername($username);
       $data= Post::with('user')->where('user_id','=', $user->id)->orderBy('publish_date','desc')->Paginate(5);
       return view('adminlte::users.show',['posts'=> $data,'users'=>$user,]);
     }
+
     public function searchUser(){
       $input =Input::all();
       $data =(strtolower($input['username']));
@@ -23,6 +30,7 @@ class UsersController extends Controller
       $user = User::where('username','LIKE', "%$data%")->orderBy('username')->Paginate(5);
       return view('adminlte::users.search',['users'=>$user,]);
     }
+
     public function showGraph($username){
       $data2017= Post::whereYear('publish_date','=','2019')->whereMonth('publish_date','=','03')->count();
       $data2016= Post::whereYear('publish_date','=','2019')->whereMonth('publish_date','=','02')->count();

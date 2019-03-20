@@ -43,7 +43,7 @@
 			      Al dar click al creador de un post se podrán observar todos los post's relacionados a ese usuario creador. Los comentarios están asociados a los post's para su creación.</p>
 					</div>
 					{{-- Esta sección sera un bucle de Posts (Los listará todos)--}}
-					<section class="col-md-9">
+					<section class="col-md-12">
 
 						@forelse($users as $user)
 							<article class="post">
@@ -66,18 +66,6 @@
 			      @endif
 			    </section>
 			      		{{-- END Esta seccion sera un bucle de Posts --}}
-			          <div class="col-md-3">
-			            <div class="col-md-3">
-			              <i class="fa fa-phone" aria-hidden="true"></i>
-			            </div>
-			            <p>+(57) 301 2388303</p>
-			          </div>
-			          <div class="col-md-3">
-			            <div class="col-md-3">
-			              <i class="fa fa-phone" aria-hidden="true"></i>
-			            </div>
-			            <p>+(57) 301 2388303</p>
-			          </div>
 			          <div class="clearfix"> </div>
 			  </div>
 		</div>

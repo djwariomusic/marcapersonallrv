@@ -61,7 +61,7 @@
               <ul class="treeview-menu">
                 <li><a href="{{url('/projects') }}"><i class="fa fa-list"  style="color:#00ba66;"></i><span> Todos los Proyectos</span></a></li>
                 <li><a href="{{url('/project') }}"><i class="fa fa-address-card-o"  style="color:#00ba66;"></i><span> Crear Proyecto</span></a></li>
-                <li><a href="{{url('/gallery') }}"><i class="fa fa-picture-o"  style="color:#00ba66;"></i><span> Actualizar Galeria</span></a></li>
+                <li><a href="{{url('/gallery') }}"><i class="fa fa-picture-o"  style="color:#00ba66;"></i><span> Actualizar Galería</span></a></li>
               </ul>
             </li>
             @endif

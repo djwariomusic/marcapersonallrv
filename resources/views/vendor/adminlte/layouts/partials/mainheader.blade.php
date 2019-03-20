@@ -46,7 +46,8 @@
                             <!-- Menu Footer-->
                             <li class="user-footer">
                                 <div class="pull-left">
-                                    <a href="{{ url('/settings') }}" class="btn btn-default btn-flat">{{ trans('adminlte_lang::message.profile') }}</a>
+                                    <label style="display:none;">{{$me = Auth::user()->username}}</label>
+                                    <a href="{{url('/myacount/'.$me)}}" class="btn btn-default btn-flat">{{ trans('adminlte_lang::message.profile') }}</a>
                                 </div>
                                 <div class="pull-right">
                                     <a href="{{ url('/logout') }}" class="btn btn-default btn-flat" id="logout"
@@ -67,7 +68,7 @@
                 @endif
 
                 <!-- Control Sidebar Toggle Button -->
-                
+
             </ul>
         </div>
     </nav>

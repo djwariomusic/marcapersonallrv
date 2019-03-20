@@ -26,10 +26,6 @@ Maquetacion Bootstrap" />
 <!-- //font-awesome-icons -->
 <link href="{{ url('css/index.css')}}" rel="stylesheet" type="text/css" media="all" />
 
-<link rel="stylesheet" href="{{url('css/dataTables.bootstrap.css')}}">
-<link rel="stylesheet" href="{{url('css/dataTables.bootstrap.min.css')}}">
-
-
 <meta name="csrf-token" content="{{ csrf_token() }}">
 
 </head>
@@ -115,98 +111,17 @@ Maquetacion Bootstrap" />
 </div>
 <div class="clearfix"> </div>
 <!--/ banner -->
-<!-- bootstrap-pop-up -->
-@if(Auth::check())
-	<div class="modal video-modal fade" id="myModalPost" tabindex="-1" role="dialog" aria-labelledby="myModal">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				</div>
-				<section>
-					<div class="modal-body">
-						<h5>El Post ha sido Creado o Modificado!</h5>
-						<img src="{{url('images/check-form.jpg')}}" width="64" height="64" alt=" " class="img-responsive" />
-						<center>
-						<p><a href="/home/{{Auth::user()->username}}"><input type="button" value="Mis Posts"></a></p>
-					  </center>
-					</div>
-				</section>
-			</div>
-		</div>
-	</div>
-<!-- //bootstrap-pop-up -->
-<!-- bootstrap-pop-up -->
-	<div class="modal video-modal fade" id="myModalPostDel" tabindex="-1" role="dialog" aria-labelledby="myModal">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				</div>
-				<section>
-					<center>
-					<div class="modal-body">
-						<h5>El Post ha sido Eliminado!</h5>
-						<img src="{{url('images/delete-form.jpg')}}" width="64" height="64" alt=" " class="img-responsive" />
-						<p align="center"><a href="/home/{{Auth::user()->username}}"><input type="button" value="Mis Posts"></a></p>
-					</div>
-					</center>
-				</section>
-			</div>
-		</div>
-	</div>
-<!-- //bootstrap-pop-up -->
-<!-- bootstrap-pop-up -->
-	<div class="modal video-modal fade" id="myModalDened" tabindex="-1" role="dialog" aria-labelledby="myModal">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				</div>
-				<section>
-					<center>
-					<div class="modal-body">
-						<h5>Acción No Permitida!</h5>
-						<img src="{{url('images/delete-form.jpg')}}" width="64" height="64" alt=" " class="img-responsive" />
-						<p align="center"><a href="/home/{{Auth::user()->username}}"><input type="button" value="Mis Posts"></a></p>
-					</div>
-					</center>
-				</section>
-			</div>
-		</div>
-	</div>
-<!-- //bootstrap-pop-up -->
-<!-- //bootstrap-pop-up -->
-<div class="modal video-modal fade" id="myModalMsj" tabindex="-1" role="dialog" aria-labelledby="myModal">
-	<div class="modal-dialog" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-			</div>
-			<section>
-				<div class="modal-body">
-					<h5>El Mensaje a sido Creado o Actualizado!</h5>
-					<img src="{{url('images/check-form.jpg')}}" width="64" height="64" alt=" " class="img-responsive" />
-					<center>
-					<p><a href="/home/{{Auth::user()->username}}"><input type="button" value="Mis Posts"></a></p>
-					</center>
-				</div>
-			</section>
-		</div>
-	</div>
-</div>
-<!-- //bootstrap-pop-up -->
-@endif
+
 @yield('contenido')
 <!-- footer -->
 	<div class="footer">
 		<div class="container">
 			<div class="w3_newsletter_footer_grids">
 				<div class="w3_newsletter_footer_grid_left">
-					<form action="#" method="post">
+					<!--<form action="#" method="post">
 						<input type="email" name="Email" placeholder="Ingresar Email...." required="">
 						<input type="submit" value="ENVIAR">
-					</form>
+					</form>-->
 				</div>
 			</div>
 			<div class="w3ls_address_mail_footer_grids">
@@ -238,7 +153,7 @@ Maquetacion Bootstrap" />
 				<div class="clearfix"> </div>
 			</div>
 			<div class="agileinfo_copyright" >
-				<p>© 2017 Consultancy. All Rights Reserved | Design by <a href="https://w3layouts.com/">W3layouts</a></p>
+				<p>© 2018 Edwin Beltrán. Material Académico.</p>
 			</div>
 		</div>
 	</div>
