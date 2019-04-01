@@ -56,7 +56,8 @@ class MessagesController extends Controller
            else{
              $message->state = $input['state'];
              $message->save();
-             return redirect()->to('/home')->with('alerts','Mensaje Guardado');
+             return redirect()->to('public/home')->with('alerts','Mensaje Guardado');
            }
+
    }
 }
